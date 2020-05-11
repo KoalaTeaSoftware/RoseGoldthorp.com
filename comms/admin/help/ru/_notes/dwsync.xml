@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="attachments.php" server="ftp.lifestones.biz//" local="131855002835971109" remote="131837050800000000" Dst="2" />
+<file name="embargo.php" server="ftp.lifestones.biz//" local="131855002837840471" remote="131837050800000000" Dst="2" />
+<file name="finishsending.php" server="ftp.lifestones.biz//" local="131855002841099430" remote="131837050800000000" Dst="2" />
+<file name="footer.php" server="ftp.lifestones.biz//" local="131855002844756733" remote="131837050800000000" Dst="2" />
+<file name="format.php" server="ftp.lifestones.biz//" local="131855002846746230" remote="131837050800000000" Dst="2" />
+<file name="from.php" server="ftp.lifestones.biz//" local="131855002848605511" remote="131837050800000000" Dst="2" />
+<file name="generatetext.php" server="ftp.lifestones.biz//" local="131855002852264336" remote="131837050800000000" Dst="2" />
+<file name="googletrack.php" server="ftp.lifestones.biz//" local="131855002854163862" remote="131837050800000000" Dst="2" />
+<file name="mergeattributes.php" server="ftp.lifestones.biz//" local="131855002855986460" remote="131837050800000000" Dst="2" />
+<file name="message.php" server="ftp.lifestones.biz//" local="131855002859689453" remote="131837050800000000" Dst="2" />
+<file name="plaintextversion.php" server="ftp.lifestones.biz//" local="131855002863338294" remote="131837050800000000" Dst="2" />
+<file name="preparemessage.php" server="ftp.lifestones.biz//" local="131855002863378315" remote="131837050800000000" Dst="2" />
+<file name="repetition.php" server="ftp.lifestones.biz//" local="131855002867192194" remote="131837050800000000" Dst="2" />
+<file name="requeueing.php" server="ftp.lifestones.biz//" local="131855002870757724" remote="131837050800000000" Dst="2" />
+<file name="resetstats.php" server="ftp.lifestones.biz//" local="131855002870907682" remote="131837050800000000" Dst="2" />
+<file name="sendformat.php" server="ftp.lifestones.biz//" local="131855002874603075" remote="131837050800000000" Dst="2" />
+<file name="sendmethod.php" server="ftp.lifestones.biz//" local="131855002878331886" remote="131837050800000000" Dst="2" />
+<file name="sendtest.php" server="ftp.lifestones.biz//" local="131855002878471712" remote="131837050800000000" Dst="2" />
+<file name="sendurl.php" server="ftp.lifestones.biz//" local="131855002882104890" remote="131837050800000000" Dst="2" />
+<file name="subject.php" server="ftp.lifestones.biz//" local="131855002885842209" remote="131837050800000000" Dst="2" />
+<file name="usetemplate.php" server="ftp.lifestones.biz//" local="131855002886032152" remote="131837050800000000" Dst="2" />
+<file name="attachments.php" server="ftp.lifestones.co.nz" local="131935253748897290" remote="131863831200000000" Dst="2" />
+<file name="embargo.php" server="ftp.lifestones.co.nz" local="131935253749436994" remote="131863831200000000" Dst="2" />
+<file name="finishsending.php" server="ftp.lifestones.co.nz" local="131935253754024512" remote="131863831200000000" Dst="2" />
+<file name="footer.php" server="ftp.lifestones.co.nz" local="131935253756013321" remote="131863831200000000" Dst="2" />
+<file name="format.php" server="ftp.lifestones.co.nz" local="131935253757422383" remote="131863831200000000" Dst="2" />
+<file name="from.php" server="ftp.lifestones.co.nz" local="131935253761145539" remote="131863831200000000" Dst="2" />
+<file name="generatetext.php" server="ftp.lifestones.co.nz" local="131935253762864555" remote="131863831200000000" Dst="2" />
+<file name="googletrack.php" server="ftp.lifestones.co.nz" local="131935253764533817" remote="131863831200000000" Dst="2" />
+<file name="mergeattributes.php" server="ftp.lifestones.co.nz" local="131935253767992984" remote="131863831200000000" Dst="2" />
+<file name="message.php" server="ftp.lifestones.co.nz" local="131935253771367086" remote="131863831200000000" Dst="2" />
+<file name="plaintextversion.php" server="ftp.lifestones.co.nz" local="131935253771456990" remote="131863831200000000" Dst="2" />
+<file name="preparemessage.php" server="ftp.lifestones.co.nz" local="131935253775124761" remote="131863831200000000" Dst="2" />
+<file name="repetition.php" server="ftp.lifestones.co.nz" local="131935253778222966" remote="131863831200000000" Dst="2" />
+<file name="requeueing.php" server="ftp.lifestones.co.nz" local="131935253778532793" remote="131863831200000000" Dst="2" />
+<file name="resetstats.php" server="ftp.lifestones.co.nz" local="131935253782250669" remote="131863831200000000" Dst="2" />
+<file name="sendformat.php" server="ftp.lifestones.co.nz" local="131935253785338903" remote="131863831200000000" Dst="2" />
+<file name="sendmethod.php" server="ftp.lifestones.co.nz" local="131935253785638712" remote="131863831200000000" Dst="2" />
+<file name="sendtest.php" server="ftp.lifestones.co.nz" local="131935253789466520" remote="131863831200000000" Dst="2" />
+<file name="sendurl.php" server="ftp.lifestones.co.nz" local="131935253792444988" remote="131863831200000000" Dst="2" />
+<file name="subject.php" server="ftp.lifestones.co.nz" local="131935253792874743" remote="131863831200000000" Dst="2" />
+<file name="usetemplate.php" server="ftp.lifestones.co.nz" local="131935253796422525" remote="131863831200000000" Dst="2" />
+</dwsync>

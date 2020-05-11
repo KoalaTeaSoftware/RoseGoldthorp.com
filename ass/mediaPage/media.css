@@ -1,0 +1,21 @@
+/* CSS Document */
+.card-header {
+    text-align: center;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.carousel-inner img {
+    width: 50%;
+    height: 50%;
+}
+
+#myCarousel > a.carousel-control-next > img, #myCarousel > a.carousel-control-prev > img {
+    height: 35%
+}
+
+video {
+    border: thin #000000 solid;
+}

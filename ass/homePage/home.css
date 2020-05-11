@@ -1,0 +1,62 @@
+/* CSS Document */
+/* affect them both */
+#youtubeBlock {
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+}
+
+#facebookBlock {
+    margin: auto;
+    padding-top: 0.5em;
+    /*width: 95%;*/
+    border: inset #DC1D20 thick;
+}
+
+/* ends facebook embed stuff */
+#socials > div > a > img {
+    /* they will get rediculously small if left to themselves. */
+    min-width: 25px;
+    padding: 0.25em;
+}
+
+#leftCol {
+    text-align: center;
+}
+
+#centreCol {
+    text-align: center;
+}
+
+/* modification to the mailchimp form */
+#mc-embedded-subscribe-form {
+    margin: auto;
+}
+
+#mc-embedded-subscribe {
+    margin: 0.25em;
+}
+
+#WPBlog > h5 > a {
+    color: black;
+}
+
+#socials > div {
+    text-align: center;
+}
+
+.lead {
+    font-weight: bolder;
+}
+
+.brandedButton {
+    background-image: linear-gradient(to bottom, #bc7b85 0%, #ab5966 100%);
+    border-radius: .6rem;
+    text-shadow: 1px 1px #6d343d;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.more-link {
+    display: block;
+    margin-top: 0.5em;
+}

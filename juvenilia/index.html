@@ -1,0 +1,586 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/main.dwt" codeOutsideHTMLIsLocked="true" -->
+<head>
+
+    <link href="/ass/icon.png" rel="icon" type="img/png"/>
+    <meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Rose Goldthorp</title>
+    <!-- InstanceEndEditable -->
+    <!-- Bootstrap -->
+    <meta charset="utf-8">
+    <!-- It is hard to make iPad Chrome _really_ refresh. We make small changes now and again, and you don't see them! -->
+    <!-- This is not likely to be that embarassing, because, I expect, many visitors are first-time, and most assets are fast -->
+    <meta content="no-cache" http-equiv="cache-control">
+    <meta content="Mon, 01 April 2019 1:00:00 GMT" http-equiv="expires"/>
+    <meta content="no-cache" http-equiv="pragma"/>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- ends Twitter Bootstrap dependencies -->
+    <!-- the w3schools stuff, may need own copy of this one day -->
+    <script src="/ass/glob/w3js.js"></script>
+    <!-- Own stuff -->
+    <link href="/ass/glob/glob.css" rel="stylesheet">
+    <script src="/ass/glob/glob.js"></script>
+    <link href="/ass/glob/banner/banner.css" rel="stylesheet">
+    <link href="/ass/glob/nav/nav.css" rel="stylesheet">
+    <!-- InstanceBeginEditable name="head" -->
+    <link href="assets/juvenilia.css" rel="stylesheet">
+    <!-- InstanceEndEditable -->
+</head>
+<!-- InstanceParam name="id" type="text" value="juvenilia" -->
+<body id="juvenilia" onLoad="setNavHighlight()">
+<div class="container-fluid">
+    <div id="banner">
+        <h1>Rose Goldthorp: <span id="bannerspan">Writer, Director, Production Manager and Editor</span></h1>
+    </div>
+    <nav class="navbar navbar-custom" role="navigation">
+        <!-- have commented this out because it throws the main nav elements off centre will want to use these 3 images, however. maybe in banner?
+    div class="navbar-header">
+          <a class="navbar-brand" href="https://twitter.com/darkrosefilmsnz" target="_blank">
+            <img class="img-responsive banner-icon social-icon" src="/ass/banner/icon-social-twitter.png" alt="Open a new tab on our twitter" id="twitter">
+          </a>
+          <a class="navbar-brand" href="https://www.youtube.com/channel/UCXTKEMG8k66nYpI5EbCztKw/featured" target="_blank">
+            <img class="img-responsive banner-icon social-icon" src="/ass/banner/icon-social-youtube.png" alt="Open a new tab on our youtube channel" id="youtube"> </a>
+          <a class="navbar-brand" href="https://www.facebook.com/darkrosefilmsnz/" target="_blank">
+            <img class="img-responsive banner-icon social-icon" src="/ass/banner/icon-social-facebook.png" alt="Open a new tab on our facebook channel" id="facebook">
+          </a>
+        </div-->
+        <!-- ToDo fix and enable the missing functionality here -->
+        <ul class="nav navbar-nav" id="nav">
+            <li class="active" id="home-link"><a href="/index.php">Home</a></li>
+            <li id="on-release-link"><a href="/films/on-release">On Release</a></li>
+            <li id="present-films-link"><a href="/films/present-films">Comedy Features</a></li>
+            <li id="planned-films-link"><a href="/films/planned-films">Period Features</a></li>
+            <li id="about-link"><a href="/about.html">About</a></li>
+            <li id="media-link"><a href="/media.html">Media</a></li>
+            <li id="juvenilia-link"><a href="/juvenilia">Juvenilia</a></li>
+            <!-- li id="contact-link"><a href="/contact.html">Contact</a></li -->
+        </ul>
+    </nav>
+    <div id="content">
+        <!-- InstanceBeginEditable name="content" --> <img alt="Me at the zoo" class="img-fluid float-right"
+                                                           src="/juvenilia/assets/img/RosePortrait.jpg">
+        <h1 class="text-center" id="title">Juvenilia <em><small>my teens' blog</small></em></h1>
+        <p>Hello, I am Rose Goldthorp. I was born in 1998. This is me at the Auckland zoo., and what you see here as a
+            kind of vlog that I have been putting together since I was 10. For more recent stuff, use the nav bar.
+        </p>
+        <p> I have always been interested in films for as long as I can remember. It started as the usual enjoyment of
+            entertainment, but I loved watching the set-ups and other features on the DVDs. The organisation, hard work
+            and fun that went into making films had me goggling for hours.
+        </p>
+        <p> To make most of these, I used Sony handycams (first with minDV and now fully digital) and Sony Vegas to make
+            AVI versions and then used the Flash 8 video encoders to squash them right down for the web, so don't be
+            upset by the graininess and the aspect ratio.
+        </p>
+        <p> For my feature films, however, I have a bigger camera, now: a Panasonic (from all my birthday and Christmas
+            presents combined forever!).
+        </p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2">
+                    <h2>15 Years Old</h2>
+                    <p>I was working on my 1st feature (Watcher) and started on my 2nd feature (Silverville)</p>
+                </div>
+                <div class="col-lg-10">
+                    <!-- This is the film entries for the year -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Silverville<br>
+                                <small>(Screen-play)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#pdfModal" data-toggle="modal"
+                                    onClick="setPdfName('silverville-screenplay')" type="button"><img
+                                    alt="See the script" class="assetButton" src="assets/img/folder_documents.gif">
+                            </button>
+                            <button class="btn" data-target="#pdfModal" data-toggle="modal"
+                                    onClick="setPdfName('silverville-treatment')" type="button"><img
+                                    alt="See the script" class="assetButton" src="assets/img/folder_documents.gif">
+                            </button>
+                            <button class="btn" data-target="#pdfModal" data-toggle="modal"
+                                    onClick="setPdfName('silverville-synopsis')" type="button"><img alt="See the script"
+                                                                                                    class="assetButton"
+                                                                                                    src="assets/img/folder_documents.gif">
+                            </button>
+                            <p>With Watcher now in post-prod (composer and editor), I've started on the pre-prod for
+                                <strong>feature-film number 2</strong>, to be shot this coming summer. The Synopsis
+                                (under its working title) and Treatment are here together with the first draft of the
+                                screenplay. It is a 19th century costume drama (aargh!). The location owners are really
+                                very kind though and are giving me a go.
+                            </p>
+                        </div>
+                        <!-- ends film entry -->
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Watcher<br>
+                                <small>(Production)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#myModal" data-toggle="modal"
+                                    onClick="setVidName('121728989')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>Shot my <strong>1st feature</strong> <a href="http://rosegoldthorp.com/film/Watcher"
+                                                                       target="_blank">Watcher</a> this summer... never
+                                had so much fun. All cast and crew completely brilliant.
+                            </p>
+                            <p>I'm not allowed to show you any of the footage as I am putting in for international
+                                festivals etc., but the crew took clips with iPads and phones and here they are.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Watcher<br>
+                                <small>(Pre-Production)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <p>Had great fun this spring trying to sort things out for my <strong>1st feature
+                                film</strong>.
+                            </p>
+                            <p>Used <a href="http://wiki.darkrose.co.nz" target="_blank">this wiki</a> with <a
+                                    href="https://www.starnow.co.nz/" target="_blank">Star Now</a> and <a
+                                    href="https://www.thebigidea.nz/" target="_blank">The Big Idea</a>. Also, used my
+                                iPad and did txt and IM to chase people up.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film enty -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Trouble<br>
+                                <small>(Music Video)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#vidModal" data-toggle="modal"
+                                    onClick="setVidName('281567539')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>Here's a vid I had to make for Media Studies. I only got a Merit for this as my shots
+                                were no good and looked too hand-held. Still you can have a dance to it.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film enty -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Make Do and Mend<br>
+                                <small>(Short)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#myModal" data-toggle="modal"
+                                    onClick="setVidName('281567480')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>Shot this whole short ages ago, last December. Been trying to edit it in time for the <a
+                                    href="http://www.theoutlookforsomeday.net/" target="_blank">Outlook for Someday</a>
+                                competition, but, ran out of time 'though ( with revision and exams) and missed the
+                                deadline. I've just put some of the early scenes here to give you the idea.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film enty -->
+                    <!-- end film list for year -->
+                </div>
+            </div>
+            <!-- ends year entry -->
+            <div class="row">
+                <div class="col-lg-2">
+                    <h2>14 Years Old</h2>
+                    <p>Basically, this year, so far, I've done three competitions and some other stuff, like vlogs and
+                        things. Have decided to do something more meaty, though, as have a cool storyline I want to make
+                        as a feature.
+                    </p>
+                </div>
+                <div class="col-lg-10">
+                    <!-- This is the film entries for the year -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Watcher<br>
+                                <small>(Screenplay)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#pdfModal" data-toggle="modal"
+                                    onClick="setPdfName('watcher-screenplay')" type="button"><img alt="See the script"
+                                                                                                  class="assetButton"
+                                                                                                  src="assets/img/folder_documents.gif">
+                            </button>
+                            <p>Here is the screen-play for my first feature film - <em>ta da!</em> .</p>
+                        </div>
+                        <!-- ends film entry -->
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Make Do and Mend<br>
+                                <small>(Script)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#pdfModal" data-toggle="modal"
+                                    onClick="setPdfName('MakeDoAndMend-script')" type="button"><img alt="See the script"
+                                                                                                    class="assetButton"
+                                                                                                    src="assets/img/folder_documents.gif">
+                            </button>
+                            <p>This is the script for my short. I shoot this as soon as I break up in December ('12).
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Vlogs for the Sustainability Institute Foundation</h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#vidModal" data-toggle="modal"
+                                    onClick="setVidName('281567519')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>This little vlog was done for the Sustainable Institute Foundation of which mama is the
+                                founding trustee. These vlogs constituted the source of my pocket money for the
+                                year;)<br>
+                                Sadly the SIF had to fold due to illness, so I can't show these shorts, but here is the
+                                info vid I made for it.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Dirty Habits<br>
+                                <small>(Short)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#pdfModal" data-toggle="modal"
+                                    onClick="setPdfName('dirtyhabits-script')" type="button"><img alt="See the script"
+                                                                                                  class="assetButton"
+                                                                                                  src="assets/img/folder_documents.gif">
+                            </button>
+                            <button class="btn" data-target="#vidModal" data-toggle="modal"
+                                    onClick="setVidName('198428528')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>This is my second entry to the <a href="http://www.theoutlookforsomeday.net/"
+                                                                 target="_blank">Outlook for Someday</a> competition.
+                                The film takes a look at unsustainable behaviour in the past and ends showing one
+                                possible result of cutting down the rain forests - that we will have to make our own
+                                air.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Dangerous Island<br>
+                                <small>(Short)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#myModal" data-toggle="modal"
+                                    onClick="setVidName('281567460')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>I made this film for the <a href="https://www.aucklandlibraries.govt.nz/"
+                                                           target="_blank">Auckland Libraries</a> film competition. The
+                                competition was to create a video trailer for a book.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+                </div>
+                <!-- ends film entries for year -->
+            </div>
+            <!-- ends the year's row -->
+            <div class="row">
+                <div class="col-lg-2">
+                    <h2>13 Years Old</h2>
+                    <p>I started off writing a script for a film called the Moon-dragon’s daughter. At first, my actors
+                        were going to help and we got some shots, but then one had family problems, and others told me
+                        that they were too busy. In the end, I got so down about it that I gave up on it and started
+                        another script (Marooned). I've also put up another couple of pieces of work I've done for
+                        school and a charity
+                    </p>
+                </div>
+                <div class="col-lg-10">
+                    <!-- This is the film entries for the year -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Moon-dragon’s Daughter<br>
+                                <small>(Short)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#pdfModal" data-toggle="modal"
+                                    onClick="setPdfName('moondragonsDaughter-script')" type="button"><img
+                                    alt="See the script" class="assetButton" src="assets/img/folder_documents.gif">
+                            </button>
+                            <button class="btn" data-target="#vidModal" data-toggle="modal"
+                                    onClick="setVidName('281567508')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>Here is the script and a taster of the film.</p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>School film for Spanish<br>
+                                <small>(Short)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#vidModal" data-toggle="modal"
+                                    onClick="setVidName('281567498')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <button class="btn" data-target="#myModal" data-toggle="modal"
+                                    onClick="setVidName('281567546')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>These are bits of homework that was sprung on me and I managed to get done in one
+                                sitting. I hope you can speak Spanish.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Marooned<br>
+                                <small>(Short)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#pdfModal" data-toggle="modal"
+                                    onClick="setPdfName('marooned-script')" type="button"><img alt="See the script"
+                                                                                               class="assetButton"
+                                                                                               src="assets/img/folder_documents.gif">
+                            </button>
+                            <button class="btn" data-target="#myModal" data-toggle="modal"
+                                    onClick="setVidName('281567485')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>Had fun juggling with actors' availability, canoe hire and the weather with this short.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+                    <!-- this ends the film entries for the year -->
+                </div>
+            </div>
+            <!-- this end the year's row -->
+            <div class="row">
+                <div class="col-lg-2">
+                    <h2>12 Years Old</h2>
+                    <p>This is my first films made in New Zealand. Green Guerrillas was made first, in my evening, and
+                        week-ends. Kiwi-saver though, was done during, and for our Financial Literacy lesson, using one
+                        of my actresses from Green Guerillas.
+                    </p>
+                </div>
+                <div class="col-lg-10">
+                    <!-- This is the film entries for the year -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Kiwi-saver school film<br>
+                                <small>(Short)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#vidModal" data-toggle="modal"
+                                    onClick="setVidName('281567512')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>We had fun doing this. We got together to write the script. It was shot with a flip
+                                camera which made MP4s. My old version of Sony Vegas did not know what to do with these,
+                                so I converted them into Shawms. The teacher is going to use it as an example to his
+                                next year students.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>The Green Guerillas<br>
+                                <small>(Short)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#pdfModal" data-toggle="modal"
+                                    onClick="setPdfName('theGreenGuerrillas-script')" type="button"><img
+                                    alt="See the script" class="assetButton" src="assets/img/folder_documents.gif">
+                            </button>
+                            <button class="btn" data-target="#vidModal" data-toggle="modal"
+                                    onClick="setVidName('281567471')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>I entered this for the <a src="http://www.theoutlookforsomeday.net/" target="_blank">Outlook
+                                for Someday</a> competition. I wrote the music on my mobile phone, but then had to film
+                                the phone playing the music so that I could get it into the computer
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+                    <!-- this end the film entries for the year -->
+                </div>
+            </div>
+            <!-- this ends the year's row -->
+            <div class="row">
+                <div class="col-lg-2">
+                    <h2>11 Years Old</h2>
+                    <p>I wanted to make a film with my school friends during the summer holidays. I wrote one but I
+                        didn't like it. It never even deserved a title (so it is called 'script one'). My second script
+                        Les Trois Fees (the three fairies) was better, so I started filming. Unfortunately, my cast kept
+                        mucking about - they enjoyed the dressing-up, but wouldn't do the script properly, so I had to
+                        give up on it.
+                    </p>
+                </div>
+                <div class="col-lg-10">
+                    <!-- This is the film entries for the year -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Script One</h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <p><em>to be loaded</em></p>
+                            <p>This was my very first attempt at scripting. It is really annoying, but it is another
+                                packed-away thing. I hope to be able to dig it out some time.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Les Trois Fees<br>
+                                <small>(Short)</small></h3>
+                        </div>
+                        <div class="col-lg-9">
+                            <button class="btn" data-target="#pdfModal" data-toggle="modal"
+                                    onClick="setPdfName('troisFees-script')" type="button"><img alt="See the script"
+                                                                                                class="assetButton"
+                                                                                                src="assets/img/folder_documents.gif">
+                            </button>
+                            <button class="btn" data-target="#vidModal" data-toggle="modal"
+                                    onClick="setVidName('281567534')" type="button"><img alt="Play the video"
+                                                                                         class="assetButton"
+                                                                                         src="assets/img/video.gif">
+                            </button>
+                            <p>My first attempt at a film. I managed to dig up the script, and a few clips that show the
+                                home-made (but I think quite good) make-up and wardrobe.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ends film entry -->
+                </div>
+            </div>
+            <!-- this ends the year's row -->
+            <div class="row">
+                <div class="col-lg-2">
+                    <h2>10 Years Old</h2>
+                    <p>My very first ever films were shot using a Sony Handycam - one of the sort that you load a tape
+                        into the side of. My mum was really careful of it, but I managed to borrow it while we on
+                        holiday in the Yorkshire Dales and point it at the scenery. I was unable to get the cast to do
+                        anything but walk around a bit and eat the grass. The next time I was allowed to play with it
+                        was walking down the lane near home.
+                    </p>
+                </div>
+                <div class="col-lg-9">
+                    <p>When I came to putting these clips on the site, I could not find them so, I suppose, they are
+                        packed with everything else in a furniture store in Auckland. I will have do some more digging!
+                        I will put them up when I find them.
+                    </p>
+                </div>
+
+                <!-- ends film entry -->
+            </div>
+            <!-- this end the film entries for the year -->
+        </div>
+        <!-- this ends all the year row -->
+        <!-- The Video Modal -->
+        <div class="modal" id="vidModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <iframe allowFullScreen frameborder="0" height="564" id="vidEmbed" mozallowfullscreen
+                                src="https://player.vimeo.com/video/281567557" webkitAllowFullScreen
+                                width="640"></iframe>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button class="btn btn-danger close-button" data-dismiss="modal" onClick="stopVideo()"
+                                    type="button">Close
+                            </button>
+                            <p class="sepWindTxt">Not displaying nicely?<br>
+                                <a class="sepWindLink" href="" target="_blank">Click here</a> to open this in a window
+                                of its own.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Script Modal -->
+        <div class="modal" id="pdfModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <embed frameborder="0" id="pdfEmbed" src=" " width="100%">
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button class="btn btn-danger close-button" data-dismiss="modal" type="button">Close</button>
+                        <p class="sepWindTxt">Not displaying nicely?<br>
+                            <a class="sepWindLink" href="" target="_blank">Click here</a> to open this in a window of
+                            its own.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- now pull in scripts to make it work -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <script>
+            function setVidName(vidName) {
+                console.log("Called set vid name function with " + vidName);
+                var fullName = "https://player.vimeo.com/video/" + vidName;
+                console.log("full of the name is " + fullName);
+                $("#vidEmbed").attr("src", fullName);
+                $(".sepWindLink").attr("href", fullName);
+                // for some reason, the bootstrap fails to display some of these videos - this fixes it
+                $("#vidModal").css("display", "block");
+            };
+
+            function stopVideo() {
+                // this will stop the video playing
+                $("#vidEmbed").attr("src", "");
+                // The cludge above makes it a bit harder to close the popup, so make sure
+                $("#vidModal").css("display", "none");
+            }
+
+            function setPdfName(pdfName) {
+                console.log("Called set pdf name function with " + pdfName);
+                var fullName = "assets\/scripts\/" + pdfName + ".pdf";
+                console.log("full of the name is " + fullName);
+                $("#pdfEmbed").attr("src", fullName);
+                $(".sepWindLink").attr("href", fullName);
+            };
+        </script>
+        <!-- InstanceEndEditable -->
+    </div>
+    <!-- end of content div -->
+</div>
+</body>
+<!-- InstanceEnd --></html>

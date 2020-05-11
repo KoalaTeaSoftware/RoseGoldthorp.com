@@ -1,0 +1,31 @@
+/* CSS Document */
+.card-body {
+    border-bottom: solid thin #CCCCCC;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #d690a8;
+}
+
+h3 > a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #D690A8;
+}
+
+h3 > a:after {
+    vertical-align: text-top;
+    content: url(../glob/link.gif);
+}
+
+#listOfFilms img {
+    max-width: 200px; /* imgs are a bit larger than others */
+    width: 100% /* stops them staying too big as the page shrinks */
+}

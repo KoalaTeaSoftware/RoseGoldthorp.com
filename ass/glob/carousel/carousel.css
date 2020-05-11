@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+.carousel-inner {
+    text-align: center;
+    padding: 0.25em;
+    /*  margin: 0.25em;*/
+}
+
+/*.carousel-item {
+  max-height: 20em;
+}*/
+.carousel-item > img {
+    margin: auto;
+    border: thin groove black;
+}
+
+#myCarousel {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}

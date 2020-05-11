@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+.modal-dialog {
+    max-width: 75%;
+}
+
+#watcherTreat img {
+    width: 99%;
+}
+
+.imageBox {
+    align-content: center;
+}
+
+.textBox {
+    text-align: left;
+}

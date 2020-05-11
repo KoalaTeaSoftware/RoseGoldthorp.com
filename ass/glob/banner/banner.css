@@ -1,0 +1,29 @@
+#banner {
+    color: #6D343D;
+    /*	color:: #5D0F25;
+  */
+    background-color: #D690A8;
+    height: 103px; /*same as logo */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#bannerspan {
+    /* this is for making extra text on the banner look smaller */
+    font-size: 30%;
+}
+
+.social-icon {
+    float: right;
+    max-width: 25px;
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0; /* get rid of default white-space above it */
+    padding-top: 0.25em; /* bring it down into the banner a bit */
+    font-size: 48pt;
+    font-weight: bold; /* need this to override the bootstrap stuff */
+}
