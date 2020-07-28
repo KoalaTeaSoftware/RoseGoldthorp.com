@@ -15,3 +15,7 @@
 .textBox {
     text-align: left;
 }
+
+.newTabInd::after {
+    content: url("/ass/glob/newTab.gif");
+}
