@@ -6,7 +6,7 @@ require_once "components/storyBoard.php";
 require_once "components/carousel.php";
 ?>
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <!-- It is hard to make iPad Chrome _really_ refresh. We make small changes now and again, and you don't see them! -->
@@ -58,13 +58,15 @@ require_once "components/carousel.php";
         </div-->
         <!-- ToDo fix and enable the missing functionality here -->
         <ul id="nav" class="nav navbar-nav">
-            <li id="home-link" class="active"><a href="/index.php">Home</a></li>
-            <li id="on-release-link"><a href="/films/on-release">On Release</a></li>
-            <li id="present-films-link"><a href="/films/present-films">Comedy Features</a></li>
-            <li id="planned-films-link"><a href="/films/planned-films">Period Features</a></li>
-            <li id="about-link"><a href="/about.html">About</a></li>
-            <li id="media-link"><a href="/media.html">Media</a></li>
-            <li id="juvenilia-link"><a href="/juvenilia">Juvenilia</a></li>
+            <li id="home-link" class="active"><!--suppress HtmlUnknownTarget --><a href="/index.php">Home</a></li>
+            <li id="on-release-link"><!--suppress HtmlUnknownTarget --><a href="/films/on-release">On Release</a></li>
+            <li id="present-films-link"><!--suppress HtmlUnknownTarget --><a href="/films/present-films">Comedy
+                    Features</a></li>
+            <li id="planned-films-link"><!--suppress HtmlUnknownTarget --><a href="/films/planned-films">Period
+                    Features</a></li>
+            <li id="about-link"><!--suppress HtmlUnknownTarget --><a href="/about.html">About</a></li>
+            <li id="media-link"><!--suppress HtmlUnknownTarget --><a href="/media.html">Media</a></li>
+            <li id="juvenilia-link"><!--suppress HtmlUnknownTarget --><a href="/juvenilia">Juvenilia</a></li>
             <!-- li id="contact-link"><a href="/contact.html">Contact</a></li -->
         </ul>
     </nav>
@@ -82,7 +84,10 @@ require_once "components/carousel.php";
             </div>
 
             <div class="col-sm-5" id="centreCol">
-                <?= giveCarousel($carouselPageList, "                ") ?>
+                <?=
+                /** @noinspection PhpUndefinedVariableInspection */
+                // defined in require at top of file
+                giveCarousel($carouselPageList, "                ") ?>
 
                 <div class="card">
                     <div class="card-head">
@@ -110,12 +115,13 @@ require_once "components/carousel.php";
                                   novalidate
                             >
                                 <div class="form-group">
-                                    <!--label for="mce-EMAIL"><small>Sign up to our news letter:</small> </label-->
+                                    <!--suppress HtmlFormInputWithoutLabel -->
                                     <input id="mce-EMAIL" type="email" class="form-control" value="" name="EMAIL"
                                            placeholder="email address" required>
                                 </div>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <!--suppress HtmlFormInputWithoutLabel -->
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <!--suppress HtmlFormInputWithoutLabel -->
                                     <input type="text" name="b_4f69f3e46ff085a594ff19706_043e7cb483" tabindex="-1"
                                            value="">
                                 </div>
@@ -127,11 +133,11 @@ require_once "components/carousel.php";
                     </div>
                 </div>
                 <div class="card" id="storyboarding">
-                    <div class="card-head">
-                        <h2>This is the story boarding of my next feature film</h2>
-                    </div>
                     <div class="card-body">
-                        <?= $storyBoardVidHTML ?>
+                        <?=
+                        /** @noinspection PhpUndefinedVariableInspection */
+                        // defined in require at top of file
+                        $storyBoardVidHTML ?>
                     </div>
                 </div>
             </div>
