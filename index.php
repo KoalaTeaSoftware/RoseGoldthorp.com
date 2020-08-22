@@ -11,7 +11,7 @@ require_once "components/carousel.php";
     <meta charset="utf-8">
     <!-- It is hard to make iPad Chrome _really_ refresh. We make small changes now and again, and you don't see them! -->
     <!-- This is not likely to be that embarrassing, because, I expect, many visitors are first-time, and most assets are fast -->
-    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache"/>
     <meta http-equiv="expires" content="Mon, 01 April 2019 1:00:00 GMT"/>
     <meta http-equiv="pragma" content="no-cache"/>
 

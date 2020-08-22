@@ -59,9 +59,9 @@ $message = clean_string($message);
 $email_message = "Sender's name:" . $name . "\n";
 $email_message .= "Message:\n--\n" . $message . "\n--\n";
 
-$headers = 'From: ' . $senderEmail . "\r\n" .
-    $headers .= 'Reply-To: ' . $senderEmail . "\r\n" .
-        $headers .= 'X-Mailer: PHP/' . phpversion();
+$headers = 'From: ' . $senderEmail . "\r\n";
+$headers .= 'Reply-To: ' . $senderEmail . "\r\n";
+$headers .= 'X-Mailer: PHP/' . phpversion();
 
 @mail($email_to, $subject, $email_message, $headers);
 ?>
