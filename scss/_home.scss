@@ -1,0 +1,21 @@
+#home {
+  .carousel-inner {
+    text-align: center;
+    padding: 0.25em;
+  }
+
+  .carousel-item > img {
+    margin: auto;
+    border: thin groove black;
+  }
+
+  #myCarousel {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+  }
+
+  #mc-embedded-subscribe-form {
+    margin: auto !important;
+  }
+}

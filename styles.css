@@ -1,14 +1,1 @@
-a {
-    color: #6d343d
-}
-
-.newTabInd::after {
-    content: url("/ass/open-iconic/layers.svg")
-}
-
-#furniture {
-    background-color: #d690a8;
-    color: #6d343d
-}
-
-/*# sourceMappingURL=styles.css.map */
+a{color:#6d343d}.newTabInd::after{content:url("/ass/open-iconic/layers.svg")}#furniture{background-color:#d690a8;color:#6d343d}.brandedButton{background-image:linear-gradient(to bottom, #bc7b85 0%, #ab5966 100%);border-radius:.6rem;text-shadow:1px 1px #6d343d;margin:.5em}#home .carousel-inner{text-align:center;padding:.25em}#home .carousel-item>img{margin:auto;border:thin groove #000}#home #myCarousel{display:flex;align-items:center;height:fit-content}#home #mc-embedded-subscribe-form{margin:auto !important}/*# sourceMappingURL=styles.css.map */

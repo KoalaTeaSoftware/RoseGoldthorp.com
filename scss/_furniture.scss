@@ -2,3 +2,10 @@
   background-color: $banner-background;
   color: $banner-text;
 }
+
+.brandedButton {
+  background-image: linear-gradient(to bottom, #bc7b85 0%, #ab5966 100%);
+  border-radius: .6rem;
+  text-shadow: 1px 1px #6d343d;
+  margin: 0.5em;
+}
