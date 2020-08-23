@@ -84,11 +84,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/components/bodyParts/body-section-fur
 <section id="page-content" class="">
     <!--suppress SpellCheckingInspection -->
     <div id="contentCenterer" class="container-fluid align-content-center">
-        <div class="container">
-            <?php
-            require_once $pagePath . "/contents.php";
-            ?>
-        </div>
+        <?php
+        require_once $pagePath . "/contents.php";
+        ?>
     </div>
 </section>
 <?php
