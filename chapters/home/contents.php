@@ -2,7 +2,7 @@
 require_once "carousel/carousel.php";
 ?>
 <section id="home">
-    <div class="row">
+    <div class="row align-items-center">
         <div class="col-sm-3" id="leftCol">
             <div class="card" id="thisIsMe">
                 <div class="card-body">
@@ -86,3 +86,4 @@ require_once "carousel/carousel.php";
         </div>
     </div>
 </section>
+
