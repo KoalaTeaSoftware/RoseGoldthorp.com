@@ -19,7 +19,7 @@ $data[] = ["text" => "Full package<ul>
 function drawAPackage($number, $text, $price)
 {
     return <<<PACKAGE
-<div class="col-md col-sm-6 col-xs-12">
+<div class="col-md col-sm-6 col-xs-12 pricingPackage">
     <div class="card text-center">
         <div class="card-header">
             Package $number
