@@ -1,3 +1,3 @@
 <section id="furniture" class="row">
-    <h1>Rose Goldthorp</h1>
+    <span id="name">Rose Goldthorp:</span><span id="subTitle">Social Media and Content Marketeer</span>
 </section>

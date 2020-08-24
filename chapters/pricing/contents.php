@@ -1,11 +1,12 @@
 <?php
-$data[] = ["text" => "A blog entry loaded on a web site and social media each week for a year", "price" => "12,000 for the year"];
+$data[] = ["text" => "A weekly blog entry loaded on a web site and social media, each week for a year", "price" => "4,950 for the year"];
 $data[] = ["text" => "A video created and loaded on a website and social media",
-    "price" => "2,500 each<br>&pound;&nbsp;24,000 weekly for the year"];
-$data[] = ["text" => "Build a website with SEO and weekly blog created and loaded on a website and social media",
-    "price" => "24,000for the year<br>(plus hosting fees)"];
-$data[] = ["text" => "A social media campaign", "price" => "9,000 for a 3 month campaign<br>&pound;&nbsp;30,000 annually for an ongoing campaign"];
-$data[] = ["text" => "A website with weekly blog, marketing video and social media posting", "price" => "5,000"];
+    "price" => "2,500 for a single video<br>&pound;&nbsp;27,000 for monthly posts for a year"];
+$data[] = ["text" => "Build a website with SEO and weekly blog created and posted on that website and social media",
+    "price" => "6,500 for the year<br>(plus hosting fees)"];
+$data[] = ["text" => "Build a website with SEO and weekly blog and monthly video created and posted on that website and social media",
+    "price" => "32,000 for the year<br>(plus hosting fees)"];
+$data[] = ["text" => "A social media campaign", "price" => "6,950 for a 1&nbsp;month campaign<br>&pound;&nbsp;17,950 for a 3&nbsp;month campaign"];
 $data[] = ["text" => "Full package<ul>
 <li>Website build and management</li>
     <li>3-month campaign</li>
@@ -13,8 +14,7 @@ $data[] = ["text" => "Full package<ul>
     <li>Weekly blog</li>
     <li>Daily social posting</li>
 </ul>",
-    "price" => "86,300 for the year"];
-
+    "price" => "49,000 for the year<br>(plus hosting fees)"];
 
 function drawAPackage($number, $text, $price)
 {
@@ -29,7 +29,7 @@ function drawAPackage($number, $text, $price)
             <a href="#" class="btn btn-primary">Get Details</a>
         </div>
         <div class="card-footer text-muted">
-            From &pound;&nbsp;$price <br>(depending on your needs).
+            From &pound;&nbsp;$price <br><small>(depending on your needs)</small>
         </div>
     </div>
 </div>
@@ -46,8 +46,12 @@ function drawAllPackages($data)
 }
 
 ?>
-
-<h2>Pricing</h2>
+<h1>Pricing</h1>
+<h2>Customised</h2>
+<p>All packages can be customised to suit your own circumstances, or we can discuss your business and offer a completely
+    customised approach.
+</p>
+<h2>Packages</h2>
 <p>We offer the following packages, for your guidance, but all can be customised to suit your needs.</p>
 <div class="row">
     <?= drawAllPackages($data) ?>
