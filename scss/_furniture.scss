@@ -1,5 +1,37 @@
 #furniture {
+  //noinspection SassScssResolvedByNameOnly
   background-color: $banner-background;
+  //noinspection SassScssResolvedByNameOnly
+  color: $banner-text;
+
+  #banner {
+    margin: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 6rem;
+    @media (max-width: 767.98px) {
+      font-size: 3rem;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 1.5rem;
+    }
+
+    #subTitle {
+      font-size: 35%;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  font-weight: bold;
+  font-style: italic;
   color: $banner-text;
 }
 
@@ -8,4 +40,69 @@
   border-radius: .6rem;
   text-shadow: 1px 1px #6d343d;
   margin: 0.5em;
+  //noinspection SassScssResolvedByNameOnly
+  border-color: $banner-text;
 }
+
+.img-thumbnail {
+  border-color: $banner-text;
+}
+
+/* for tabbed navs */
+.nav-tabs {
+  border-bottom: 1px solid $banner-text;
+
+  .nav-link {
+    background-color: lightgray;
+    border-color: $banner-text;
+    font-weight: lighter;
+  }
+
+  .nav-link.active {
+    font-weight: bolder;
+    border-color: $banner-text $banner-text #fff;
+  }
+}
+
+.tab-content {
+  border-color: $banner-text;
+  border-style: solid;
+  border-width: 1px;
+  border-top-width: 0;
+  padding: 1rem;
+}
+
+/* end of stuff for tabbed interfaces */
+/* Main navbar */
+#mainNav {
+  width: 100%;
+  background-color: #ab5966;
+  border-color: #974c58;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#bc7b85), to(#ab5966));
+  background-image: -webkit-linear-gradient(top, #bc7b85, 0%, #ab5966, 100%);
+  background-image: -moz-linear-gradient(top, #bc7b85 0%, #ab5966 100%);
+  background-image: linear-gradient(to bottom, #bc7b85 0%, #ab5966 100%);
+  background-repeat: repeat-x;
+
+  ul {
+    width: 75%;
+
+  }
+
+  .nav-item {
+    width: 20%; // this will have to change if the number of items on the nav bar changes
+    border-color: $banner-text;
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+  }
+
+  a {
+    font-style: normal;
+    text-align: center;
+  }
+
+  .active {
+    font-size: 110%;
+  }
+}
+

@@ -55,7 +55,7 @@ require_once "carousel/carousel.php";
         <div class="col">
             <div class="card">
                 <div class="card-head text-center">
-                    <h2>Welcome</h2>
+                    <h1>Welcome</h1>
                 </div>
                 <div class="card-body">
                     <h2>Advertainment</h2>

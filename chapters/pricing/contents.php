@@ -26,7 +26,7 @@ function drawAPackage($number, $text, $price)
         </div>
         <div class="card-body">
             <p class="card-text">$text.</p>
-            <a href="#" class="btn btn-primary">Get Details</a>
+            <a href="#" class="btn btn-primary brandedButton">Get Details</a>
         </div>
         <div class="card-footer text-muted">
             From &pound;&nbsp;$price <br><small>(depending on your needs)</small>
