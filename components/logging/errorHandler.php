@@ -26,6 +26,7 @@ if (file_exists($logFile)) {
  */
 function errorHandler($errNo, $errStr, $errFile, $errLine)
 {
+    /** @noinspection SpellCheckingInspection */
     error_log("\n-------------------------------------------\n" .
         "ErrStr: " . $errStr . "\n" .
         "Locn: " . $errFile . "\n" .

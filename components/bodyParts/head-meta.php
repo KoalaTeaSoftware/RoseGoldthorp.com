@@ -15,7 +15,9 @@ $robots = "noindex,nofollow";
 //    $robots = "index,follow";
 
 ?>
-<meta name="description" content="<?= $meta ?>">
+<meta name="description" content="<?=
+/** @noinspection PhpUndefinedVariableInspection */
+$meta ?>">
 <meta http-equiv="Content-Language" content="en-GB">
 <meta name="robots" content="<?= $robots ?>>">
 <!--meta property="og:image" content=">

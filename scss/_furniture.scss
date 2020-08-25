@@ -32,6 +32,7 @@ h1 {
 a {
   font-weight: bold;
   font-style: italic;
+  //noinspection SassScssResolvedByNameOnly
   color: $banner-text;
 }
 
@@ -44,26 +45,31 @@ a {
   border-color: $banner-text;
 }
 
+//noinspection SassScssResolvedByNameOnly
 .img-thumbnail {
   border-color: $banner-text;
 }
 
 /* for tabbed navs */
 .nav-tabs {
+  //noinspection SassScssResolvedByNameOnly
   border-bottom: 1px solid $banner-text;
 
+  //noinspection SassScssResolvedByNameOnly
   .nav-link {
     background-color: lightgray;
     border-color: $banner-text;
     font-weight: lighter;
   }
 
+  //noinspection SassScssResolvedByNameOnly,SassScssResolvedByNameOnly
   .nav-link.active {
     font-weight: bolder;
     border-color: $banner-text $banner-text #fff;
   }
 }
 
+//noinspection SassScssResolvedByNameOnly
 .tab-content {
   border-color: $banner-text;
   border-style: solid;
@@ -79,7 +85,7 @@ a {
   background-color: #ab5966;
   border-color: #974c58;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#bc7b85), to(#ab5966));
-  background-image: -webkit-linear-gradient(top, #bc7b85, 0%, #ab5966, 100%);
+  background-image: -webkit-linear-gradient(top, #bc7b85, #ab5966);
   background-image: -moz-linear-gradient(top, #bc7b85 0%, #ab5966 100%);
   background-image: linear-gradient(to bottom, #bc7b85 0%, #ab5966 100%);
   background-repeat: repeat-x;
@@ -89,6 +95,7 @@ a {
 
   }
 
+  //noinspection SassScssResolvedByNameOnly
   .nav-item {
     width: 20%; // this will have to change if the number of items on the nav bar changes
     border-color: $banner-text;

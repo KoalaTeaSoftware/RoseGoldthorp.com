@@ -23,7 +23,8 @@
             my upcoming six comic fantasy feature films.
         </p>
         <figure>
-            <img src="/chapters/about/the-greenlands.JPG" class="img-fluid img-thumbnail">
+            <img src="/chapters/about/the-greenlands.JPG" class="img-fluid img-thumbnail"
+                 alt="Screen grab of the-greenlands.com">
             <figcaption>My Transmedia Website
                 <a href="https://the-greenlands.com/" target="_blank"
                    title="Go to The Greenlands">"The Greenlands"</a></figcaption>

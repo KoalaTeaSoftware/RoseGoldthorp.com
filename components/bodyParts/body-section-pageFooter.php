@@ -5,7 +5,9 @@
         // this variable is defined in the index.php that requires this file, so
         /** @noinspection PhpUndefinedVariableInspection */
         $titleTag ?>";
-    document.getElementById("<?= $chapter ?>Nav").classList.add("active");
+    document.getElementById("<?=
+        /** @noinspection PhpUndefinedVariableInspection */
+        $chapter ?>Nav").classList.add("active");
 </script>
 <section id="footer" class="row">
 </section>
