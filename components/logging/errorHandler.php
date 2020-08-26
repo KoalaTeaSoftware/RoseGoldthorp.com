@@ -13,9 +13,9 @@ ini_set('error_log', $logFile);
 
 set_error_handler('errorHandler', E_ALL | E_STRICT);
 
-if (file_exists($logFile)) {
-    unlink($logFile);
-}
+//if (file_exists($logFile)) {
+//    unlink($logFile);
+//}
 
 /**
  * The function used instead of the PHP default logging function. Its name is in the ini_set (above)

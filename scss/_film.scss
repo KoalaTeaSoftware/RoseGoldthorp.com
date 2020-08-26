@@ -1,0 +1,29 @@
+#filmDetails {
+  .jumbotron {
+    margin: 0;
+    padding: 10px 2rem;
+  }
+
+  #descriptiveRow {
+    font-size: 1.25rem;
+  }
+
+  #poster {
+    margin: 1.5em auto 1.5em auto;
+    max-width: 98%;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+  }
+
+  #linkBox, #diaBox {
+    width: 100%;
+  }
+
+  #diaBox {
+    .embed-responsive {
+      width: 75%;
+      margin: auto;
+    }
+  }
+}

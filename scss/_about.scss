@@ -1,10 +1,22 @@
 #about {
-  figure {
-    width: 75%;
-    margin: auto;
+  #marketer {
+    figure {
+      width: 75%;
+      margin: auto;
+    }
+
+    figcaption {
+      text-align: center;
+    }
   }
 
-  figcaption {
-    text-align: center;
+  #filmmaker {
+    img {
+      max-height: 5rem;
+    }
+
+    .card-body {
+      padding: .75rem;
+    }
   }
 }

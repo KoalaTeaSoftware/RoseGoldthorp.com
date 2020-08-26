@@ -14,7 +14,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # the above two do not seem to do exactly what is required, but also don't seem to be a problem.
 # txt for the likes of robot.txt
 # map for the css maps and the like
-RewriteCond %{REQUEST_URI} !\.(png|gif|jpg|jpeg|js|css|mp3|wav|txt|map)$ [NC]
+RewriteCond %{REQUEST_URI} !\.(png|gif|jpg|jpeg|js|css|mp3|wav|txt|map|ico)$ [NC]
 # make everything else go to the index file and as https, too
 RewriteRule ^(.*)$ index.php?%{QUERY_STRING}  [NC]
 
