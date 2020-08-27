@@ -10,6 +10,14 @@ a {
   color: $link_colour;
 }
 
+/* the following noInspections are just because it doen't actually know about them */
+//noinspection CssUnusedSymbol
 .newTabInd::after {
   content: url("/ass/open-iconic/layers.svg");
+}
+
+// the following stops the newTabInd symbol crashing up against the words in
+//noinspection CssUnusedSymbol
+.newTabInd > .linkText {
+  padding-right: 0.5rem;
 }

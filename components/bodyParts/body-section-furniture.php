@@ -13,19 +13,19 @@
                     <a class="nav-link" id="homeNav" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="contentmarketingNav" href="contentmarketing">Content Marketing</a>
+                    <a class="nav-link" id="contentmarketingNav" href="/contentmarketing">Content Marketing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="socialmediaNav" href="socialmedia">Social Media</a>
+                    <a class="nav-link" id="socialmediaNav" href="/socialmedia">Social Media</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="pricingNav" href="pricing">Pricing</a>
+                    <a class="nav-link" id="pricingNav" href="/pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="aboutNav" href="about">About</a>
+                    <a class="nav-link" id="aboutNav" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="contactNav" href="contact">Contact</a>
+                    <a class="nav-link" id="contactNav" href="/contact">Contact</a>
                 </li>
             </ul>
         </div>

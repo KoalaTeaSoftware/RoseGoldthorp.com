@@ -19,7 +19,7 @@ $askedFor = $_SERVER["REQUEST_URI"]; // this is what was actually asked-for
 error_log("Asked for:" . $askedFor);
 
 $majorParts = explode('?', $askedFor);
-error_log("Major parts:" . print_r($majorParts, true));
+//error_log("Major parts:" . print_r($majorParts, true));
 $pathElements = explode('/', $majorParts[0]);
 error_log("Path Elements:" . print_r($pathElements, true));
 
@@ -28,7 +28,7 @@ $section = isset($pathElements[2]) ? $pathElements[2] : "";
 $subSection = isset($pathElements[3]) ? $pathElements[3] : "";
 
 if (strlen($chapter) < 1) {
-    error_log("No chapter has been requested");
+//    error_log("No chapter has been requested");
     $chapter = "home";
     $pagePath = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . "chapters" . DIRECTORY_SEPARATOR . $chapter;
     $msg = "Home";
@@ -52,7 +52,7 @@ if (strlen($chapter) < 1) {
         $meta = file_get_contents($pagePath . DIRECTORY_SEPARATOR . "meta.txt");
     }
 
-    error_log("Chater is :" . $chapter);
+    error_log("Chapter is :" . $chapter);
     $titleTag = ucfirst($chapter);
 
     // note: we will only bother looking at the section if the chapter was good
@@ -70,8 +70,8 @@ if (strlen($chapter) < 1) {
 
         $titleTag = ucfirst($section);
     } // ends what to do if section is good
-    else
-        error_log("No section requested");
+//    else
+//        error_log("No section requested");
 }
 // if you have got to this point, then the elements of the path are nice
 // note: the $_GET is populated with whatever we were originally given (as if we had nothing fancy going on)
