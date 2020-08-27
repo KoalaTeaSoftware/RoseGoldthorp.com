@@ -67,8 +67,9 @@ if (is_dir($filmDetailsLocation)) {
 <?php
 function makeDescriptionBox($descr)
 {
-    $html = "";
     $len = sizeof($descr);
+    $html = "";
+
     for ($i = 0; $i < $len; $i++) {
         $html .= "<p>" . $descr[$i] . "</p>";
     }
@@ -84,11 +85,12 @@ function makeLinkList($linkSet)
 {
     $html = "";
     $len = sizeof($linkSet);
+
     for ($i = 0; $i < $len; $i++) {
         $code = $linkSet[$i]["code"];
         $text = $linkSet[$i]["text"];
 
-        $html = '<a href="' . $code . '" class="list-group-item newTabInd" target="_blank">';
+        $html .= '<a href="' . $code . '" class="list-group-item newTabInd" target="_blank">';
         $html .= '  <span class="linkText">' . $text . '</span>';
         $html .= '</a>';
     }

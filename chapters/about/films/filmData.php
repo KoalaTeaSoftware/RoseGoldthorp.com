@@ -23,12 +23,66 @@ $filmData[] = [
     ],
     "dia" => "https://player.vimeo.com/video/252835658",
     "links" => [
-        ["text" => "See the screenplay", "code" => "/secureFilmDetails/Fleurs-Secret/Fleur's-Secret-screenplay.pdf"],
-        ["text" => "See the trailer", "code" => "https://vimeo.com/rosegoldthorp/fleurssecretreleasetrailer"],
-        ["text" => "See the Press Kit", "code" => "/filmDetails/Fleurs-Secret/press-kit"]
+//        ["text" => "See the screenplay", "code" => "/secureFilmDetails/Fleurs-Secret/Fleur's-Secret-screenplay.pdf"],
+        ["text" => "See the trailer", "code" => "https://vimeo.com/rosegoldthorp/fleurssecretreleasetrailer"]//,
+//        ["text" => "See the Press Kit", "code" => "/filmDetails/Fleurs-Secret/press-kit"]
+    ]
+];
+$filmData[] = [
+    "title" => "A Ghost In Corsets",
+    "extract" => "A modern-day, supernatural, dark comedic drama. This is a self-funded, full-length feature film in which a besieged family manages to win-out with the aid of unexpected support. Released September '18.",
+    "text" => [
+        "<b><em>Sometimes ghosts go \"OOOOOOHHH ... really!\"</em></b>",
+        "A drag queen ghost seems to be only adding to the stresses heaped upon Mother's shoulders, as they bow under the weight of a failing family. This ghost may really be the solution, however.",
+        "This was Rose's second micro-budget feature film. It was released to September '18",
+        "Rose Goldthorp wrote A Ghost in Corsets at 17 years old and 'UPM'ed and directed it at 18."
+    ],
+    "dia" => "https://player.vimeo.com/video/214127201",
+    "links" => [
+        ["text" => "Buy the DVD on Amazon", "code" => "https://www.amazon.com/dp/B07HN4B3VY"],
+        ["text" => "Buy the movie on Amazon Prime", "code" => "https://www.amazon.co.uk/dp/B07FSGZBG6"],
+        ["text" => "See the trailer", "code" => "https://vimeo.com/rosegoldthorp/a-ghost-in-corsets-trailer"] /*,
+ To Do neither of these links will work
+        ["text" => "See the Press Kit", "code" => "http://www.rosegoldthorp.com/data/filmDetails/A-Ghost-In-Corsets/press-kit"],
+        ["text" => "See the EPK", "code" => "http://www.rosegoldthorp.com/data/filmDetails/A-Ghost-In-Corsets/electronic-press-kit.html"]*/
+    ]
+];
+$filmData[] = [
+    "title" => "Silverville",
+    "extract" => "An Edwardian period rom-com (¾ hour micro-budget featurette) completed and being entered for festivals from Feb. 2016.",
+    "text" => [
+        "Silverville is an Edwardian rom-com film (¾ hour micro-budget). It deals with a young woman being pressured into marrying a respectable lawyer who she is not at all interested in. The lawyer, however, finds that he is interested in our heroine's step-brother. Calamity ensues.",
+        "Silverville was a featurette which comprised the second half of Rose's first feature film which was a portmanteau feature film and was shot over the Christmas 2014/15 with a cast of 26 and a crew of 5.",
+        "It was filmed in Auckland (New Zealand). It was released in 2016.",
+        "Rose Goldthorp was 15 years old when she wrote Silverille (45 mins), and 16 when she 'PM'ed and directed it."
+    ],
+    "dia" => "https://player.vimeo.com/video/122206958",
+    "links" => [
+//        ["text" => "See the screenplay", "code" => "http://www.rosegoldthorp.com/data/filmDetails/Silverville/Silverville-screenplay.pdf"],
+        ["text" => "See the trailer", "code" => "https://vimeo.com/145927698"],
+        ["text" => "See the screenplay", "code" => "https://vimeo.com/196796092"],
+    ]
+];
+$filmData[] = [
+    "title" => "Watcher",
+    "extract" => "A sci-fi film (¾ hour micro-budget featurette) finished and being entered for festivals from Oct. 2015.",
+    "text" => [
+        "Watcher is a sci-fi film (¾ hour micro-budget) that deals with the family loyalties of two young girls. They find, in the end, that their loyalty lies with the household AI, instead of with their father.",
+        "This film was the first half of Rose's first feature: a portmanteau film and was shot during the summer of 2013/14, in New Zealand. It has a cast of 34 and a crew of 5. Watcher is now complete",
+        "Rose Goldthorp wrote Watcher when she was 14 years old and 'UPM'ed and directed it when she was 15."
+    ],
+    "dia" => "https://player.vimeo.com/video/121728989",
+    "links" => [
+//        ["text" => "See the Screenpay", "code" => "http://www.rosegoldthorp.com/data/filmDetails/Watcher/Watcher-screenplay.pdf"],
+        ["text" => "See the trailer", "code" => "https://vimeo.com/143086831"],
+        ["text" => "See the film on vimeo", "code" => "https://vimeo.com/142332872"]
     ]
 ];
 
+/**
+ * @param $given
+ * @return string
+ */
 function filmNameToUrl($given)
 {
     $url = str_replace("'", "", $given);

@@ -60,11 +60,13 @@ function makeFilmList($data)
     $len = sizeof($data);
     $html = "";
 
-    for ($i = 0; $i < $len; $i++) $html .= makeFilmEntry(
-        $data[$i]["title"],
-        $data[$i]["extract"],
-        filmNameToUrl($data[$i]["title"])
-    );
+    for ($i = 0; $i < $len; $i++) {
+        $html .= makeFilmEntry(
+            $data[$i]["title"],
+            $data[$i]["extract"],
+            filmNameToUrl($data[$i]["title"])
+        );
+    }
     return $html;
 }
 
