@@ -10,7 +10,7 @@ $titleTag = "About Me";
 ?>
     <h1>About Me</h1>
 
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <ul class="nav nav-tabs" id="rolesNav" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="marketer-tab" data-toggle="tab" href="#marketer" role="tab"
                aria-controls="home"
@@ -98,17 +98,17 @@ function makeFilmEntry($title, $extract, $subSectionName)
     $linkHref = "/about/films/" . $subSectionName;
 
     return <<< ENTRYDONE
-<div class="card" >
+<div class="card filmListItem" >
     <div class="card-body">
         <div class="row">
             <div class="col-md-2 d-flex flex-row justify-content-center align-items-center">
-                <a href="$linkHref" title="More details about $title">
+                <a href="$linkHref" class="imgLinkToFilmDetails"title="More details about $title">
                     <img alt="$title" class="img-fluid" src="$posterPathSpec">
                 </a>
             </div>
             <div class="col">
                 <h3 class="text-center">
-                    <a href="$linkHref" title="More details about $title">$title</a>
+                    <a href="$linkHref" title="More details about $title" class="textLinkToFilmDetails">$title</a>
                 </h3>
                 <p>$extract</p>
             </div>

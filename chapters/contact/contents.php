@@ -1,6 +1,6 @@
 <?php
 /** @noinspection PhpUndefinedVariableInspection */
-$titleTag = "About Me";
+$titleTag = "Contact Me";
 require_once "chapters/contact/constraints.php";
 
 $processingResult = "";
