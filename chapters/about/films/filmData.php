@@ -1,4 +1,6 @@
 <?php
+//https://rg.koalateasoftware.com/chapters/about/films/filmDetails/fleurs-secret/poster.jpg
+//https://rg.koalateasoftware.com/chapters/about/films/secureFilmDetails/fleurs-secret/fleurs-secret-screenplay.pdf
 $filmData[] = [
     "title" => "The Rocky Road To Freedom",
     "extract" => "Rose's fourth feature, shot in Jan. 2019, will be released to festivals in 2020. Gabriel is a rather shy clerk who becomes besotted with Mai, a young musician who is, unbeknown to him, also a prostitute. Gabriel, with his best friend Tom, forms a rock band, 'The Rocky Road', in order to attract Mai's attention. Things get complicated.",
@@ -23,9 +25,9 @@ $filmData[] = [
     ],
     "dia" => "https://player.vimeo.com/video/252835658",
     "links" => [
-//        ["text" => "See the screenplay", "code" => "/secureFilmDetails/Fleurs-Secret/Fleur's-Secret-screenplay.pdf"],
-        ["text" => "See the trailer", "code" => "https://vimeo.com/rosegoldthorp/fleurssecretreleasetrailer"]//,
-//        ["text" => "See the Press Kit", "code" => "/filmDetails/Fleurs-Secret/press-kit"]
+        ["text" => "See the screenplay", "code" => "/chapters/about/films/secureFilmDetails/fleurs-secret/fleurs-secret-screenplay.pdf"],
+        ["text" => "See the trailer", "code" => "https://vimeo.com/rosegoldthorp/fleurssecretreleasetrailer"],
+        ["text" => "See the Press Kit", "code" => "/chapters/about/films/filmDetails/fleurs-secret/press-kit/press-kit.pdf"]
     ]
 ];
 $filmData[] = [
@@ -41,9 +43,8 @@ $filmData[] = [
     "links" => [
         ["text" => "Buy the DVD on Amazon", "code" => "https://www.amazon.com/dp/B07HN4B3VY"],
         ["text" => "Buy the movie on Amazon Prime", "code" => "https://www.amazon.co.uk/dp/B07FSGZBG6"],
-        ["text" => "See the trailer", "code" => "https://vimeo.com/rosegoldthorp/a-ghost-in-corsets-trailer"] /*,
- To Do neither of these links will work
-        ["text" => "See the Press Kit", "code" => "http://www.rosegoldthorp.com/data/filmDetails/A-Ghost-In-Corsets/press-kit"],
+        ["text" => "See the trailer", "code" => "https://vimeo.com/rosegoldthorp/a-ghost-in-corsets-trailer"],
+        ["text" => "See the Press Kit", "code" => "/chapters/about/films/filmDetails/a-ghost-in-corsets/press-kit/press-kit.pdf"]/*,
         ["text" => "See the EPK", "code" => "http://www.rosegoldthorp.com/data/filmDetails/A-Ghost-In-Corsets/electronic-press-kit.html"]*/
     ]
 ];
@@ -58,9 +59,9 @@ $filmData[] = [
     ],
     "dia" => "https://player.vimeo.com/video/122206958",
     "links" => [
-//        ["text" => "See the screenplay", "code" => "http://www.rosegoldthorp.com/data/filmDetails/Silverville/Silverville-screenplay.pdf"],
+        ["text" => "See the screenplay", "code" => "/chapters/about/films/filmDetails/silverville/silverville-screenplay.pdf"],
         ["text" => "See the trailer", "code" => "https://vimeo.com/145927698"],
-        ["text" => "See the screenplay", "code" => "https://vimeo.com/196796092"],
+        ["text" => "See the film on Vimeo", "code" => "https://vimeo.com/196796092"],
     ]
 ];
 $filmData[] = [
@@ -73,7 +74,7 @@ $filmData[] = [
     ],
     "dia" => "https://player.vimeo.com/video/121728989",
     "links" => [
-//        ["text" => "See the Screenpay", "code" => "http://www.rosegoldthorp.com/data/filmDetails/Watcher/Watcher-screenplay.pdf"],
+        ["text" => "See the Screenpay", "code" => "/chapters/about/films/filmDetails/watcher/watcher-screenplay.pdf"],
         ["text" => "See the trailer", "code" => "https://vimeo.com/143086831"],
         ["text" => "See the film on vimeo", "code" => "https://vimeo.com/142332872"]
     ]

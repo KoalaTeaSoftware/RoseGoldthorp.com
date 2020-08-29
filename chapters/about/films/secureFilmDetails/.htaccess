@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Secured information about films"
-AuthUserFile "/home/lifeston/.htpasswds/public_html/dev.darkrose.co.nz/data/secureFilmDetails/passwd"
-require valid-user

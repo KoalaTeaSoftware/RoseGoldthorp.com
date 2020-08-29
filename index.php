@@ -21,7 +21,7 @@ error_log("Asked for:" . $askedFor);
 $majorParts = explode('?', $askedFor);
 //error_log("Major parts:" . print_r($majorParts, true));
 $pathElements = explode('/', $majorParts[0]);
-error_log("Path Elements:" . print_r($pathElements, true));
+//error_log("Path Elements:" . print_r($pathElements, true));
 
 $chapter = isset($pathElements[1]) ? $pathElements[1] : "";
 $section = isset($pathElements[2]) ? $pathElements[2] : "";
@@ -37,12 +37,14 @@ if (strlen($chapter) < 1) {
     $pagePath = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . "chapters" . DIRECTORY_SEPARATOR . $chapter;
 
     if (!is_dir($pagePath)) {
+        error_log("PagePath :" . $pagePath . ": is not a directory");
         $msg = "Unknown-Chapter(" . $chapter . ")";
         header('Location: /?' . $msg);
         exit();
     }
 
     if (!file_exists($pagePath . DIRECTORY_SEPARATOR . "contents.php")) {
+        error_log("PagePath :" . $pagePath . ": does not contains a contents.php");
         $msg = "Unknown-Chapter(" . $chapter . ")";
         header('Location: /?' . $msg);
         exit();

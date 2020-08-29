@@ -1,0 +1,10 @@
+#contact {
+  // ToDo: the contact form does not make use of this yet
+  //noinspection CssUnusedSymbol
+  .erroneousField {
+    //noinspection SassScssResolvedByNameOnly
+    border-color: $banner-text;
+    //noinspection SassScssResolvedByNameOnly
+    color: $banner-text;
+  }
+}
