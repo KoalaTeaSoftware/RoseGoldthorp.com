@@ -6,10 +6,9 @@ require_once "chapters/about/films/filmData.php";
  * So there is no need for detective work by the chapter to see if the section code should be executed
  * So the code in this file can assume that you are just wanting the about page
  */
-$titleTag = "About Me";
+$titleTag = "About Rose Goldthorp";
 ?>
-    <h1>About Me</h1>
-
+    <h1>About Rose Goldthorp</h1>
     <ul class="nav nav-tabs" id="rolesNav" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="marketer-tab" data-toggle="tab" href="#marketer" role="tab"
@@ -24,28 +23,31 @@ $titleTag = "About Me";
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="marketer" role="tabpanel" aria-labelledby="marketer-tab">
-            <p>I have a degree in Communications with Film & Tv and 1 year of marketing and one year of a Marketing
-                Foundation course. I also have a 'A'&nbsp;level (equivalent) in Media Studies.
+            <p>Rose Goldthorp has a bachelor's degree in Communications with Film & TV and one year of a university
+                Marketing
+                foundation course.
             </p>
-            <p>Below, you can see the front page of my transmedia web site
-                <a href="https://the-greenlands.com/" target="_blank" title="Go to The Greenlands">"The Greenlands"</a>.
-                On a regular basis, I contribute blogs, and images, as well as videos to this site. The site is
-                primarily,
-                to promote my upcoming six comic fantasy feature films.
+            <p>Below, you can see the front page of Rose's transmedia web site
+                <a href="https://the-greenlands.com/" target="_blank" title="Go to The Greenlands" class="newTabInd">"The
+                    Greenlands"</a>.
+                On a regular basis, Rose contributes copy, and images, as well as videos to this site. The site was
+                created in spring '20, primarily, to promote Rose's upcoming six comic, fantasy feature films.
             </p>
             <figure>
                 <img src="/chapters/about/the-greenlands-home-page.JPG" class="img-fluid img-thumbnail"
                      alt="Screen grab of the-greenlands.com">
-                <figcaption>My Transmedia Website
+                <figcaption>Rose's Transmedia Website
                     <a href="https://the-greenlands.com/" target="_blank"
-                       title="Go to The Greenlands">"The Greenlands"</a></figcaption>
+                       title="Go to The Greenlands">the-greenlands.com</a></figcaption>
             </figure>
         </div>
         <div class="tab-pane fade" id="filmmaker" role="tabpanel" aria-labelledby="filmmaker-tab">
-            <h2>On Release</h2>
+            <p>Rose is releasing her fourth narrative feature film in 2020. She shoots her fifth feature, the first in
+                her comic fantasy feature cycle, The Greenlands, in London, next year, '21.
+            </p>
+            <h2>Films On Release</h2>
             <?= /** @noinspection PhpUndefinedVariableInspection - defined in the included data file */
             makeFilmList($filmData); ?>
-            <h2>Comming Soon</h2>
         </div>
     </div>
     <script>
@@ -102,7 +104,7 @@ function makeFilmEntry($title, $extract, $subSectionName)
     <div class="card-body">
         <div class="row">
             <div class="col-md-2 d-flex flex-row justify-content-center align-items-center">
-                <a href="$linkHref" class="imgLinkToFilmDetails"title="More details about $title">
+                <a href="$linkHref" class="imgLinkToFilmDetails" title="More details about $title">
                     <img alt="$title" class="img-fluid" src="$posterPathSpec">
                 </a>
             </div>

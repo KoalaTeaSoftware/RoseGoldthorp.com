@@ -78,6 +78,14 @@ a {
   padding: 1rem;
 }
 
+.card {
+  margin: .25rem;
+}
+
+figcaption {
+  text-align: center;
+}
+
 /* end of stuff for tabbed interfaces */
 /* Main navbar */
 #mainNav {
@@ -92,7 +100,6 @@ a {
 
   ul {
     width: 75%;
-
   }
 
   //noinspection SassScssResolvedByNameOnly

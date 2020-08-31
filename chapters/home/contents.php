@@ -57,29 +57,14 @@ require_once "carousel/carousel.php";
                 <div class="card-head text-center">
                     <h1>Welcome</h1>
                 </div>
-                <div class="card-body">
-                    <h2>Advertainment</h2>
-                    <p>The modern consumer no longer tolerates thirty second blasts on the subject of your product, they
-                        just click away.
-                        People can now consume only stories that interest them. In my chapter
-                        <a href="/advertainment" title="Go to the Advertainment chapter">Advertainment</a>, I explain
-                        how I can help you by
-                        creating short documentary, or a short narrative that can enthuse your customer.
+                <div class="card-body text-center">
+                    <p>We produce gripping content, customised to your requirements. Your own short films and web sites
+                        are directed, edited and produced by our own in-house team. Your own content is managed by your
+                        own account manager.
                     </p>
-                    <h2>Social Media Marketing</h2>
-                    <p>Not only must your films me made, but they must be spoken about on as many platforms as possible.
-                        In my chapter
-                        <!--suppress SpellCheckingInspection -->
-                        <a href="socialmediamarketeer" title="Go to the Social Media Marketing chapter">Social Media
-                            Marketing</a>, I show you
-                        how I can help you with this.
-                    </p>
-                    <h2>Feature Films</h2>
-                    <p>I will shoot my fifth feature film in the summer of 2021. My love is for 'Costume' and 'Fantasy'
-                        films. Visit my
-                        chapter <a href="filmmaker" title="Go to the Film Maker chapter">Film Maker</a> to see more
-                        about films that I have
-                        made, and the 'costume film' production company that I am setting up next year
+                    <p>Our content ranges from the creation of your <b>web site</b>, through the provision of
+                        <b>blogs</b> and <b>videos</b> to seting you up with your own <b>shop</b> and its own <b>affiliate
+                            program</b>, or affiliate network link.
                     </p>
                 </div>
             </div>

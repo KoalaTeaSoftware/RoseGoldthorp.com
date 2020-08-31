@@ -88,19 +88,16 @@ if (strlen($chapter) < 1) {
     require_once $_SERVER['DOCUMENT_ROOT'] . '/components/bodyParts/head-common.php';
     ?>
 </head>
-<body id="<?= $chapter ?>" class="container-fluid">
+<body class="container-fluid">
 
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . "/components/bodyParts/body-section-furniture.php";
 ?>
 
-<section id="page-content" class="">
-    <!--suppress SpellCheckingInspection -->
-    <div id="contentCenterer" class="container-fluid align-content-center">
-        <?php
-        require_once $pagePath . "/contents.php";
-        ?>
-    </div>
+<section id="<?= $chapter ?>" class="container-fluid align-content-center">
+    <?php
+    require_once $pagePath . "/contents.php";
+    ?>
 </section>
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/components/bodyParts/body-section-pageFooter.php';

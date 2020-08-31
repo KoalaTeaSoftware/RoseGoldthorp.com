@@ -1,6 +1,6 @@
 <section id="furniture" class="row">
     <div id="banner">
-        Rose Goldthorp: <span id="subTitle">Social Media and Content Marketeer</span>
+        Rose Goldthorp: <span id="subTitle">Social Media and Content Marketer</span>
     </div>
     <nav id="mainNav" class="navbar navbar-expand-md navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
