@@ -1,3 +1,4 @@
+//noinspection SassScssResolvedByNameOnly
 #furniture {
   //noinspection SassScssResolvedByNameOnly
   background-color: $banner-background;
@@ -36,13 +37,14 @@ a {
   color: $banner-text;
 }
 
+//noinspection SassScssResolvedByNameOnly
 .brandedButton {
-  background-image: linear-gradient(to bottom, #bc7b85 0%, #ab5966 100%);
+  background-image: linear-gradient(to bottom, $nav_bg_gradient_light 0%, $nav_bg_gradient_dark 100%);
   border-radius: .6rem;
-  text-shadow: 1px 1px #6d343d;
+  text-shadow: 1px 1px $banner-text;
   margin: 0.5em;
-  //noinspection SassScssResolvedByNameOnly
   border-color: $banner-text;
+  color: white;
 }
 
 //noinspection SassScssResolvedByNameOnly
@@ -88,26 +90,29 @@ figcaption {
 
 /* end of stuff for tabbed interfaces */
 /* Main navbar */
+//noinspection SassScssResolvedByNameOnly
 #mainNav {
   width: 100%;
-  background-color: #ab5966;
-  border-color: #974c58;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#bc7b85), to(#ab5966));
-  background-image: -webkit-linear-gradient(top, #bc7b85, #ab5966);
-  background-image: -moz-linear-gradient(top, #bc7b85 0%, #ab5966 100%);
-  background-image: linear-gradient(to bottom, #bc7b85 0%, #ab5966 100%);
+  background-color: $nav_bg_gradient_light;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from($nav_bg_gradient_light), to($nav_bg_gradient_dark));
+  background-image: -webkit-linear-gradient(top, $nav_bg_gradient_light, $nav_bg_gradient_dark);
+  background-image: -moz-linear-gradient(top, $nav_bg_gradient_light 0%, $nav_bg_gradient_dark 100%);
+  background-image: linear-gradient(to bottom, $nav_bg_gradient_light 0%, $nav_bg_gradient_dark 100%);
   background-repeat: repeat-x;
+  border: thin solid $banner-text;
+  padding: 0;
 
   ul {
     width: 75%;
+    margin-top: 0 !important; // this prevents an uncomfortable margin situation at around the small breakpoint
   }
 
   //noinspection SassScssResolvedByNameOnly
   .nav-item {
-    width: 20%; // this will have to change if the number of items on the nav bar changes
     border-color: $banner-text;
     border-width: 0 1px 0 1px;
     border-style: solid;
+    margin: 0;
   }
 
   a {
