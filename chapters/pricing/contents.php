@@ -4,7 +4,7 @@ require_once "chapters/pricing/data.php";
 function drawAPackage($number, $text, $price)
 {
     return <<<PACKAGE
-<div class="col-sm-12 col-md-4 col-lg pricingPackage">
+<div class="col-sm-6 col-md-4 col-lg pricingPackage">
     <div class="card text-center">
         <div class="card-header">
             Package $number
