@@ -7,4 +7,9 @@
     //noinspection SassScssResolvedByNameOnly
     color: $banner-text;
   }
+
+  input, textarea {
+    //noinspection SassScssResolvedByNameOnly
+    border-color: $banner-text;
+  }
 }

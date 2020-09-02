@@ -6,7 +6,8 @@
 
   .carousel-item > img {
     margin: auto;
-    border: thin groove black;
+    //noinspection SassScssResolvedByNameOnly
+    border: thin groove $banner-text;
   }
 
   #myCarousel {
@@ -17,5 +18,14 @@
 
   #mc-embedded-subscribe-form {
     margin: auto !important;
+  }
+
+  .card {
+    //noinspection SassScssResolvedByNameOnly
+    border-color: $banner-text;
+  }
+
+  #me {
+    width: 100%;
   }
 }

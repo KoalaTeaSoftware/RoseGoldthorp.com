@@ -7,26 +7,33 @@
 <div class="container align-content-center">
     <div class="row" id="offerings">
         <div class="col">
-            <p class="lead">Infrastructure:</p>
-            <div class="items">
-                <p>Web sites;</p>
-                <p>Affiliate Stores;</p>
-                <p>SEO</p>
+            <div class="card">
+                <div class="card-header">Infrastructure</div>
+                <div class="card-body">
+                    <p>Web sites</p>
+                    <p>Affiliate Stores</p>
+                    <p>SEO</p>
+                </div>
             </div>
         </div>
         <div class="col">
-            <p class="lead">Blog:</p>
-            <div class="items">
-                <p>Weekly copy</p>
-                <p>Weekly images</p>
+            <div class="card">
+                <div class="card-header">Blog</div>
+                <div class="card-body">
+                    <p>Weekly copy</p>
+                    <p>Weekly images</p>
+                </div>
             </div>
         </div>
         <div class="col col-xs-12">
-            <p class="lead">Videos:</p>
-            <div class="items">
-                <p>Inspirational <small><em>these can be either fictional narratives, or documentaries</em></small></p>
-                <p>Educational <small><em>'how to' videos</em></small></p>
-                <p>Product showcasing <small><em>in a fun way</em></small></p>
+            <div class="card">
+                <div class="card-header">Videos</div>
+                <div class="card-body">
+                    <p>Inspirational <small><em>these can be either fictional narratives, or documentaries</em></small>
+                    </p>
+                    <p>Educational <small><em>'how to' videos</em></small></p>
+                    <p>Product showcasing <small><em>in a fun way</em></small></p>
+                </div>
             </div>
         </div>
     </div>

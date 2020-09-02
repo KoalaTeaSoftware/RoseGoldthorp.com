@@ -3,14 +3,14 @@ require_once "carousel/carousel.php";
 ?>
 <section id="home">
     <div class="row align-items-center">
-        <div class="col-sm-3" id="leftCol">
+        <div class="col" id="leftCol">
             <div class="card" id="thisIsMe">
                 <div class="card-body">
-                    <img class="img-fluid" src="/chapters/home/rose.jpg" alt="This is me">
+                    <img src="/chapters/home/rose.jpg" alt="This is me" id="me">
                 </div>
             </div>
         </div>
-        <div class="col-sm-5" id="centreCol">
+        <div class="col-6 col-md-4" id="centreCol">
             <div class="container">
                 <?=
                 /** @noinspection PhpUndefinedVariableInspection */

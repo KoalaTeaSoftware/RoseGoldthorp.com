@@ -25,9 +25,11 @@
     }
 
     #logo {
-      vertical-align: bottom;
-      border-color: white;
+      border-right: 5px;
+      vertical-align: bottom; // so that it looks nice wrt the words
+      border-color: white; // give a little bit of white all around the picture
       border-style: solid;
+      border-radius: .25rem; // matches the radius given to cards
       // the corresponds to the height of the big letters in this banner - these break-points correspond to the heights set for the
       // #banner (above)
       height: 6rem;
@@ -76,6 +78,8 @@ a {
 
 .card {
   margin: .25rem;
+  //noinspection SassScssResolvedByNameOnly
+  border-color: $banner-text;
 }
 
 figcaption {
