@@ -10,8 +10,7 @@
             <p class="lead">Infrastructure:</p>
             <div class="items">
                 <p>Web sites;</p>
-                <p>Ecommerce;</p>
-                <p>Affiliate Program / Network, etc.</p>
+                <p>Affiliate Stores;</p>
                 <p>SEO</p>
             </div>
         </div>

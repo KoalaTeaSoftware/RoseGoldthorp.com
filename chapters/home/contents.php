@@ -63,7 +63,7 @@ require_once "carousel/carousel.php";
                         own account manager.
                     </p>
                     <p>Our content ranges from the creation of your <b>web site</b>, through the provision of
-                        <b>blogs</b> and <b>videos</b> to setting you up with your own <b>shop</b> and its own <b>affiliate
+                        <b>blogs</b> and <b>videos</b>, to setting you up with your own <b>shop</b> and its own <b>affiliate
                             program</b>, or affiliate network link.
                     </p>
                 </div>
