@@ -37,6 +37,11 @@ a {
   color: $banner-text;
 }
 
+.lead {
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
 //noinspection SassScssResolvedByNameOnly
 .brandedButton {
   background-image: linear-gradient(to bottom, $nav_bg_gradient_light 0%, $nav_bg_gradient_dark 100%);
@@ -50,6 +55,14 @@ a {
 //noinspection SassScssResolvedByNameOnly
 .img-thumbnail {
   border-color: $banner-text;
+}
+
+.card {
+  margin: .25rem;
+}
+
+figcaption {
+  text-align: center;
 }
 
 /* for tabbed navs */
@@ -80,15 +93,8 @@ a {
   padding: 1rem;
 }
 
-.card {
-  margin: .25rem;
-}
-
-figcaption {
-  text-align: center;
-}
-
 /* end of stuff for tabbed interfaces */
+
 /* Main navbar */
 //noinspection SassScssResolvedByNameOnly
 #mainNav {
@@ -112,6 +118,8 @@ figcaption {
     border-width: 0 1px 0 1px;
     border-style: solid;
     margin: 0;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   a {
@@ -124,3 +132,4 @@ figcaption {
   }
 }
 
+/* ends main nav bar */
