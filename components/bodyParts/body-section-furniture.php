@@ -1,5 +1,6 @@
 <section id="furniture" class="row">
     <div id="banner">
+        <img src="/ass/logo@320px.gif" alt="logo" id="logo">
         Rose Goldthorp: <span id="subTitle">Social Media and Content Marketer</span>
     </div>
     <nav id="mainNav" class="navbar navbar-expand-md navbar-light bg-light">
