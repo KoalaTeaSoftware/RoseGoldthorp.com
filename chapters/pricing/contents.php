@@ -34,7 +34,7 @@ function drawAllPackages($data)
 <h1>Pricing</h1>
 <h2>Customised</h2>
 <p>We can of course discuss your business and offer a completely customised approach, instead of these packages.
-    Provision of ecom, and affiliate facilities are customised arrangements.
+    Provision of affiliate facilities are customised arrangements.
 </p>
 <h2>Packages</h2>
 <p>We offer the following packages, for your guidance.</p>

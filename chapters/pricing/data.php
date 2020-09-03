@@ -17,7 +17,7 @@ $data[] = [
 ];
 $data[] = [
     "text" => "A social media campaign",
-    "price" => "&pound;&nbsp;3,900 for a 1&nbsp;month campaign<br>&pound;&nbsp;11,000 for a 3&nbsp;month campaign"
+    "price" => "&pound;&nbsp;3,900 for a 1&nbsp;month campaign to<br>&pound;&nbsp;11,000 for a 3&nbsp;month campaign"
 ];
 $data[] = [
     "text" => "Full package<ul>

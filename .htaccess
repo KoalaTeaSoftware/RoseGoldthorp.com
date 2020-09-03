@@ -1,8 +1,8 @@
 RewriteEngine on
 
 # Swap any non http to go over to https
-#RewriteCond %{HTTPS} !on
-#RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [L,R=301]
 
 ## if it is a blog, just go there (and think no more about it)
 #RewriteRule ^blog.*$ - [NC,L]
