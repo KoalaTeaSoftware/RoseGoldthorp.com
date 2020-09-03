@@ -4,7 +4,7 @@ $data[] = [
     "price" => "&pound;&nbsp;4,950 for the year"
 ];
 $data[] = [
-    "text" => "A video created and loaded on a website and basic social media",
+    "text" => "A 2&half; to 3 minute video created and loaded on a website and basic social media",
     "price" => "&pound;&nbsp;2,500 for a single video<br>&pound;&nbsp;27,000 for different monthly videos created and posted for a whole year"
 ];
 $data[] = [
@@ -12,7 +12,7 @@ $data[] = [
     "price" => "&pound;&nbsp;9,900 for the year<br>(includes hosting fees and technical support)"
 ];
 $data[] = [
-    "text" => "Build a website with SEO and blog and monthly created and posted weekly video created and posted monthly on that website and social media",
+    "text" => "Build a website with SEO and blog and monthly created and posted weekly 2&half; to 3 minute video created and posted monthly on that website and social media",
     "price" => "&pound;&nbsp;36,700 for the year<br>(includes hosting fees and technical support)"
 ];
 $data[] = [
@@ -22,9 +22,9 @@ $data[] = [
 $data[] = [
     "text" => "Full package<ul>
 <li>Website build and management</li>
-    <li>3-month campaign</li>
-    <li>One video</li>
-    <li>Weekly blog</li>
+    <li>3-month social media campaign</li>
+    <li>One 2&half; to 3 minute video</li>
+    <li>Weekly blog with images</li>
     <li>Basic social posting</li>
 </ul>",
     "price" => "&pound;&nbsp;21,900 for the year<br>(includes hosting fees and technical support)"
