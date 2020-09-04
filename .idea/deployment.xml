@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="bluehost live" autoUploadExternalChanges="true" compareModeInSync="TIMESTAMP">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="bluehost dev" autoUploadExternalChanges="true" compareModeInSync="TIMESTAMP">
     <serverData>
       <paths name="bluehost dev">
         <serverdata>
@@ -11,6 +11,7 @@
             <excludedPath local="true" path="$PROJECT_DIR$/wiki" />
             <excludedPath local="true" path="$PROJECT_DIR$/comms" />
             <excludedPath local="true" path="$PROJECT_DIR$/raw-assets" />
+            <excludedPath local="true" path="$PROJECT_DIR$/scss" />
           </excludedPaths>
         </serverdata>
       </paths>
@@ -26,32 +27,8 @@
             <excludedPath local="true" path="$PROJECT_DIR$/scss" />
             <excludedPath local="true" path="$PROJECT_DIR$/raw-assets" />
             <excludedPath path="/cms" />
-          </excludedPaths>
-        </serverdata>
-      </paths>
-      <paths name="dev RG">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-          <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
-            <excludedPath local="true" path="$PROJECT_DIR$/Templates" />
-            <excludedPath local="true" path="$PROJECT_DIR$/ReadMe.md" />
-            <excludedPath local="true" path="$PROJECT_DIR$/raw-assets" />
-          </excludedPaths>
-        </serverdata>
-      </paths>
-      <paths name="live">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
-          </mappings>
-          <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
-            <excludedPath local="true" path="$PROJECT_DIR$/Templates" />
-            <excludedPath local="true" path="$PROJECT_DIR$/comms" />
-            <excludedPath local="true" path="$PROJECT_DIR$/raw-assets" />
+            <excludedPath path="/error_log" />
+            <excludedPath local="true" path="$PROJECT_DIR$/error_log" />
           </excludedPaths>
         </serverdata>
       </paths>

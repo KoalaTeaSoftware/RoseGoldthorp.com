@@ -2,20 +2,6 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="0173f5ca-212e-452e-9214-91f3b2d6b274" name="live" url="http://ftp.lifestones.biz">
-        <fileTransfer host="ftp.lifestones.biz" port="21">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
-      <webServer id="03d7be65-94ac-4988-a782-2f7db973b9df" name="dev RG" url="http://dev.rosegoldthorp.com/">
-        <fileTransfer host="ftp.lifestones.biz" port="21">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
-          </advancedOptions>
-        </fileTransfer>
-      </webServer>
       <webServer id="bb122775-93a8-4550-8362-0cee8e661086" name="bluehost dev" url="http://dev.rosegoldthorp.com/">
         <fileTransfer host="ftp.koalateasoftware.com" port="21">
           <advancedOptions>

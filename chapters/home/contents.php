@@ -1,7 +1,7 @@
 <?php
 require_once "carousel/carousel.php";
 ?>
-<section id="home">
+<section>
     <div class="row align-items-center">
         <div class="col" id="leftCol">
             <div class="card" id="thisIsMe">
@@ -10,7 +10,7 @@ require_once "carousel/carousel.php";
                 </div>
             </div>
         </div>
-        <div class="col-6 col-md-4" id="centreCol">
+        <div class="col " id="centreCol">
             <div class="container">
                 <?=
                 /** @noinspection PhpUndefinedVariableInspection */
@@ -19,6 +19,50 @@ require_once "carousel/carousel.php";
             </div>
         </div>
         <div class="col" id="rightCol">
+            <div class="card align-items-center" id="instagramFeed">
+                <?php
+                require_once "components/wpHandler.php";
+                require_once "components/instagamHandler.php";
+                $feed = readWPFeed("instagram");
+                $imgs = getImgSourcesFromInstagramFeed($feed);
+                $alts = getAltTagsFromInstagramFeed($feed);
+                $firstImgSrc = $imgs[1][1]; // the first in the array links to the whole account
+                $firstImgAlt = $alts[1][0]; // that first src does not have an alt, so the zeroth one is for the desired image
+                $firstImgSrc .= "media"; // this get just the jpg, otherwise you get a whole BoB
+                ?>
+                <div class="card-body ">
+                    <img class="img-fluid img-thumbnail"
+                         src="<?= $firstImgSrc ?>"
+                         alt="<?= $firstImgAlt ?>"
+                         rel="noopener nofollow"
+                    >
+                </div>
+                <div class="card-footer">
+                    <a href="https://www.instagram.com/rosegoldthorpfilms/" target="_blank" rel="noopener nofollow">
+                        Follow me on Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-head text-center">
+                    <h1>Welcome</h1>
+                </div>
+                <div class="card-body text-center">
+                    <p>We produce gripping content, customised to your requirements. Your own short films and web
+                        sites
+                        are directed, edited and produced by our own in-house team. Your own content is managed by
+                        your
+                        own account manager.
+                    </p>
+                    <p>Our content ranges from the creation of your <b>web site</b>, through the provision of
+                        <b>blogs</b> and <b>videos</b>, to setting you up with your own <b>affiliate
+                            stores</b>.
+                    </p>
+                </div>
+            </div>
             <div class="card">
                 <div class="card-body">
 
@@ -46,26 +90,6 @@ require_once "carousel/carousel.php";
                         </button>
                     </form>
 
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-head text-center">
-                    <h1>Welcome</h1>
-                </div>
-                <div class="card-body text-center">
-                    <p>We produce gripping content, customised to your requirements. Your own short films and web sites
-                        are directed, edited and produced by our own in-house team. Your own content is managed by your
-                        own account manager.
-                    </p>
-                    <p>Our content ranges from the creation of your <b>web site</b>, through the provision of
-                        <b>blogs</b> and <b>videos</b>, to setting you up with your own <b>shop</b> and its own <b>affiliate
-                            program</b>, or affiliate network link.
-                    </p>
                 </div>
             </div>
         </div>

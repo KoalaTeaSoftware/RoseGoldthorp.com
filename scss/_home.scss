@@ -1,31 +1,33 @@
 #home {
-  .carousel-inner {
-    text-align: center;
-    padding: 0.25em;
-  }
 
-  .carousel-item > img {
-    margin: auto;
-    //noinspection SassScssResolvedByNameOnly
-    border: thin groove $banner-text;
+  #me {
+    width: 100%;
   }
 
   #myCarousel {
     display: flex;
     align-items: center;
     height: fit-content;
+
+    .carousel-inner {
+      text-align: center;
+      padding: 0.25em;
+    }
+
+    .carousel-item > img {
+      margin: auto;
+      //noinspection SassScssResolvedByNameOnly
+      border: thin groove $banner-text;
+    }
+  }
+
+  #instagramFeed {
+    .card-body {
+      padding: 0.25rem;
+    }
   }
 
   #mc-embedded-subscribe-form {
     margin: auto !important;
-  }
-
-  .card {
-    //noinspection SassScssResolvedByNameOnly
-    border-color: $banner-text;
-  }
-
-  #me {
-    width: 100%;
   }
 }

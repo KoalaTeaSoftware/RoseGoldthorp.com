@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/components/logging/errorHandler.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/components/errorHandler.php';
 
 // some default values
 $titleTag = "Rose Goldthorp";
