@@ -9,11 +9,11 @@ $data[] = [
 ];
 $data[] = [
     "text" => "Build a website with SEO and blog created and posted weekly on that website and basic social media",
-    "price" => "&pound;&nbsp;9,900 for the year<br>(includes hosting fees and technical support)"
+    "price" => "&pound;&nbsp;10,750 for the year<br>(includes hosting fees and technical support)"
 ];
 $data[] = [
     "text" => "Build a website with SEO and blog and monthly created and posted weekly 2&half; to 3 minute video created and posted monthly on that website and social media",
-    "price" => "&pound;&nbsp;36,700 for the year<br>(includes hosting fees and technical support)"
+    "price" => "&pound;&nbsp;37,250 for the year<br>(includes hosting fees and technical support)"
 ];
 $data[] = [
     "text" => "A social media campaign",
@@ -27,5 +27,5 @@ $data[] = [
     <li>Weekly blog with images</li>
     <li>Basic social posting</li>
 </ul>",
-    "price" => "&pound;&nbsp;21,900 for the year<br>(includes hosting fees and technical support)"
+    "price" => "&pound;&nbsp;23,850 for the year<br>(includes hosting fees and technical support)"
 ];
