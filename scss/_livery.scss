@@ -13,11 +13,20 @@ a {
 /* the following noInspections are just because it doen't actually know about them */
 //noinspection CssUnusedSymbol
 .newTabInd::after {
-  content: url("/ass/open-iconic/layers.svg");
+  content: " ";
+  background-image: url("/ass/open-iconic/link-intact.svg");
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
 }
 
 // the following stops the newTabInd symbol crashing up against the words in
 //noinspection CssUnusedSymbol
-.newTabInd > .linkText {
+.newTabInd {
   padding-right: 0.5rem;
+  text-decoration: underline;
 }

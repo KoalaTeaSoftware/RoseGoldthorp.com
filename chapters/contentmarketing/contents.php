@@ -43,7 +43,7 @@
                  alt="Rose directing one of her earlier films (Silverville)">
             <figcaption>Rose directing one of her earlier films:
                 <!--suppress HtmlUnknownTarget -->
-                <a href="/about/films/silverville" class="newTabInd">Silverville</a>
+                <a href="/about/films/silverville" class="newTabInd">Silverville </a>
             </figcaption>
         </figure>
     </div>

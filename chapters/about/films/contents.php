@@ -91,7 +91,7 @@ function makeLinkList($linkSet)
         $text = $linkSet[$i]["text"];
 
         $html .= '<a href="' . $code . '" class="list-group-item newTabInd" target="_blank">';
-        $html .= '  <span class="linkText">' . $text . '</span>';
+        $html .= $text . " ";
         $html .= '</a>';
     }
     return $html;

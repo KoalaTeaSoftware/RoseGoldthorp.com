@@ -110,7 +110,7 @@ function makeFilmEntry($title, $extract, $subSectionName)
             </div>
             <div class="col">
                 <h3 class="text-center">
-                    <a href="$linkHref" title="More details about $title" class="textLinkToFilmDetails">$title</a>
+                    <a href="$linkHref" title="More details about $title" class="textLinkToFilmDetails linkText newTabInd">$title </a>
                 </h3>
                 <p>$extract</p>
             </div>
