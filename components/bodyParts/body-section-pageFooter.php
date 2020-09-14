@@ -1,3 +1,4 @@
+
 <script>
     document.title = "<?=
         // the script is run before the drawing of the footer, in case a test script uses the footer as an indication of page load completion
@@ -9,5 +10,4 @@
         /** @noinspection PhpUndefinedVariableInspection */
         $chapter ?>Nav").classList.add("active");
 </script>
-<section id="footer" class="row">
-</section>
+

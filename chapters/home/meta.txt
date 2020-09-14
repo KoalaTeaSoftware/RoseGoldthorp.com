@@ -1,0 +1,3 @@
+<meta name="description" content="Rose Goldthorp's web site.">
+<meta property="og:description" content="Rose Goldthorp's web site">
+

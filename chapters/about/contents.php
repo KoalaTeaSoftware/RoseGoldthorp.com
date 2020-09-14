@@ -33,7 +33,7 @@ $titleTag = "About Rose Goldthorp";
                 On a regular basis, Rose contributes copy, and images, as well as videos to this site. The site was
                 created in spring '20, primarily, to promote Rose's upcoming six comic, fantasy feature films.
             </p>
-            <figure>
+            <figure class="text-center">
                 <img src="/chapters/about/the-greenlands-home-page.JPG" class="img-fluid img-thumbnail"
                      alt="Screen grab of the-greenlands.com">
                 <figcaption>Rose's Transmedia Website

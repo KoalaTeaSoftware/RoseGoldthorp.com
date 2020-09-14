@@ -6,7 +6,7 @@ $titleTag = "Rose Goldthorp";
 $chapter = "home";
 $pagePath = $_SERVER['DOCUMENT_ROOT'] . "/chapters" . DIRECTORY_SEPARATOR . $chapter;
 $msg = "Defaulting to Home";
-$meta = "Some meta text";
+$meta = "";
 
 /*
  * The following depends on the rules in the .htaccess file, i.e
@@ -50,9 +50,6 @@ if (strlen($chapter) < 1) {
         exit();
     }
 
-    if (file_exists($pagePath . DIRECTORY_SEPARATOR . "meta.txt")) {
-        $meta = file_get_contents($pagePath . DIRECTORY_SEPARATOR . "meta.txt");
-    }
 
     error_log("Chapter is :" . $chapter);
     $titleTag = ucfirst($chapter);
@@ -88,19 +85,17 @@ if (strlen($chapter) < 1) {
     require_once $_SERVER['DOCUMENT_ROOT'] . '/components/bodyParts/head-common.php';
     ?>
 </head>
-<body class="container-fluid">
-
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . "/components/bodyParts/body-section-furniture.php";
-?>
-
-<section id="<?= $chapter ?>" class="container-fluid align-content-center">
-    <?php
-    require_once $pagePath . "/contents.php";
-    ?>
-</section>
-<?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/components/bodyParts/body-section-pageFooter.php';
-?>
-<p class="d-none" id="controllerInfo"><?= $msg ?></p>
+<body>
+<div class="container-fluid">
+    <section id="furniture" class="row">
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/components/bodyParts/body-section-furniture.php"; ?>
+    </section>
+    <section id="<?= $chapter ?>" class="container-fluid align-content-center">
+        <?php require_once $pagePath . "/contents.php"; ?>
+    </section>
+    <section id="footer" class="row">
+        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/components/bodyParts/body-section-pageFooter.php'; ?>
+    </section>
+    <p class="d-none" id="controllerInfo"><?= $msg ?></p>
+</div>
 </body>
