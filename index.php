@@ -76,7 +76,7 @@ if (strlen($chapter) < 1) {
 // note: the $_GET is populated with whatever we were originally given (as if we had nothing fancy going on)
 ?>
 <!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title><?= $titleTag ?></title>
     <?php
@@ -87,15 +87,15 @@ if (strlen($chapter) < 1) {
 </head>
 <body>
 <div class="container-fluid">
-    <section id="furniture" class="row">
+    <div id="furniture" class="row">
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/components/bodyParts/body-section-furniture.php"; ?>
-    </section>
-    <section id="<?= $chapter ?>" class="container-fluid align-content-center">
+    </div>
+    <div id="<?= $chapter ?>" class="container-fluid align-content-center">
         <?php require_once $pagePath . "/contents.php"; ?>
-    </section>
-    <section id="footer" class="row">
+    </div>
+    <div id="footer" class="row">
         <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/components/bodyParts/body-section-pageFooter.php'; ?>
-    </section>
+    </div>
     <p class="d-none" id="controllerInfo"><?= $msg ?></p>
 </div>
 </body>

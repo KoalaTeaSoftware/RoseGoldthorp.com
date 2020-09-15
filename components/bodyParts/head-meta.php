@@ -16,6 +16,7 @@ else {
     $robots = "noindex,nofollow";
 }
 
+/** @noinspection PhpUndefinedVariableInspection */
 $extraMetatDataFile = $pagePath . DIRECTORY_SEPARATOR . "meta.txt";
 $meta = "";
 if (file_exists($extraMetatDataFile)) {
@@ -25,7 +26,6 @@ if (file_exists($extraMetatDataFile)) {
 }
 
 ?>
-<meta http-equiv="Content-Language" content="en-GB">
 <meta name="robots" content="<?= $robots ?>">
 <?= $meta ?>
 <!--meta property="og:image" content=">
