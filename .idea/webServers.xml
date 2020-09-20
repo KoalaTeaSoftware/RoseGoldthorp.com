@@ -2,14 +2,14 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="bb122775-93a8-4550-8362-0cee8e661086" name="bluehost dev" url="http://dev.rosegoldthorp.com/">
+      <webServer id="bb122775-93a8-4550-8362-0cee8e661086" name="stage" url="http://dev.rosegoldthorp.com/">
         <fileTransfer host="ftp.koalateasoftware.com" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
-      <webServer id="c98388a9-e255-43fa-be39-84939e64cfb7" name="bluehost live" url="http://rosegoldthorp.com/">
+      <webServer id="c98388a9-e255-43fa-be39-84939e64cfb7" name="live" url="http://rosegoldthorp.com/">
         <fileTransfer host="ftp.koalateasoftware.com" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
