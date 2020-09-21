@@ -10,7 +10,7 @@ function drawAPackage($number, $text, $price)
             Package $number
         </div>
         <div class="card-body">
-            <p class="card-text">$text.</p>
+            <div class="card-text">$text</div>
             <a href="/contact" class="btn btn-primary brandedButton">Get Details</a>
         </div>
         <div class="card-footer text-muted">

@@ -20,12 +20,13 @@ $data[] = [
     "price" => "&pound;&nbsp;3,900 for a 1&nbsp;month campaign to<br>&pound;&nbsp;11,000 for a 3&nbsp;month campaign"
 ];
 $data[] = [
-    "text" => "Full package<ul>
-<li>Website build and management</li>
-    <li>3-month social media campaign</li>
-    <li>One 2&half; to 3 minute video</li>
-    <li>Weekly blog with images</li>
-    <li>Basic social posting</li>
-</ul>",
+    "text" => "Full package
+        <ul>
+            <li>Website build and management</li>
+            <li>3-month social media campaign</li>
+            <li>One 2&half; to 3 minute video</li>
+            <li>Weekly blog with images</li>
+            <li>Basic social posting</li>
+        </ul>",
     "price" => "&pound;&nbsp;23,850 for the year<br>(includes hosting fees and technical support)"
 ];

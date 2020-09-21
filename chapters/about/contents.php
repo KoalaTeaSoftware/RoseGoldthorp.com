@@ -12,12 +12,12 @@ $titleTag = "About Rose Goldthorp";
     <ul class="nav nav-tabs" id="rolesNav" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="marketer-tab" data-toggle="tab" href="#marketer" role="tab"
-               aria-controls="home"
+               aria-controls="marketer"
                aria-selected="true">Marketer</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" id="filmmaker-tab" data-toggle="tab" href="#filmmaker" role="tab"
-               aria-controls="profile"
+               aria-controls="filmmaker"
                aria-selected="false">Film Maker</a>
         </li>
     </ul>

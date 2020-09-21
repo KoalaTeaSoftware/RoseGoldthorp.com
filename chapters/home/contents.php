@@ -34,7 +34,6 @@ require_once "carousel/carousel.php";
                     <img class="img-fluid img-thumbnail"
                          src="<?= $firstImgSrc ?>"
                          alt="<?= $firstImgAlt ?>"
-                         rel="noopener nofollow"
                     >
                 </div>
                 <div class="card-footer">
