@@ -1,6 +1,3 @@
-<?php
-require_once "carousel/carousel.php";
-?>
 <section>
     <div class="row align-items-center">
         <div class="col" id="leftCol">
@@ -12,28 +9,39 @@ require_once "carousel/carousel.php";
         </div>
         <div class="col " id="centreCol">
             <div class="container">
-                <?=
-                /** @noinspection PhpUndefinedVariableInspection */
-                // defined in require at top of file
-                giveCarousel($carouselPageList, "                ") ?>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+                    <div class="carousel-inner" id="caroInner">
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="/chapters/home/carousel/01watcher.jpg"
+                                 alt="Poster and clip for featurette Watcher">
+                        </div>
+                        <div class="carousel-item active">
+                            <img class="img-fluid" src="/chapters/home/carousel/02silverville.jpg"
+                                 alt="Poster and clip for featurette Silverville">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="/chapters/home/carousel/03aGhostInCorsets.jpg"
+                                 alt="Poster and clip for feature A Ghost In Corsets">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="/chapters/home/carousel/04fleur'sSecret.jpg"
+                                 alt="Poster and clip for feature Fleur's Secret">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="/chapters/home/carousel/05rockyRoadToFreedom.jpg"
+                                 alt="Poster and clip for feature The Rocky Road To Freedom">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col" id="rightCol">
             <div class="card align-items-center" id="instagramFeed">
-                <?php
-                require_once "components/wpHandler.php";
-                require_once "components/instagamHandler.php";
-                $feed = readWPFeed("instagram");
-                $imgs = getImgSourcesFromInstagramFeed($feed);
-                $alts = getAltTagsFromInstagramFeed($feed);
-                $firstImgSrc = $imgs[1][1]; // the first in the array links to the whole account
-                $firstImgAlt = $alts[1][0]; // that first src does not have an alt, so the zeroth one is for the desired image
-                $firstImgSrc .= "media"; // this get just the jpg, otherwise you get a whole BoB
-                ?>
                 <div class="card-body ">
-                    <img class="img-fluid img-thumbnail"
-                         src="<?= $firstImgSrc ?>"
-                         alt="<?= $firstImgAlt ?>"
+                    <img id="intagramImage"
+                         class="img-fluid img-thumbnail"
+                         src="/ass/WorkingCogs.gif"
+                         alt="On it's way ..."
                     >
                 </div>
                 <div class="card-footer">
@@ -94,4 +102,21 @@ require_once "carousel/carousel.php";
         </div>
     </div>
 </section>
+<?php
+ob_flush(); // not sure that these actually achieve anything, but you never know
+flush();
+require_once "components/wpHandler.php";
+require_once "components/instagamHandler.php";
+$feed = readWPFeed("instagram");
+$imgs = getImgSourcesFromInstagramFeed($feed);
+$alts = getAltTagsFromInstagramFeed($feed);
+$firstImgSrc = $imgs[1][1]; // the first in the array links to the whole account
+$firstImgAlt = $alts[1][0]; // that first src does not have an alt, so the zeroth one is for the desired image
+$firstImgSrc .= "media"; // this get just the jpg, otherwise you get a whole BoB
+?>
+<script>
+    document.getElementById("intagramImage").setAttribute("src", "<?= $firstImgSrc ?>");
+    document.getElementById("intagramImage").setAttribute("alt", "<?= $firstImgAlt ?>");
+</script>
+
 

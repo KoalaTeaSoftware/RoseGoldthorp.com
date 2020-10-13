@@ -1,8 +1,9 @@
-<?php
-/** @noinspection PhpUndefinedVariableInspection */
+<?php /** @noinspection PhpUndefinedVariableInspection */
 $titleTag = "Contact Me";
+$timeNow = gmdate('Ymdhms');
+echo '<p hidden id="stamp">' . $timeNow . '</p>';
 require_once "chapters/contact/constraints.php";
-
+//============================================================================
 $processingResult = "";
 $resultDisplayCssClass = "";
 if (isset($_GET)) {
@@ -58,10 +59,14 @@ if (isset($_GET)) {
         return checkEmails(); //until I can think of more things
     }
 </script>
-
+//=========================================================================================================
 <p>If you don't already know my email, please write to me using this form (please use all fields)</p>
+
 <!--suppress HtmlUnknownTarget -->
-<form method="post" onsubmit="return checkForm()" action="chapters/contact/sendmail.php">
+<form method="post" onsubmit="return checkForm()" action="/chapters/contact/sendmail.php">
+    <!--suppress HtmlFormInputWithoutLabel -->
+    <input hidden id="whadyano" value="<?= $timeNow ?>">
+
     <div class="form-group">
         <label for="<?= $nameFieldName ?>">Your Name</label>
         <input required id="<?= $nameFieldName ?>" name="<?= $nameFieldName ?>" type="text"
@@ -94,8 +99,7 @@ if (isset($_GET)) {
     <div class="form-group">
         <label for="<?= $subjectFieldName ?>">Subject</label>
         <input required id="<?= $subjectFieldName ?>" name="<?= $subjectFieldName ?>" type="text"
-               maxlength="<?= /** @noinspection PhpUndefinedVariableInspection */
-               $maxSubjectLength ?>"
+               maxlength="<?= $maxSubjectLength ?>"
                placeholder="RE: something ..."
                aria-describedby="subjectHelp" class="form-control">
         <small class="form-text text-muted" id="subjectHelp">Please provide a subject.</small>

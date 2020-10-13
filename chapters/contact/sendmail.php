@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/components/logging/errorHandler.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/components/errorHandler.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . "/chapters/contact/constraints.php";
 
 //error_log("Come in to sendmail.php");

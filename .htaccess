@@ -1,25 +1,14 @@
 RewriteEngine on
 
-# Swap any non http to go over to https
 RewriteCond %{HTTPS} !on
 RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [L,R=301]
 
-## if it is a blog, just go there (and think no more about it)
-#RewriteRule ^blog.*$ - [NC,L]
+RewriteRule ^index\.php$ - [NC,L]
 
-RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-# don't redirect if the request is for an image, or script these will all need to go where they are told
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# make sure that any calls through to the Content Management System are not redirected
-RewriteCond %{REQUEST_URI} !^/cms [NC]
-
-# the above two do not seem to do exactly what is required, but also don't seem to be a problem.
-# txt for the likes of robot.txt
-# map for the css maps and the like
 RewriteCond %{REQUEST_URI} !\.(png|gif|jpg|jpeg|js|css|mp3|wav|txt|map|ico|pdf|xml)$ [NC]
-# make everything else go to the index file and as https, too
+RewriteCond %{REQUEST_URI} !^/cms [NC]
+RewriteCond %{REQUEST_URI} !sendmail\.php [NC]
+
 RewriteRule ^(.*)$ index.php?%{QUERY_STRING}  [NC]
 
 # initial quick fix for caching different resources

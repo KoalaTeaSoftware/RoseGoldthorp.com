@@ -1,101 +1,150 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/components/errorHandler.php';
+$logFile = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . "error_log";
+error_reporting(-1); // that is every possible error will be trapped
+ini_set('display_errors', 'Off');
+ini_set('log_errors', 'On');
+ini_set('error_log', $logFile);
+set_error_handler('errorHandler', E_ALL | E_STRICT);
 
-// some default values
-$titleTag = "Rose Goldthorp";
-$chapter = "home";
-$pagePath = $_SERVER['DOCUMENT_ROOT'] . "/chapters" . DIRECTORY_SEPARATOR . $chapter;
-$msg = "Defaulting to Home";
-$meta = "";
+//if (file_exists($logFile)) {
+//    unlink($logFile);
+//}
 
-/*
- * The following depends on the rules in the .htaccess file, i.e
- * RewriteRule ^.*$ /index.php?%{QUERY_STRING}
- *
- * All the chapters will be in the /chapters folder
- * Each chapter has a directory with the right name,and containing a contents.php
+/**
+ * The function used instead of the PHP default logging function. Its name is in the ini_set (above)
+ * @param $errNo - system provided
+ * @param $errStr - system provided
+ * @param $errFile - system provided
+ * @param $errLine - system provided
  */
-$askedFor = $_SERVER["REQUEST_URI"]; // this is what was actually asked-for
-error_log("Asked for:" . $askedFor);
+function errorHandler($errNo, $errStr, $errFile, $errLine)
+{
+    /** @noinspection SpellCheckingInspection */
+    error_log("\n-------------------------------------------\n" .
+        "ErrStr: " . $errStr . "\n" .
+        "Locn: " . $errFile . "\n" .
+        "Line: " . $errLine . "\n" .
+        "ErrNo: " . $errNo . "\n" .
+        "-------------------------------------------\n");
+}
 
-$majorParts = explode('?', $askedFor);
-//error_log("Major parts:" . print_r($majorParts, true));
+//==========================================================================================================================
+$majorParts = explode('?', $_SERVER["REQUEST_URI"]);
 $pathElements = explode('/', $majorParts[0]);
-//error_log("Path Elements:" . print_r($pathElements, true));
-
 $chapter = isset($pathElements[1]) ? $pathElements[1] : "";
 $section = isset($pathElements[2]) ? $pathElements[2] : "";
 $subSection = isset($pathElements[3]) ? $pathElements[3] : "";
-
-if (strlen($chapter) < 1) {
-//    error_log("No chapter has been requested");
+//==============================================================================================================================
+if ((!isset($chapter)) || empty($chapter)) {
+    error_log("Special case, no chapter means home");
     $chapter = "home";
-    $pagePath = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . "chapters" . DIRECTORY_SEPARATOR . $chapter;
-    $msg = "Home";
-} else {
-    $chapter = strtolower($chapter);
-    $pagePath = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . "chapters" . DIRECTORY_SEPARATOR . $chapter;
-
-    if (!is_dir($pagePath)) {
-        error_log("PagePath :" . $pagePath . ": is not a directory");
-        $msg = "Unknown-Chapter(" . $chapter . ")";
-        header('Location: /?' . $msg);
-        exit();
-    }
-
-    if (!file_exists($pagePath . DIRECTORY_SEPARATOR . "contents.php")) {
-        error_log("PagePath :" . $pagePath . ": does not contains a contents.php");
-        $msg = "Unknown-Chapter(" . $chapter . ")";
-        header('Location: /?' . $msg);
-        exit();
-    }
-
-
-    error_log("Chapter is :" . $chapter);
-    $titleTag = ucfirst($chapter);
-
-    // note: we will only bother looking at the section if the chapter was good
-    if (strlen($section) > 1) {
-        $sectionPath = $pagePath . DIRECTORY_SEPARATOR . $section;
-        error_log("Section has been requested:" . $section . " looking in " . $sectionPath);
-        if (!file_exists($sectionPath)) {
-            $msg = "Unknown-Section(" . $section . ")";
-            header('Location: /' . $chapter . '?' . $msg);
-            exit();
-        } else {
-            error_log("Have found the section guts at " . $sectionPath);
-            $pagePath = $sectionPath;
-        }
-
-        $titleTag = ucfirst($section);
-    } // ends what to do if section is good
-//    else
-//        error_log("No section requested");
 }
-// if you have got to this point, then the elements of the path are nice
-// note: the $_GET is populated with whatever we were originally given (as if we had nothing fancy going on)
+$siteFileRoot = $_SERVER['DOCUMENT_ROOT'] . "/";
+$chapterFileRoot = $siteFileRoot . "chapters/" . $chapter . "/"; // for this site, an addon, the two can be the same
+$chapterContentsFileName = $chapterFileRoot . "contents.php";
+//error_log("Chapter:" . $chapter);
+//error_log("Section:" . $section);
+//error_log("Subsection:" . $subSection);
+//error_log("Site file root:" . $siteFileRoot);
+//error_log("Chapter file root:" . $chapterFileRoot);
+//==============================================================================================================================
+if (!file_exists($chapterContentsFileName)) {
+    error_log("No chapter contents defined at :" . $chapterContentsFileName . ": so resetting to home");
+    $chapter = "home";
+    $chapterFileRoot = $siteFileRoot . "chapters/" . $chapter . "/";
+}
+//==============================================================================================================================
+$metaHtml = "";
+// ToDo: use section meta file if it exists
+$chapterMetaFileName = $chapterFileRoot . "meta.htm";
+// only look for extra meta tags if we are not on the home - this speeds home up slightly
+if (($chapter != "home") && (file_exists($chapterMetaFileName)) && ($data = file_get_contents($chapterMetaFileName)))
+    $metaHtml .= $data;
+else
+    error_log("Meta data was not read for file " . $chapterMetaFileName);
+//==============================================================================================================================
+$titleTag = ucfirst(str_replace('-', ' ', $chapter));
 ?>
 <!doctype html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title><?= $titleTag ?></title>
-    <?php
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/components/bodyParts/head-meta.php";
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/components/bodyParts/head-bootstrap.php';
-    require_once $_SERVER['DOCUMENT_ROOT'] . '/components/bodyParts/head-common.php';
-    ?>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex,nofollow">
+    <?= $metaHtml ?>
+    <title>Rose Goldthorp.com</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/gif" sizes="16x16" href="/ass/logo@16px.gif">
 </head>
-<body>
-<div class="container-fluid">
-    <div id="furniture" class="row">
-        <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/components/bodyParts/body-section-furniture.php"; ?>
+<body class="container-fluid">
+<div id="furniture" class="row">
+    <div id="banner">
+        <img src="/ass/logo@320px.gif" alt="logo" id="logo">
+        Rose Goldthorp: <span id="subTitle">Social Media and Content Marketer</span>
     </div>
-    <div id="<?= $chapter ?>" class="container-fluid align-content-center">
-        <?php require_once $pagePath . "/contents.php"; ?>
-    </div>
-    <div id="footer" class="row">
-        <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/components/bodyParts/body-section-pageFooter.php'; ?>
-    </div>
-    <p class="d-none" id="controllerInfo"><?= $msg ?></p>
+    <nav id="mainNav" class="navbar navbar-expand-md navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" id="homeNav" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-link" id="contentmarketingNav" href="/contentmarketing">Content Marketing</a>
+                </li>
+                <li class="nav-item">
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-link" id="socialmediaNav" href="/socialmedia">Social Media</a>
+                </li>
+                <li class="nav-item">
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-link" id="pricingNav" href="/pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-link" id="aboutNav" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-link" id="contactNav" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
+
+<div id="<?= $chapter ?>" class="container-fluid align-content-center">
+    <?php require_once $chapterFileRoot . "/contents.php"; ?>
+    <script>
+        document.title = "<?= $titleTag ?>"; // it may change, e.g. a section is drawn
+        document.getElementById("<?= $chapter ?>Nav").classList.add("active");
+    </script>
+</div>
+
+<!--suppress SpellCheckingInspection -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<!--suppress SpellCheckingInspection -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<!--suppress SpellCheckingInspection -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+<!--suppress SpellCheckingInspection -->
+<link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous">
+
+<div id="footer" class="row">
+    &nbsp;
+</div>
+
 </body>
