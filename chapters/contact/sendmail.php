@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/chapters/contact/constraints.php";
 //error_log("POST:" . print_r($_POST, true));
 //error_log("GET:" . print_r($_GET, true));
 
-$email_to = "goldthorpmark@gmail.com";
+$email_to = "info@the-greenlands.com";
 
 /** @noinspection PhpUndefinedVariableInspection */
 $name = makeSafe($_POST[$nameFieldName]);
