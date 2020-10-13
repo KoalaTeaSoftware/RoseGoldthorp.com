@@ -1,45 +1,41 @@
 <?php
-/* some defaults */
+error_log("Entering the film details section");
+/* some defaults so that this page can draw something */
 $titleTag = "Unknown Film";
 $posterPathSpec = "/ass/WorkingCogs.gif";
 $requiredFilm["title"] = "Unknown Film";
-$requiredFilm["text"] = [""];
+$requiredFilm["text"] = ['Please go back to the <a href="/about">About</a> page and try again.'];
 $requiredFilm["links"] = [];
 $requiredFilm["dia"] = "";
 /* ends defaults */
-// ToDo: I think this is redundant, if so, delete it
-//if (!isset($subSection)) {
-//    return;
-//}
-
-/** @noinspection PhpUndefinedVariableInspection */
-$filmDetailsLocation = $pagePath;  // defined in index.php
-$filmDetailsLocation .= DIRECTORY_SEPARATOR . "filmDetails" . DIRECTORY_SEPARATOR;
-/** @noinspection PhpUndefinedVariableInspection */
-$filmDetailsLocation .= $subSection;
-
-if (is_dir($filmDetailsLocation)) {
+if (isset($subSection) && ($subSection !== "")) {
     /** @noinspection PhpUndefinedVariableInspection */
-    $posterPathSpec = "/chapters/" . $chapter . "/films/filmDetails/" . $subSection . "/poster.jpg";
+    $filmDetailsFileRoot = $sectionFileRoot;  // defined in the about contents page
+    $filmDetailsFileRoot .= "filmDetails/" . $subSection;
 
-    if (!file_exists($_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . $posterPathSpec)) {
-        error_log("Poster does not exist :" . $posterPathSpec . ":");
-        $posterPathSpec = "/ass/WorkingCogs.gif";
+    if (!is_dir($filmDetailsFileRoot)) {
+        error_log($filmDetailsFileRoot . ": is not a know directory");
+    } else {
+        $posterPathSpec = "/chapters/about/films/filmDetails/" . $subSection . "/poster.jpg";
+
+        if (!file_exists($posterPathSpec)) {
+            error_log("Poster does not exist :" . $posterPathSpec . ": so a default will be shown.");
+        }
+
+        require_once "chapters/about/films/filmData.php";
+
+        /** @noinspection PhpUndefinedVariableInspection */
+        $retrievedData = findByNiceName($filmData, $subSection);
+
+        if ($retrievedData == null) {
+            error_log("Unknown-film:" . $subSection . ":");
+        } else {
+            $requiredFilm = $retrievedData;
+        }
+        // now we know that there is a film with this data and directory ...
+        $titleTag = $requiredFilm["title"];
     }
-
-    require_once "chapters/about/films/filmData.php";
-
-    /** @noinspection PhpUndefinedVariableInspection */
-    $requiredFilm = findByNiceName($filmData, $subSection);
-
-    if ($requiredFilm == null) {
-        echo "Unknown-film(" . $subSection . ")";
-    }
-
-// now we know that there is a film with this data and directory ...
-    $titleTag = $requiredFilm["title"];
 }
-
 ?>
     <div id="filmDetails">
         <div class="jumbotron">

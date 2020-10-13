@@ -20,7 +20,7 @@ function readWPFeed($category)
         error_log("Unable to find the content element of the feed");
         return null;
     } else {
-        error_log("Instagram item contents: " . print_r($innards->channel->item[0]->content[0], true));
+//        error_log("Instagram item contents: " . print_r($innards->channel->item[0]->content[0], true));
         return $innards->channel->item[0]->content[0];
     }
 }
@@ -34,9 +34,9 @@ function readWPFeed($category)
  */
 function readFileAsText($fullPath)
 {
-    error_log("Reading feed at :" . $fullPath . ":");
+//    error_log("Reading feed at :" . $fullPath . ":");
     $feed = file_get_contents($fullPath);
-    error_log("This is what was read\n" . $feed . "\n-----------------------");
+//    error_log("This is what was read\n" . $feed . "\n-----------------------");
     if ($feed == false) {
         error_log("Failed to read the file at :" . $fullPath . ":");
         return null;
@@ -55,7 +55,7 @@ function cleanWordPressFeed($feed)
     $feed = preg_replace('/&raquo;/', '&apos;', $feed);
     $feed = preg_replace('/&nbsp;/', ' ', $feed);
     $feed = preg_replace('/<script>.*<\/script>/', ' ', $feed);
-    error_log("\n-----------------------\nCleaned-up to\n" . $feed . "\n-----------------------");
+//    error_log("\n-----------------------\nCleaned-up to\n" . $feed . "\n-----------------------");
     return $feed;
 }
 
@@ -75,6 +75,6 @@ function convertToSimpleXmlObject($feed)
         error_log($msg);
         return null;
     }
-    error_log("Interpreted as this XML:" . print_r($xml, true));
+//    error_log("Interpreted as this XML:" . print_r($xml, true));
     return $xml;
 }

@@ -103,8 +103,6 @@
     </div>
 </section>
 <?php
-ob_flush(); // not sure that these actually achieve anything, but you never know
-flush();
 require_once "components/wpHandler.php";
 require_once "components/instagamHandler.php";
 $feed = readWPFeed("instagram");

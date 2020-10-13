@@ -1,11 +1,25 @@
 <?php
+error_log("Entering the About chapter");
 require_once "chapters/about/films/filmData.php";
-
-/*
- * This film details section/sub-section handler is called direclty using liks from the about > filmmaker chapter-part
- * So there is no need for detective work by the chapter to see if the section code should be executed
- * So the code in this file can assume that you are just wanting the about page
- */
+if (isset($section) && ($section != "")) {
+    /** @noinspection PhpUndefinedVariableInspection - set in the chapter */
+    $sectionFileRoot = $chapterFileRoot . $section . "/";
+    error_log("Section file root:" . $sectionFileRoot);
+    if (!is_dir($section)) {
+        $sectionFileContents = $sectionFileRoot . "contents.php";
+        error_log("Section file contents:" . $sectionFileContents);
+        if (file_exists($sectionFileContents)) {
+            /** @noinspection PhpIncludeInspection */
+            require_once $sectionFileContents;
+            return;
+        } else {
+            error_log("Requested a section (" . $section . ") for which there is no contents file");
+        }
+    } else {
+        error_log("Requested a section (" . $section . ") for which there is no contents folder");
+    }
+}
+// Either no section was requested, or something went wrong with getting section details, so draw the chapter
 $titleTag = "About Rose Goldthorp";
 ?>
     <h1>About Rose Goldthorp</h1>
@@ -29,9 +43,9 @@ $titleTag = "About Rose Goldthorp";
             </p>
             <p>Below, you can see the front page of Rose's transmedia web site
                 <a href="https://the-greenlands.com/" target="_blank" title="Go to The Greenlands" class="newTabInd">"The
-                    Greenlands"</a>.
-                On a regular basis, Rose contributes copy, and images, as well as videos to this site. The site was
-                created in spring '20, primarily, to promote Rose's upcoming six comic, fantasy feature films.
+                    Greenlands"</a>. On a regular basis, Rose contributes copy, and images, as well as videos to this
+                site. The site was created in spring '20, primarily, to promote Rose's upcoming six comic, fantasy
+                feature films.
             </p>
             <figure class="text-center">
                 <img src="/chapters/about/the-greenlands-home-page.JPG" class="img-fluid img-thumbnail"
@@ -51,6 +65,7 @@ $titleTag = "About Rose Goldthorp";
         </div>
     </div>
     <script>
+        // make the back button operate as expected
         $(document).ready(() => {
             const url = window.location.href;
             if (url.indexOf("#") > 0) {

@@ -6,10 +6,10 @@ ini_set('log_errors', 'On');
 ini_set('error_log', $logFile);
 set_error_handler('errorHandler', E_ALL | E_STRICT);
 
-//if (file_exists($logFile)) {
-//    unlink($logFile);
-//}
-
+if (file_exists($logFile)) {
+    unlink($logFile);
+}
+error_log("============================================================");
 /**
  * The function used instead of the PHP default logging function. Its name is in the ini_set (above)
  * @param $errNo - system provided
@@ -42,11 +42,11 @@ if ((!isset($chapter)) || empty($chapter)) {
 $siteFileRoot = $_SERVER['DOCUMENT_ROOT'] . "/";
 $chapterFileRoot = $siteFileRoot . "chapters/" . $chapter . "/"; // for this site, an addon, the two can be the same
 $chapterContentsFileName = $chapterFileRoot . "contents.php";
-//error_log("Chapter:" . $chapter);
-//error_log("Section:" . $section);
-//error_log("Subsection:" . $subSection);
-//error_log("Site file root:" . $siteFileRoot);
-//error_log("Chapter file root:" . $chapterFileRoot);
+error_log("Chapter:" . $chapter);
+error_log("Section:" . $section);
+error_log("Subsection:" . $subSection);
+error_log("Site file root:" . $siteFileRoot);
+error_log("Chapter file root:" . $chapterFileRoot);
 //==============================================================================================================================
 if (!file_exists($chapterContentsFileName)) {
     error_log("No chapter contents defined at :" . $chapterContentsFileName . ": so resetting to home");

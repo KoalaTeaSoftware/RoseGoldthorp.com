@@ -59,7 +59,6 @@ if (isset($_GET)) {
         return checkEmails(); //until I can think of more things
     }
 </script>
-//=========================================================================================================
 <p>If you don't already know my email, please write to me using this form (please use all fields)</p>
 
 <!--suppress HtmlUnknownTarget -->
