@@ -1,13 +1,13 @@
 <section>
     <div class="row align-items-center">
-        <div class="col" id="leftCol">
+        <div class="col-md" id="leftCol">
             <div class="card" id="thisIsMe">
                 <div class="card-body">
                     <img src="/chapters/home/rose.jpg" alt="This is me" id="me">
                 </div>
             </div>
         </div>
-        <div class="col " id="centreCol">
+        <div class="col-md d-none d-md-block " id="centreCol">
             <div class="container">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
                     <div class="carousel-inner" id="caroInner">
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="col" id="rightCol">
+        <div class="col-md" id="rightCol">
             <div class="card align-items-center" id="instagramFeed">
                 <div class="card-body ">
                     <img id="intagramImage"
@@ -93,7 +93,7 @@
                                    value="">
                         </div>
                         <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                                class="btn btn-default brandedButton">Subscribe to my newsletter
+                                class="btn btn-default brandedButton">Get my newsletter
                         </button>
                     </form>
 
@@ -111,10 +111,13 @@ $alts = getAltTagsFromInstagramFeed($feed);
 $firstImgSrc = $imgs[1][1]; // the first in the array links to the whole account
 $firstImgAlt = $alts[1][0]; // that first src does not have an alt, so the zeroth one is for the desired image
 $firstImgSrc .= "media"; // this get just the jpg, otherwise you get a whole BoB
+// make the redrawing of the instagram happen when the doc is ready.
 ?>
 <script>
-    document.getElementById("intagramImage").setAttribute("src", "<?= $firstImgSrc ?>");
-    document.getElementById("intagramImage").setAttribute("alt", "<?= $firstImgAlt ?>");
+    $(document).ready(function () {
+        document.getElementById("intagramImage").setAttribute("src", "<?= $firstImgSrc ?>");
+        document.getElementById("intagramImage").setAttribute("alt", "<?= $firstImgAlt ?>");
+    })
 </script>
 
 
