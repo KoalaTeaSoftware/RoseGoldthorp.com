@@ -68,7 +68,13 @@ a {
   text-shadow: 1px 1px $banner-text;
   margin: 0.5em;
   border-color: $banner-text;
-  color: white;
+  color: $nav_text;
+  text-align: center;
+}
+
+.brandedButton:hover {
+  //noinspection SassScssResolvedByNameOnly
+  color: $nav_text;
 }
 
 //noinspection SassScssResolvedByNameOnly
@@ -93,15 +99,16 @@ figcaption {
 
   //noinspection SassScssResolvedByNameOnly
   .nav-link {
-    background-color: lightgray;
-    border-color: $banner-text;
+    background-color: #d3d3d3;
+    border-bottom-color: #6d343d !important;
     font-weight: lighter;
+    color: #6d343d !important;
   }
 
   //noinspection SassScssResolvedByNameOnly,SassScssResolvedByNameOnly
   .nav-link.active {
     font-weight: bolder;
-    border-color: $banner-text $banner-text #fff;
+    border-color: $banner-text $banner-text #fff !important;
   }
 }
 

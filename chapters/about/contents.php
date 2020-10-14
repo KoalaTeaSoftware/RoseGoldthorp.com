@@ -23,7 +23,7 @@ if (isset($section) && ($section != "")) {
 $titleTag = "About Rose Goldthorp";
 ?>
     <h1>About Rose Goldthorp</h1>
-    <ul class="nav nav-tabs" id="rolesNav" role="tablist">
+    <ul class="nav nav-tabs nav-fill" id="rolesNav" role="tablist">
         <li class="nav-item">
             <a class="nav-link active" id="marketer-tab" data-toggle="tab" href="#marketer" role="tab"
                aria-controls="marketer"
@@ -56,17 +56,23 @@ $titleTag = "About Rose Goldthorp";
             </figure>
         </div>
         <div class="tab-pane fade" id="filmmaker" role="tabpanel" aria-labelledby="filmmaker-tab">
+            <div class="btn-group w-100" role="group" aria-label="Show Reels">
+                <a class="btn-block btn-lg brandedButton" href="https://youtu.be/sqYdZtcs1gE" target="_blank">Show&nbsp;Reel
+                    2014 - 2018</a>
+                <a class="btn-block btn-lg brandedButton" href="https://youtu.be/XJR9n8VbvoM" target="_blank">Show&nbsp;Reel
+                    2019</a>
+            </div>
+            <h2>Films On Release</h2>
             <p>Rose is releasing her fourth narrative feature film in 2020. She shoots her fifth feature, the first in
                 her comic fantasy feature cycle, The Greenlands, in London, next year, '21.
             </p>
-            <h2>Films On Release</h2>
             <?= /** @noinspection PhpUndefinedVariableInspection - defined in the included data file */
             makeFilmList($filmData); ?>
         </div>
     </div>
     <script>
         // make the back button operate as expected
-        $(document).ready(() => {
+        $(document).ready(function () {
             const url = window.location.href;
             if (url.indexOf("#") > 0) {
                 const activeTab = url.substring(url.indexOf("#") + 1);
@@ -78,7 +84,7 @@ $titleTag = "About Rose Goldthorp";
                 let newUrl = url.split("#")[0] + hash;
                 history.replaceState(null, null, newUrl);
             });
-        });
+        })
     </script>
 <?php
 
