@@ -39,7 +39,7 @@ if (isset($subSection) && ($subSection !== "")) {
 ?>
     <div id="filmDetails">
         <div class="jumbotron">
-            <h2 class="text-center" id="filmTitle"><?= $requiredFilm["title"] ?></h2>
+            <h1 class="text-center" id="filmTitle"><?= $requiredFilm["title"] ?></h1>
         </div>
         <div class="row">
             <div class="col-md-4" id="posterBox">

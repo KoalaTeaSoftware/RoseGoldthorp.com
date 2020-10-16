@@ -126,14 +126,14 @@ function makeFilmEntry($title, $extract, $subSectionName)
         <div class="row">
             <div class="col-md-2 d-flex flex-row justify-content-center align-items-center">
                 <a href="$linkHref" class="imgLinkToFilmDetails" title="More details about $title">
-                    <img alt="$title" class="img-fluid" src="$posterPathSpec">
+                    <img alt="$title" class="img-fluid filmThumbnail" src="$posterPathSpec">
                 </a>
             </div>
             <div class="col">
                 <h3 class="text-center">
                     <a href="$linkHref" title="More details about $title" class="textLinkToFilmDetails linkText newTabInd">$title </a>
                 </h3>
-                <p>$extract</p>
+                <p class="filmPuff">$extract</p>
             </div>
         </div>
     </div>
