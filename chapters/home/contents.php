@@ -37,13 +37,13 @@
         </div>
         <div class="col-md" id="rightCol">
             <div class="card align-items-center" id="instagramFeed">
-                <div class="card-body ">
+                <!--div class="card-body ">
                     <img id="intagramImage"
                          class="img-fluid img-thumbnail"
                          src="/ass/WorkingCogs.gif"
                          alt="On it's way ..."
                     >
-                </div>
+                </div-->
                 <div class="card-footer">
                     <a href="https://www.instagram.com/rosegoldthorpfilms/" target="_blank" rel="noopener nofollow">
                         Follow me on Instagram</a>
@@ -112,12 +112,13 @@ $firstImgSrc = $imgs[1][1]; // the first in the array links to the whole account
 $firstImgAlt = $alts[1][0]; // that first src does not have an alt, so the zeroth one is for the desired image
 $firstImgSrc .= "media"; // this get just the jpg, otherwise you get a whole BoB
 // make the redrawing of the instagram happen when the doc is ready.
-?>
-<script>
-    $(document).ready(function () {
-        document.getElementById("intagramImage").setAttribute("src", "<?= $firstImgSrc ?>");
-        document.getElementById("intagramImage").setAttribute("alt", "<?= $firstImgAlt ?>");
-    })
-</script>
+//<script>
+//    $(document).ready(function () {
+/*        document.getElementById("intagramImage").setAttribute("src", "<?= $firstImgSrc ?>");*/
+/*        document.getElementById("intagramImage").setAttribute("alt", "<?= $firstImgAlt ?>");*/
+//    })
+//</script>
+//?>
+
 
 
