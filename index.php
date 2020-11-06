@@ -78,6 +78,7 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
+    <link rel="preload" as="image" href="ass/WorkingCogs.gif">
 </head>
 <body class="container-fluid">
 <div id="furniture" class="row">
