@@ -75,8 +75,7 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" type="image/gif" sizes="16x16" href="/ass/logo@16px.gif">
     <!--suppress SpellCheckingInspection -->
-    <script async
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
 </head>

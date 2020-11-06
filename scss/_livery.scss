@@ -5,6 +5,8 @@ $nav_bg_gradient_dark: #88434e; // #ab5966;
 $nav_text: #ffffff;
 $nav_text_active: $banner-text;
 $link_colour: $banner-text;
+$fade_in_speed: 5s;
+$fade_out_speed: 30s;
 
 a {
   color: $link_colour;
@@ -29,4 +31,112 @@ a {
 .newTabInd {
   padding-right: 0.5rem;
   text-decoration: underline;
+}
+
+//-------------------------------------------------------------------
+.fade-in {
+  animation: fadeIn ease $fade_in_speed;
+  -webkit-animation: fadeIn ease $fade_in_speed;
+  -moz-animation: fadeIn ease $fade_in_speed;
+  -o-animation: fadeIn ease $fade_in_speed;
+  -ms-animation: fadeIn ease $fade_in_speed;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+//-------------------------------------------------------------------
+.fade-out {
+  animation: fadeout ease $fade_out_speed;
+  -webkit-animation: fadeout ease $fade_out_speed;
+  -moz-animation: fadeout ease $fade_out_speed;
+  -o-animation: fadeout ease $fade_out_speed;
+  -ms-animation: fadeout ease $fade_out_speed;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

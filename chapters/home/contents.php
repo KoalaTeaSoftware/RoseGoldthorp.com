@@ -6,7 +6,9 @@
                 let myObj = JSON.parse(this.responseText);
                 let el = document.getElementById('intagramImage');
                 el.setAttribute('src', myObj['imgList'][0]);
-                el.setAttribute('alt', myObj['altList'][0])
+                el.setAttribute('alt', myObj['altList'][0]);
+                el.setAttribute('title', myObj['altList'][0]);
+                el.setAttribute("class", "img-fluid img-thumbnail fade-in");
             }
         };
         xmlhttp.open("GET", "https://stage.rosegoldthorp.com/api/instagram/", true);
@@ -52,9 +54,10 @@
             <div class="card align-items-center" id="instagramFeed">
                 <div class="card-body ">
                     <img id="intagramImage"
-                         class="img-fluid img-thumbnail"
+                         class="img-thumbnail"
                          src="/ass/WorkingCogs.gif"
                          alt="On it's way ..."
+                         title="On it's way ..."
                     >
                 </div>
                 <div class="card-footer">
