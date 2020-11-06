@@ -19,7 +19,6 @@ error_log("============================================================");
  */
 function errorHandler($errNo, $errStr, $errFile, $errLine)
 {
-    /** @noinspection SpellCheckingInspection */
     error_log("\n-------------------------------------------\n" .
         "ErrStr: " . $errStr . "\n" .
         "Locn: " . $errFile . "\n" .
@@ -76,7 +75,8 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" type="image/gif" sizes="16x16" href="/ass/logo@16px.gif">
     <!--suppress SpellCheckingInspection -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <script async
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
 </head>

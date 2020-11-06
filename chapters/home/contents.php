@@ -1,4 +1,17 @@
 <section>
+    <script async>
+        let xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                let myObj = JSON.parse(this.responseText);
+                let el = document.getElementById('intagramImage');
+                el.setAttribute('src', myObj['imgList'][0]);
+                el.setAttribute('alt', myObj['altList'][0])
+            }
+        };
+        xmlhttp.open("GET", "https://stage.rosegoldthorp.com/api/instagram/", true);
+        xmlhttp.send();
+    </script>
     <div class="row align-items-center">
         <div class="col-md" id="leftCol">
             <div class="card" id="thisIsMe">
@@ -37,13 +50,13 @@
         </div>
         <div class="col-md" id="rightCol">
             <div class="card align-items-center" id="instagramFeed">
-                <!--div class="card-body ">
+                <div class="card-body ">
                     <img id="intagramImage"
                          class="img-fluid img-thumbnail"
                          src="/ass/WorkingCogs.gif"
                          alt="On it's way ..."
                     >
-                </div-->
+                </div>
                 <div class="card-footer">
                     <a href="https://www.instagram.com/rosegoldthorpfilms/" target="_blank" rel="noopener nofollow">
                         Follow me on Instagram</a>
@@ -102,23 +115,7 @@
         </div>
     </div>
 </section>
-<?php
-require_once "components/wpHandler.php";
-require_once "components/instagamHandler.php";
-$feed = readWPFeed("instagram");
-$imgs = getImgSourcesFromInstagramFeed($feed);
-$alts = getAltTagsFromInstagramFeed($feed);
-$firstImgSrc = $imgs[1][1]; // the first in the array links to the whole account
-$firstImgAlt = $alts[1][0]; // that first src does not have an alt, so the zeroth one is for the desired image
-$firstImgSrc .= "media"; // this get just the jpg, otherwise you get a whole BoB
-// make the redrawing of the instagram happen when the doc is ready.
-//<script>
-//    $(document).ready(function () {
-/*        document.getElementById("intagramImage").setAttribute("src", "<?= $firstImgSrc ?>");*/
-/*        document.getElementById("intagramImage").setAttribute("alt", "<?= $firstImgAlt ?>");*/
-//    })
-//</script>
-//?>
+
 
 
 

@@ -1,0 +1,4 @@
+RewriteEngine on
+
+# no matter what is being asked for send it to the API's front controller
+RewriteRule ^(.*)$ index.php?%{QUERY_STRING}  [NC]

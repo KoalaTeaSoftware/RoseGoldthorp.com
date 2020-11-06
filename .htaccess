@@ -7,14 +7,15 @@ RewriteRule ^index\.php$ - [NC,L]
 
 RewriteCond %{REQUEST_URI} !\.(png|gif|jpg|jpeg|svg|js|css|mp3|wav|txt|map|ico|pdf|xml)$ [NC]
 RewriteCond %{REQUEST_URI} !^/cms [NC]
+RewriteCond %{REQUEST_URI} !^/api [NC]
 RewriteCond %{REQUEST_URI} !sendmail\.php [NC]
 
 RewriteRule ^(.*)$ index.php?%{QUERY_STRING}  [NC]
 
 # initial quick fix for caching different resources
-# One year for image files - once in place, they are very unlikely to change
+# One year for image files - once in place, a change of picture is very likely to involve a changed name
 <filesMatch ".(jpg|jpeg|png|gif|ico)$">
-Header set Cache-Control "max-age=31536000, public"
+Header set Cache-Control "public, max-age=31536000, immutable"
 </filesMatch>
 ## One month for css and js - these are pretty stable, now
 <filesMatch ".(css|js)$">
