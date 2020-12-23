@@ -7,7 +7,7 @@ $filmData[] = [
     "text" => [
         "So that he can get to know her, a disillusioned young clerk tries for rockstardom.",
         "This is Rose's fourth, micro-budget, feature film. It is a musical feature. Main photography was Jan. 2019.",
-        "Rose Goldthorp who wrote this in 2018 at 19 years old, shot it at 20 yrs old, graduated from Auckland University and then moved to London, where she is waiting for her post-prod. team to finish their work. "
+        "Rose Goldthorp who wrote this in 2018 at 19 years old, shot it at 20 yrs old, graduated from Auckland University and then moved to London. This finished feature film is undergoing classification (2020). "
     ],
     "dia" => "https://player.vimeo.com/video/320412004",
     "links" => [
