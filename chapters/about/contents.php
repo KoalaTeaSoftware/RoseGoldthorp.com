@@ -48,7 +48,7 @@ $titleTag = "About Rose Goldthorp";
                 feature films.
             </p>
             <figure class="text-center">
-                <img src="/chapters/about/the-greenlands-home-page.JPG" class="img-fluid img-thumbnail"
+                <img src="/chapters/about/the-greenlands-home-page.01.jpg" class="img-fluid img-thumbnail"
                      alt="Screen grab of the-greenlands.com">
                 <figcaption>Rose's Transmedia Website
                     <a href="https://the-greenlands.com/" target="_blank"
