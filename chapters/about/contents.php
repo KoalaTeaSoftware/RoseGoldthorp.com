@@ -38,8 +38,7 @@ $titleTag = "About Rose Goldthorp";
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="marketer" role="tabpanel" aria-labelledby="marketer-tab">
             <p>Rose Goldthorp has a bachelor's degree in Communications with Film & TV and one year of a university
-                Marketing
-                foundation course.
+                Marketing foundation course.
             </p>
             <p>Below, you can see the front page of Rose's transmedia web site
                 <a href="https://the-greenlands.com/" target="_blank" title="Go to The Greenlands" class="newTabInd">"The
@@ -63,7 +62,7 @@ $titleTag = "About Rose Goldthorp";
                     2019</a>
             </div>
             <h2>Films On Release</h2>
-            <p>Rose is releasing her fourth narrative feature film in 2020. She shoots her fifth feature, the first in
+            <p>Rose is releasing her fifth narrative feature film in 2020. She shoots her sixth feature, the first in
                 her comic fantasy feature cycle, The Greenlands, in London, next year, '21.
             </p>
             <?= /** @noinspection PhpUndefinedVariableInspection - defined in the included data file */
