@@ -28,6 +28,11 @@ switch ($_SERVER['REQUEST_METHOD']) {
                 /** @noinspection PhpIncludeInspection */
                 require $_SERVER['DOCUMENT_ROOT'] . "/api/" . $chapter . "/responder.php";
                 exit();
+            case "films":
+                /** @noinspection PhpIncludeInspection */
+                require $_SERVER['DOCUMENT_ROOT'] . "/api/" . $chapter . "/responder.php";
+                exit();
+
             default:
                 $myClientTalker->sendPlain(400, "Unknown noun: " . $chapter);
                 exit();
