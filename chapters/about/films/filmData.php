@@ -11,12 +11,12 @@ $filmData[] = [
     ],
     "dia" => "https://player.vimeo.com/video/320412004",
     "links" => [
-        ["text" => "See the pitch trailer", "code" => "https://vimeo.com/rosegoldthorp/the-rocky-road-to-freedom"]
+        ["text" => "See the trailer", "code" => "https://youtu.be/O3QF2KpM-n8"]
     ]
 ];
 $filmData[] = [
     "title" => "Fleur's Secret",
-    "extract" => "Rose's fourth full-length (1&frac12; hrs), self-funded feature film is a drama set in a contemporary NZ farming community. Released Jan&nbsp;'19, it was awarded selections at two international festivals.",
+    "extract" => "Rose's  full-length (1&frac12; hrs), self-funded feature film is a drama set in a contemporary NZ farming community. Released Jan&nbsp;'19, it was awarded selections at two international festivals.",
     "text" => [
         "Fleur&#39;s Secret is set in a small farming community on the North Island of New Zealand. Helen flees her drunkard husband in Sydney, taking her daughter, Fleur, to stay with her on Grandpa's farm. 13 year old Fleur is blackmailed, while there, for a dreadful lie that she told. This film deals with the problems that alcohol can cause a family.",
         "This fourth feature (1&frac12; hrs) Fleur&#39;s Secret has been released to international film festivals, Jan. &#39;19.",
