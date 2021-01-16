@@ -74,7 +74,6 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" type="image/gif" sizes="16x16" href="/ass/logo@16px.gif">
     <link rel="icon" type="image/gif" sizes="320x320" href="/ass/logo@320px.gif">
-    <link rel="preload" as="image" href="/ass/WorkingCogs.gif">
 </head>
 <body class="container-fluid">
 <div id="furniture" class="row">
