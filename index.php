@@ -141,8 +141,21 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous">
 
-<div id="footer" class="row">
-    &nbsp;
-</div>
+<script>
+    $(document).ready(() => {
+        $('a[role="tab"]').on("click", (e) => {
+            history.pushState({}, null, e.target.href);
+        });
 
+        window.onpopstate = () => {
+            const currentlyHere = document.location.href;
+            if (currentlyHere.indexOf("#") > 0) {
+                const tabName = currentlyHere.substring(currentlyHere.indexOf("#") + 1);
+                const locator = '.nav[role="tablist"] a[href="#' + tabName + '"]';
+                $(locator).tab('show');
+            }
+        }
+    });
+</script>
+<div id="footer" class="row"></div>
 </body>

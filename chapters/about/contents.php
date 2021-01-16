@@ -69,6 +69,7 @@ $titleTag = "About Rose Goldthorp";
             makeFilmList($filmData); ?>
         </div>
     </div>
+
 <?php
 
 /**
