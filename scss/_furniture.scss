@@ -64,12 +64,14 @@ a {
 //noinspection SassScssResolvedByNameOnly
 .brandedButton {
   background-image: linear-gradient(to bottom, $nav_bg_gradient_light 0%, $nav_bg_gradient_dark 100%);
-  border-radius: .6rem;
-  text-shadow: 1px 1px $banner-text;
-  margin: 0.5em;
-  border-color: $banner-text;
   color: $nav_text;
+  text-shadow: 1px 1px $banner-text;
+  border-color: $banner-text;
+  box-shadow: 5px 5px $banner-text;
   text-align: center;
+  border-radius: 20px !important;
+  //width: fit-content;
+  //margin: auto;
 }
 
 .brandedButton:hover {

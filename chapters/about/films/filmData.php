@@ -11,7 +11,8 @@ $filmData[] = [
     ],
     "dia" => "https://player.vimeo.com/video/320412004",
     "links" => [
-        ["text" => "See the trailer", "code" => "https://youtu.be/O3QF2KpM-n8"]
+        ["text" => "See the trailer", "code" => "https://youtu.be/O3QF2KpM-n8"],
+        ["text" => 'Watch the movie', "code" => "https://gum.co/rockyroad"]
     ]
 ];
 $filmData[] = [

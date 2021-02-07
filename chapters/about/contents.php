@@ -56,9 +56,13 @@ $titleTag = "About Rose Goldthorp";
         </div>
         <div class="tab-pane fade" id="filmmaker" role="tabpanel" aria-labelledby="filmmaker-tab">
             <div class="btn-group w-100" role="group" aria-label="Show Reels">
-                <a class="btn-block btn-lg brandedButton" href="https://youtu.be/sqYdZtcs1gE" target="_blank">Show&nbsp;Reel
+                <a class="btn brandedButton"
+                   style="margin-left: 1rem; margin-right: 1rem; margin-bottom:1rem;width:50%"
+                   href="https://youtu.be/sqYdZtcs1gE" target="_blank">Show&nbsp;Reel
                     2014 - 2018</a>
-                <a class="btn-block btn-lg brandedButton" href="https://youtu.be/XJR9n8VbvoM" target="_blank">Show&nbsp;Reel
+                <a class="btn brandedButton"
+                   style="margin-left: 1rem;  margin-right: 1rem; margin-bottom:1rem;width:50%"
+                   href="https://youtu.be/XJR9n8VbvoM" target="_blank">Show&nbsp;Reel
                     2019</a>
             </div>
             <h2>Films On Release</h2>

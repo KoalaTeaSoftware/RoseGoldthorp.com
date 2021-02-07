@@ -110,5 +110,5 @@ if (isset($_GET)) {
                       class="form-control" onkeyup="showCount(this.value)"></textarea>
         </label>
     </div>
-    <button class="btn btn-primary brandedButton" type="submit" name="<?= $submitButtonIdName ?>">Send</button>
+    <button class="btn brandedButton" type="submit" name="<?= $submitButtonIdName ?>">Send</button>
 </form>
