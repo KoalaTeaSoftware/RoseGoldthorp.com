@@ -30,4 +30,25 @@
   #mc-embedded-subscribe-form {
     margin: auto !important;
   }
+
+  #cta {
+    p {
+      margin: .75rem;
+      font-size: x-large;
+      text-align: center;
+    }
+
+    a {
+      margin: .75rem;
+    }
+  }
+
+  ol {
+    list-style: none;
+
+    li {
+      margin-bottom: .3rem;
+    }
+  }
+;
 }

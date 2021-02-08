@@ -14,7 +14,7 @@
     </div>
     <div class="col-lg-6 col-sm d-none d-md-block">
         <figure>
-            <img src="/chapters/socialmedia/womenAtLaptop.jpg" class="img-fluid img-thumbnail"
+            <img src="/raw-assets/redundant%20stuff/socialmedia%20stuff/socialmedia/womenAtLaptop.jpg" class="img-fluid img-thumbnail"
                  alt="Working together to get things done">
         </figure>
     </div>

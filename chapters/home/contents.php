@@ -4,7 +4,7 @@
         xmlhttp.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
                 let myObj = JSON.parse(this.responseText);
-                let el = document.getElementById('intagramImage');
+                let el = document.getElementById('instagramImage');
                 el.setAttribute('src', myObj['imgList'][0]);
                 el.setAttribute('alt', myObj['altList'][0]);
                 el.setAttribute('title', myObj['altList'][0]);
@@ -49,24 +49,26 @@
                     </div>
                 </div>
             </div>
-            <script src="https://gumroad.com/js/gumroad.js"></script>
-            <a class="btn btn-block brandedButton"
-               style="margin-top: 1rem;"
-               href="https://gum.co/rockyroad"
-               target="_blank"
-               data-gumroad-single-product="true">
-                <span style="margin: 1rem; font-size: 3rem!important;">Buy the movie:<br>The Rocky Road</span>
-            </a>
+            <div id="cta">
+                <script src="https://gumroad.com/js/gumroad.js"></script>
+                <p>My movie The Rocky Road to Freedom is available now!</p>
+                <a class="btn btn-block brandedButton"
+                   style="margin-top: 1rem;"
+                   href="https://gum.co/rockyroad"
+                   target="_blank"
+                   data-gumroad-single-product="true">
+                    <span style="margin: 1rem; font-size: 3rem!important;">Buy the movie</span>
+                </a>
+            </div>
         </div>
         <div class="col-md" id="rightCol">
             <div class="card align-items-center" id="instagramFeed">
                 <div class="card-body ">
-                    <img id="intagramImage"
+                    <img id="instagramImage"
                          class="img-thumbnail"
                          src="/ass/WorkingCogs.gif"
                          alt="On it's way ..."
-                         title="On it's way ..."
-                    >
+                         title="On it's way ...">
                 </div>
                 <div class="card-footer">
                     <a href="https://www.instagram.com/rosegoldthorpfilms/" target="_blank" rel="noopener nofollow">
@@ -82,29 +84,35 @@
                     <h1>Welcome</h1>
                 </div>
                 <div class="card-body text-center">
-                    <p>We produce gripping content, customised to your requirements. Your own short films and web
-                        sites
-                        are directed, edited and produced by our own in-house team. Your own content is managed by
-                        your
-                        own account manager.
+                    <p>Hello and welcome to my web site. Have a mooch around and get an idea of what I'm up to, and drop
+                        me a line if you want to employ, collaborate with, or just contact me.
                     </p>
-                    <p>Our content ranges from the creation of your <b>web site</b>, through the provision of
-                        <b>blogs</b> and <b>videos</b>, to setting you up with your own <b>affiliate
-                            stores</b>.
+                    <p>I already have a producer, and the two sorts of collaborating that I have going on at the moment
+                        are:
+                    </p>
+                    <ol>
+                        <li>Podcasting (largely voice acting)</li>
+                        <li>Helping packaging, financing and selling my planned films, either the fantasy cycle
+                            (<a href="https://the-greenlands.com/" target="_blank">The Greenlands</a>), or my period
+                            brit lit features (see my <a href="/" target="_blank">Period Brit Lit chapter</a>)
+                        </li>
+                    </ol>
+                    <p> For quick reference, when I was a student, I made 5 feature films and co-wrote 12 other feature
+                        screenplays. As a schoolchild, I made 18 shorts. Since graduating, I have made 3 dramatic
+                        podcast seasons, launched and populated the-greenlands.com transmedia project, and am designing
+                        and planning my Period Brit. Lit. transmedia project.
                     </p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-
                     <form class="form-inline"
                           action="https://rosegoldthorp.us18.list-manage.com/subscribe/post?u=4f69f3e46ff085a594ff19706&amp;id=043e7cb483"
                           method="post"
                           target="_blank"
                           name="mc-embedded-subscribe-form"
                           id="mc-embedded-subscribe-form"
-                          novalidate
-                    >
+                          novalidate>
                         <div class="form-group">
                             <!--suppress HtmlFormInputWithoutLabel -->
                             <input id="mce-EMAIL" type="email" class="form-control" value="" name="EMAIL"
@@ -126,7 +134,3 @@
         </div>
     </div>
 </section>
-
-
-
-

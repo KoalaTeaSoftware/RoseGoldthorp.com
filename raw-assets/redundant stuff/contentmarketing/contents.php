@@ -39,7 +39,7 @@
     </div>
     <div class="row" id="picture">
         <figure class="align-content-center">
-            <img src="/chapters/contentmarketing/roseDirectingSilverville.jpg" class="img-fluid img-thumbnail"
+            <img src="/raw-assets/redundant%20stuff/contentmarketinguff/contentmarketing/roseDirectingSilverville.jpg" class="img-fluid img-thumbnail"
                  alt="Rose directing one of her earlier films (Silverville)">
             <figcaption>Rose directing one of her earlier films:
                 <!--suppress HtmlUnknownTarget -->

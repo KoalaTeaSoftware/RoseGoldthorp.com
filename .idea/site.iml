@@ -4,11 +4,13 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/comms" />
       <excludeFolder url="file://$MODULE_DIR$/wiki" />
+      <excludeFolder url="file://$MODULE_DIR$/raw-assets/redundant stuff" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
     <orderEntry type="library" name="popper.js" level="application" />
+    <orderEntry type="library" name="gumroad" level="application" />
   </component>
 </module>

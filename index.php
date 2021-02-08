@@ -9,6 +9,7 @@ set_error_handler('errorHandler', E_ALL | E_STRICT);
 if (file_exists($logFile)) {
     unlink($logFile);
 }
+
 error_log("============================================================");
 /**
  * The function used instead of the PHP default logging function. Its name is in the ini_set (above)
@@ -27,6 +28,7 @@ function errorHandler($errNo, $errStr, $errFile, $errLine)
         "-------------------------------------------\n");
 }
 
+$siteFileRoot = $_SERVER['DOCUMENT_ROOT'] . "/";
 //==========================================================================================================================
 $majorParts = explode('?', $_SERVER["REQUEST_URI"]);
 $pathElements = explode('/', $majorParts[0]);
@@ -35,17 +37,16 @@ $section = isset($pathElements[2]) ? $pathElements[2] : "";
 $subSection = isset($pathElements[3]) ? $pathElements[3] : "";
 //==============================================================================================================================
 if ((!isset($chapter)) || empty($chapter)) {
-    error_log("Special case, no chapter means home");
+//    error_log("Special case, no chapter means home");
     $chapter = "home";
 }
-$siteFileRoot = $_SERVER['DOCUMENT_ROOT'] . "/";
 $chapterFileRoot = $siteFileRoot . "chapters/" . $chapter . "/"; // for this site, an addon, the two can be the same
 $chapterContentsFileName = $chapterFileRoot . "contents.php";
-error_log("Chapter:" . $chapter);
-error_log("Section:" . $section);
-error_log("Subsection:" . $subSection);
-error_log("Site file root:" . $siteFileRoot);
-error_log("Chapter file root:" . $chapterFileRoot);
+//error_log("Chapter:" . $chapter);
+//error_log("Section:" . $section);
+//error_log("Subsection:" . $subSection);
+//error_log("Site file root:" . $siteFileRoot);
+//error_log("Chapter file root:" . $chapterFileRoot);
 //==============================================================================================================================
 if (!file_exists($chapterContentsFileName)) {
     error_log("No chapter contents defined at :" . $chapterContentsFileName . ": so resetting to home");
@@ -54,7 +55,6 @@ if (!file_exists($chapterContentsFileName)) {
 }
 //==============================================================================================================================
 $metaHtml = "";
-// ToDo: use section meta file if it exists
 $chapterMetaFileName = $chapterFileRoot . "meta.htm";
 // only look for extra meta tags if we are not on the home - this speeds home up slightly
 if (($chapter != "home") && (file_exists($chapterMetaFileName)) && ($data = file_get_contents($chapterMetaFileName)))
@@ -70,7 +70,7 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?= $metaHtml ?>
-    <title>Rose Goldthorp.com</title>
+    <title>Rose Goldthorp</title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" type="image/gif" sizes="16x16" href="/ass/logo@16px.gif">
     <link rel="icon" type="image/gif" sizes="320x320" href="/ass/logo@320px.gif">
@@ -79,39 +79,28 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
 <div id="furniture" class="row">
     <div id="banner">
         <img src="/ass/logo@320px.gif" alt="logo" id="logo">
-        Rose Goldthorp: <span id="subTitle">Social Media and Content Marketer</span>
+        Rose Goldthorp: <span id="subTitle">Content Maker</span>
     </div>
     <nav id="mainNav" class="navbar navbar-expand-md navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleableNavBar"
+                aria-controls="toggleableNavBar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link" id="homeNav" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <!--suppress HtmlUnknownTarget -->
-                    <a class="nav-link" id="contentmarketingNav" href="/contentmarketing">Content Marketing</a>
-                </li>
-                <li class="nav-item">
-                    <!--suppress HtmlUnknownTarget -->
-                    <a class="nav-link" id="socialmediaNav" href="/socialmedia">Social Media</a>
-                </li>
-                <li class="nav-item">
-                    <!--suppress HtmlUnknownTarget -->
-                    <a class="nav-link" id="pricingNav" href="/pricing">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <!--suppress HtmlUnknownTarget -->
-                    <a class="nav-link" id="aboutNav" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <!--suppress HtmlUnknownTarget -->
-                    <a class="nav-link" id="contactNav" href="/contact">Contact</a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="toggleableNavBar">
+            <div class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+                <!--suppress HtmlUnknownTarget -->
+                <a class="nav-item nav-link" id="homeNav" href="/">Home</a>
+                <!--suppress HtmlUnknownTarget -->
+                <a class="nav-item nav-link" id="aboutNav" href="/about">About</a>
+                <!--suppress HtmlUnknownTarget -->
+                <a class="nav-item nav-link" id="the-greenlandsNav" href="/the-greenlands">The Greenlands</a>
+                <!--suppress HtmlUnknownTarget -->
+                <a class="nav-item nav-link" id="period-brit-litNav" href="/period-brit-lit">Period Brit. Lit.</a>
+                <!--suppress HtmlUnknownTarget -->
+                <a class="nav-item nav-link" id="released-featuresNav" href="/released-features">Released Features</a>
+                <!--suppress HtmlUnknownTarget -->
+                <a class="nav-item nav-link" id="contactNav" href="/contact">Contact</a>
+            </div>
         </div>
     </nav>
 </div>
@@ -140,22 +129,5 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous">
-
-<script>
-    $(document).ready(() => {
-        $('a[role="tab"]').on("click", (e) => {
-            history.pushState({}, null, e.target.href);
-        });
-
-        window.onpopstate = () => {
-            const currentlyHere = document.location.href;
-            if (currentlyHere.indexOf("#") > 0) {
-                const tabName = currentlyHere.substring(currentlyHere.indexOf("#") + 1);
-                const locator = '.nav[role="tablist"] a[href="#' + tabName + '"]';
-                $(locator).tab('show');
-            }
-        }
-    });
-</script>
 <div id="footer" class="row"></div>
 </body>
