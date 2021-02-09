@@ -6,12 +6,12 @@ require_once("apiUtils/talkerToClient.class.php");
 if (file_exists("error_log"))
     unlink("./error_log");
 
-error_log("\n-------------------------------------------------------------------------------");
-error_log("Method is: " . $_SERVER['REQUEST_METHOD']);
-error_log("GET global contains: " . print_r($_GET, TRUE));
-error_log("\n-------------------------------------------------------------------------------");
-error_log("Server: " . print_r($_SERVER, TRUE));
-error_log("\n-------------------------------------------------------------------------------");
+//error_log("\n-------------------------------------------------------------------------------");
+//error_log("Method is: " . $_SERVER['REQUEST_METHOD']);
+//error_log("GET global contains: " . print_r($_GET, TRUE));
+//error_log("\n-------------------------------------------------------------------------------");
+//error_log("Server: " . print_r($_SERVER, TRUE));
+//error_log("\n-------------------------------------------------------------------------------");
 
 $myClientTalker = new TalkerToClient(); // this instance will be used if an error is encountered.
 

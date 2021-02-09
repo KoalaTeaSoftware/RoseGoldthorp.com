@@ -1,5 +1,5 @@
 <?php
-//https://rg.koalateasoftware.com/chapters/about/films/filmDetails/fleurs-secret/poster.jpg
+//https://rg.koalateasoftware.com/ass/filmDetails/public/fleurs-secret/poster.jpg
 //https://rg.koalateasoftware.com/chapters/about/films/secureFilmDetails/fleurs-secret/fleurs-secret-screenplay.pdf
 $filmData[] = [
     "title" => "The Rocky Road To Freedom",
@@ -26,9 +26,9 @@ $filmData[] = [
     ],
     "dia" => "https://player.vimeo.com/video/252835658",
     "links" => [
-        ["text" => "See the screenplay", "code" => "/chapters/about/films/secureFilmDetails/fleurs-secret/fleurs-secret-screenplay.pdf"],
+        ["text" => "See the screenplay", "code" => "/ass/filmDetails/public/fleurs-secret/fleurs-secret-screenplay.pdf"],
         ["text" => "See the trailer", "code" => "https://vimeo.com/rosegoldthorp/fleurssecretreleasetrailer"],
-        ["text" => "See the Press Kit", "code" => "/chapters/about/films/filmDetails/fleurs-secret/press-kit/press-kit.pdf"]
+        ["text" => "See the Press Kit", "code" => "/ass/filmDetails/public/fleurs-secret/press-kit/press-kit.pdf"]
     ]
 ];
 $filmData[] = [
@@ -45,8 +45,8 @@ $filmData[] = [
         ["text" => "Buy the DVD on Amazon", "code" => "https://www.amazon.com/dp/B07HN4B3VY"],
         ["text" => "Buy the movie on Amazon Prime", "code" => "https://www.amazon.co.uk/dp/B07FSGZBG6"],
         ["text" => "See the trailer", "code" => "https://vimeo.com/rosegoldthorp/a-ghost-in-corsets-trailer"],
-        ["text" => "See the Press Kit", "code" => "/chapters/about/films/filmDetails/a-ghost-in-corsets/press-kit/press-kit.pdf"]/*,
-        ["text" => "See the EPK", "code" => "http://www.rosegoldthorp.com/data/filmDetails/A-Ghost-In-Corsets/electronic-press-kit.html"]*/
+        ["text" => "See the Press Kit", "code" => "/ass/filmDetails/public/a-ghost-in-corsets/press-kit/press-kit.pdf"]/*,
+["text" => "See the EPK", "code" => "http://www.rosegoldthorp.com/data/filmDetails/A-Ghost-In-Corsets/electronic-press-kit.html"]*/
     ]
 ];
 $filmData[] = [
@@ -60,7 +60,7 @@ $filmData[] = [
     ],
     "dia" => "https://player.vimeo.com/video/122206958",
     "links" => [
-        ["text" => "See the screenplay", "code" => "/chapters/about/films/filmDetails/silverville/silverville-screenplay.pdf"],
+        ["text" => "See the screenplay", "code" => "/ass/filmDetails/public/silverville/silverville-screenplay.pdf"],
         ["text" => "See the trailer", "code" => "https://vimeo.com/145927698"],
         ["text" => "See the film on Vimeo", "code" => "https://vimeo.com/196796092"],
     ]
@@ -75,7 +75,7 @@ $filmData[] = [
     ],
     "dia" => "https://player.vimeo.com/video/121728989",
     "links" => [
-        ["text" => "See the Screenpay", "code" => "/chapters/about/films/filmDetails/watcher/watcher-screenplay.pdf"],
+        ["text" => "See the Screenpay", "code" => "/ass/filmDetails/public/watcher/watcher-screenplay.pdf"],
         ["text" => "See the trailer", "code" => "https://vimeo.com/143086831"],
         ["text" => "See the film on vimeo", "code" => "https://vimeo.com/142332872"]
     ]

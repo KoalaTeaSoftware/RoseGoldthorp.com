@@ -18,7 +18,7 @@
         <div class="col-md" id="leftCol">
             <div class="card" id="thisIsMe">
                 <div class="card-body">
-                    <img src="/chapters/home/rose.jpg" alt="This is me" id="me">
+                    <img src="/chapters/home/rose.jpg" alt="This is me" id="me" class="img-thumbnail">
                 </div>
             </div>
         </div>
@@ -51,8 +51,8 @@
             </div>
             <div id="cta">
                 <script src="https://gumroad.com/js/gumroad.js"></script>
-                <p>My movie The Rocky Road to Freedom is available now!</p>
-                <a class="btn btn-block brandedButton"
+                <p class="mt-4 mb-0">My movie The Rocky Road to Freedom is available now!</p>
+                <a class="btn btn-block brandedButton mt-0"
                    style="margin-top: 1rem;"
                    href="https://gum.co/rockyroad"
                    target="_blank"
@@ -71,7 +71,8 @@
                          title="On it's way ...">
                 </div>
                 <div class="card-footer">
-                    <a href="https://www.instagram.com/rosegoldthorpfilms/" target="_blank" rel="noopener nofollow">
+                    <a href="https://www.instagram.com/rosegoldthorpfilms/" target="_blank"
+                       rel="noopener nofollow" class="m-auto">
                         Follow me on Instagram</a>
                 </div>
             </div>
@@ -94,7 +95,8 @@
                         <li>Podcasting (largely voice acting)</li>
                         <li>Helping packaging, financing and selling my planned films, either the fantasy cycle
                             (<a href="https://the-greenlands.com/" target="_blank">The Greenlands</a>), or my period
-                            brit lit features (see my <a href="/" target="_blank">Period Brit Lit chapter</a>)
+                            brit lit features (see my <!--suppress HtmlUnknownTarget -->
+                            <a href="/period-brit-lit" target="_blank">Period Brit Lit chapter</a>)
                         </li>
                     </ol>
                     <p> For quick reference, when I was a student, I made 5 feature films and co-wrote 12 other feature
@@ -128,7 +130,6 @@
                                 class="btn btn-default brandedButton">Get my newsletter
                         </button>
                     </form>
-
                 </div>
             </div>
         </div>

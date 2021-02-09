@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="stage" uploadOnCheckin="c98388a9-e255-43fa-be39-84939e64cfb7" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="stage" uploadOnCheckin="c98388a9-e255-43fa-be39-84939e64cfb7" autoUploadExternalChanges="true" compareModeInSync="TIMESTAMP">
     <serverData>
       <paths name="live">
         <serverdata>

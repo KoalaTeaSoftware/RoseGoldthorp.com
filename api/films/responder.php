@@ -3,7 +3,8 @@
 [SCRIPT_FILENAME] => /home2/koalate1/public_html/rosegoldthorp.com.stage/api/index.php
 */
 /** @noinspection PhpIncludeInspection */
-require_once("../chapters/about/films/filmData.php");
+require_once("../ass/filmDetails/filmData.php");
+//require_once("../chapters/about/films/filmData.php");
 
 $myTalker = new TalkerToClient();
 // the variable $filmData is defined in the filmData.php file

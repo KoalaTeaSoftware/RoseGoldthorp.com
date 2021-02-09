@@ -7,7 +7,7 @@
             has made five feature films and over 18 shorts in her spare time while at school and university.
         </p>
     </div>
-    <div class="col-6"><img src="/chapters/home/rose.jpg" class="w-100" alt="Portrait of Rose Goldthorp">
+    <div class="col-6"><img src="/chapters/about/rose.jpg" class="w-100 img-thumbnail" alt="Portrait of Rose Goldthorp">
     </div>
     <div class="col">
         <p>Rose immigrated back to the UK, graduating in February 2020, and launched her transmedia website,
@@ -22,6 +22,3 @@
         </p>
     </div>
 </div>
-<?php
-$titleTag = "About Rose Goldthorp";
-?>

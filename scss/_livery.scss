@@ -9,7 +9,7 @@ $fade_in_speed: 5s;
 $fade_out_speed: 30s;
 
 a {
-  color: $link_colour;
+  color: $banner-text !important;
 }
 
 /* the following noInspections are just because it doen't actually know about them */

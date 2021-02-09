@@ -1,40 +1,46 @@
 <?php
-error_log("Entering the film details section");
+//error_log("Entering the film details section");
 /* some defaults so that this page can draw something */
 $titleTag = "Unknown Film";
 $posterPathSpec = "/ass/WorkingCogs.gif";
 $requiredFilm["title"] = "Unknown Film";
-$requiredFilm["text"] = ['Please go back to the <a href="/about">About</a> page and try again.'];
+/** @noinspection HtmlUnknownTarget */
+$requiredFilm["text"] = ['Please go back to the <a href="/released-features">Released Features</a> page and try again.'];
 $requiredFilm["links"] = [];
 $requiredFilm["dia"] = "";
 /* ends defaults */
-if (isset($subSection) && ($subSection !== "")) {
+
+/** @var string $filmDataAbsoluteRoot - defined in the chapter file that calls this file */
+/** @var string $subSection - defined in index.php */
+$thisFilmAbsoluteRoot = $filmDataAbsoluteRoot . $subSection;
+/** @var string $filmDataRelativeRoot */
+$thisFilmRelativeRoot = $filmDataRelativeRoot . $subSection;
+
+// just for robustness, check the parameters
+if (!isset($subSection) || ($subSection === ""))
+    error_log("The section has not been define, so how can I show it?");
+elseif (!is_dir($thisFilmAbsoluteRoot))
+    error_log($thisFilmAbsoluteRoot . ": does not give known directory");
+else {
+    // There appears to be no reason why we can't display the details for this film
+    /** @var string $filmDefinitionsAbsoluteRoot defined in the calling file */
+    /** @noinspection PhpIncludeInspection */
+    require_once($filmDefinitionsAbsoluteRoot . "filmData.php");
+
     /** @noinspection PhpUndefinedVariableInspection */
-    $filmDetailsFileRoot = $sectionFileRoot;  // defined in the about contents page
-    $filmDetailsFileRoot .= "filmDetails/" . $subSection;
+    $retrievedData = findByNiceName($filmData, $subSection);
 
-    if (!is_dir($filmDetailsFileRoot)) {
-        error_log($filmDetailsFileRoot . ": is not a know directory");
+    if ($retrievedData == null) {
+        error_log("Unknown-film:" . $subSection . ":");
     } else {
-        $posterPathSpec = "/chapters/about/films/filmDetails/" . $subSection . "/poster.jpg";
-
-        if (!file_exists($posterPathSpec)) {
-            error_log("Poster does not exist :" . $posterPathSpec . ": so a default will be shown.");
-        }
-
-        require_once "chapters/about/films/filmData.php";
-
-        /** @noinspection PhpUndefinedVariableInspection */
-        $retrievedData = findByNiceName($filmData, $subSection);
-
-        if ($retrievedData == null) {
-            error_log("Unknown-film:" . $subSection . ":");
-        } else {
-            $requiredFilm = $retrievedData;
-        }
-        // now we know that there is a film with this data and directory ...
-        $titleTag = $requiredFilm["title"];
+        $requiredFilm = $retrievedData;
     }
+    // all posters are expected to be in the same place within the data store
+    // if there is not a suitable file, use the default placeholder
+    if (file_exists($thisFilmAbsoluteRoot . "/poster.jpg"))
+        $posterPathSpec = $thisFilmRelativeRoot . "/poster.jpg";
+
+    $titleTag = $requiredFilm["title"];
 }
 ?>
     <script src="https://gumroad.com/js/gumroad.js"></script>
@@ -62,13 +68,15 @@ if (isset($subSection) && ($subSection !== "")) {
         </div>
     </div>
 <?php
-function makeDescriptionBox($descr)
+function makeDescriptionBox($description)
 {
-    $len = sizeof($descr);
+    $len = sizeof($description);
     $html = "";
 
-    for ($i = 0; $i < $len; $i++) {
-        $html .= "<p>" . $descr[$i] . "</p>";
+    for ($i = 0;
+         $i < $len;
+         $i++) {
+        $html .= "<p>" . $description[$i] . "</p>";
     }
     return $html;
 }
@@ -83,7 +91,9 @@ function makeLinkList($linkSet)
     $html = "";
     $len = sizeof($linkSet);
 
-    for ($i = 0; $i < $len; $i++) {
+    for ($i = 0;
+         $i < $len;
+         $i++) {
         $code = $linkSet[$i]["code"];
         $text = $linkSet[$i]["text"];
 

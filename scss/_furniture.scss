@@ -51,7 +51,7 @@ a {
   font-weight: bold;
   font-style: italic;
   //noinspection SassScssResolvedByNameOnly
-  color: $banner-text;
+  color: $banner-text !important;
 }
 
 .lead {
@@ -63,8 +63,8 @@ a {
 //noinspection SassScssResolvedByNameOnly
 .brandedButton {
   background-image: linear-gradient(to bottom, $nav_bg_gradient_light 0%, $nav_bg_gradient_dark 100%);
-  color: $nav_text;
-  text-shadow: 1px 1px $banner-text;
+  color: $banner-text !important;
+  text-shadow: 1px 1px black;
   border-color: $banner-text;
   box-shadow: 5px 5px $banner-text;
   text-align: center;

@@ -1,5 +1,4 @@
 <?php /** @noinspection PhpUndefinedVariableInspection */
-$titleTag = "Contact Me";
 $timeNow = gmdate('Ymdhms');
 echo '<p hidden id="stamp">' . $timeNow . '</p>';
 require_once "chapters/contact/constraints.php";
@@ -13,7 +12,7 @@ if (isset($_GET)) {
         $processingResult = str_replace(
             array("content-type", "bcc:", "to:", "cc:", "href"),
             "",
-            htmlspecialchars(trim($_GET['msg']), ENT_QUOTES, "UTF-8"));
+            htmlspecialchars(trim($_GET['msg'])));
         echo '<p id="resultDisplay" class="text-success jumbotron display-4 text-center">' . $processingResult . '</p>';
         return;
     }
@@ -21,7 +20,7 @@ if (isset($_GET)) {
         $processingResult = str_replace(
             array("content-type", "bcc:", "to:", "cc:", "href"),
             "",
-            htmlspecialchars(trim($_GET['errors']), ENT_QUOTES, "UTF-8"));
+            htmlspecialchars(trim($_GET['errors']), ENT_QUOTES));
         $resultDisplayCssClass = 'class="text-warning"';
         // todo: think about highlighting faulty fields
     }
@@ -67,48 +66,44 @@ if (isset($_GET)) {
     <input hidden id="whadyano" value="<?= $timeNow ?>">
 
     <div class="form-group">
-        <label for="<?= $nameFieldName ?>">Your Name</label>
         <input required id="<?= $nameFieldName ?>" name="<?= $nameFieldName ?>" type="text"
                maxlength="<?= $maxNameLength ?>"
                pattern="<?= $nameRegex ?>"
                placeholder="Please tell me your name"
-               aria-describedby="nameHelp" class="form-control">
-        <small class="form-text text-muted" id="nameHelp">Please tell me your name.</small>
+               class="form-control">
     </div>
     <div class="form-group">
-        <label for="<?= $email1FieldName ?>">Email address</label>
         <input required id="<?= $email1FieldName ?>" name="<?= $email1FieldName ?>" type="email"
                maxlength="<?= $maxEmailLength ?>"
-               placeholder="Please enter your email"
+               placeholder="Please enter your email address"
                onblur="checkEmails()"
-               aria-describedby="emailHelp" class="form-control">
-        <small class="form-text text-muted" id="emailHelp">We'll never share your email with anyone
-            else.</small>
+               class="form-control">
+
     </div>
     <div class="form-group">
-        <label for="<?= $email2FieldName ?>">Email address confirmation</label>
         <input required id="<?= $email2FieldName ?>" name="<?= $email2FieldName ?>" type="email"
                maxlength="<?= $maxEmailLength ?>"
                placeholder="Please re-enter your email"
                onblur="checkEmails()"
-               aria-describedby="emailConfHelp" class="form-control">
-        <small class="form-text text-muted" id="emailConfHelp">Please type it again, just to check.</small>
+               class="form-control">
     </div>
 
     <div class="form-group">
-        <label for="<?= $subjectFieldName ?>">Subject</label>
         <input required id="<?= $subjectFieldName ?>" name="<?= $subjectFieldName ?>" type="text"
                maxlength="<?= $maxSubjectLength ?>"
                placeholder="RE: something ..."
-               aria-describedby="subjectHelp" class="form-control">
-        <small class="form-text text-muted" id="subjectHelp">Please provide a subject.</small>
+               class="form-control">
     </div>
     <div class="form-group">
         <label>Your Message: (chars left: <span id="letterCount"><?= $msgMaxLen ?></span>)
-            <textarea required id="<?= $messageFieldName ?>" name="<?= $messageFieldName ?>"
-                      minlength="<?= $msgMinLen ?>" maxlength="<?= $msgMaxLen ?>" rows="5" cols="180"
-                      class="form-control" onkeyup="showCount(this.value)"></textarea>
+            <textarea required
+                      id="<?= $messageFieldName ?>" name="<?= $messageFieldName ?>"
+                      minlength="<?= $msgMinLen ?>" maxlength="<?= $msgMaxLen ?>" rows="5" cols="200"
+                      class="form-control"
+                      onkeyup="showCount(this.value)">
+            </textarea>
         </label>
     </div>
-    <button class="btn brandedButton" type="submit" name="<?= $submitButtonIdName ?>">Send</button>
+    <button class="btn brandedButton" type="submit" name="<?= $submitButtonIdName ?>" style="font-size: x-large"> Send
+    </button>
 </form>
