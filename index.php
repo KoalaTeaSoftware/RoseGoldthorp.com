@@ -71,7 +71,7 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?= $metaHtml ?>
     <title>Rose Goldthorp</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/stylesV2.css">
     <link rel="icon" type="image/gif" sizes="16x16" href="/ass/logo@16px.gif">
     <link rel="icon" type="image/gif" sizes="320x320" href="/ass/logo@320px.gif">
 </head>
