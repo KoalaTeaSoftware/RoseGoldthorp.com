@@ -3,7 +3,7 @@
 //https://rg.koalateasoftware.com/chapters/about/films/secureFilmDetails/fleurs-secret/fleurs-secret-screenplay.pdf
 $filmData[] = [
     "title" => "The Rocky Road To Freedom",
-    "extract" => "Rose's fifth feature, shot in Jan. 2019, will be released to festivals in 2021. Gabriel is a rather shy clerk who becomes besotted with Mai, a young musician who is, unbeknown to him, also a prostitute. Gabriel, with his best friend Tom, forms a rock band, 'The Rocky Road', in order to attract Mai's attention. Things get complicated.",
+    "extract" => "Rose's fifth feature, shot in Jan. 2019, was released to festivals in early 2021. Gabriel is a rather shy clerk who becomes besotted with Mai, a young musician who is, unbeknown to him, also a prostitute. Gabriel, with his best friend Tom, forms a rock band, 'The Rocky Road', in order to attract Mai's attention. Things get complicated.",
     "text" => [
         "So that he can get to know her, a disillusioned young clerk tries for rockstardom.",
         "This is Rose's fifth, micro-budget, feature film. It is a musical feature. Main photography was Jan. 2019.",
