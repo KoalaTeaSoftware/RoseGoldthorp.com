@@ -1,10 +1,10 @@
 <h1>The Period Brit. Lit. Project</h1>
 <div class="row align-items-center">
     <div class="col">
-        <p>In mid 2021, I am also launching another transmedia project:
+        <p>I have just launched another transmedia project:
             <a href="https://thedailydilettante.com/" target="_blank">The Daily Dilettante</a>. Again involving various
             social media platforms and also, eventually, its own web site, as the project's own 'mother ship'. Podcasts
-            are also being considered.
+            will start in the new year.
         </p>
     </div>
     <div class="col col-6">
