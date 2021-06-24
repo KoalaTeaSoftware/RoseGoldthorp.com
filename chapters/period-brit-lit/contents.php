@@ -15,9 +15,8 @@
         </figure>
     </div>
     <div class="col">
-        <p>I am busy co-adapting various period Brit lit novels (I have already co-adapted 3) with a view, eventually,
-            to
-            making these adaptations as films and TV mini-series.
+        <p>I am busy co-adapting various period Brit lit novels (I have already co-adapted 5 period novels) with a view,
+            eventually, to making these adaptations as films and TV mini-series.
         </p>
         <p>I am concentrating on Thomas Hardy's three Novels of Ingenuity, and the last three of Trollope's Barchester
             Chronicles, at the moment.
