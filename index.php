@@ -79,7 +79,7 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
 <div id="furniture" class="row">
     <div id="banner">
         <img src="/ass/logo@320px.gif" alt="logo" id="logo">
-        Rose Goldthorp: <span id="subTitle">Content Maker</span>
+        Rose Goldthorp: <span id="subTitle">Artist and Film Maker</span>
     </div>
     <nav id="mainNav" class="navbar navbar-expand-md navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleableNavBar"
