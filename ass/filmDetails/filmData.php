@@ -7,7 +7,7 @@ $filmData[] = [
     "text" => [
         "So that he can get to know her, a disillusioned young clerk tries for rockstardom.",
         "This is Rose's fifth, micro-budget, feature film. It is a musical feature. Main photography was Jan. 2019.",
-        "Rose Goldthorp who wrote this in 2018 at 19 years old, shot it at 20 yrs old, graduated from Auckland University and then moved to London. This finished feature film is now doing the festival circuit (2021). "
+        "Rose Goldthorp wrote this in 2018 at 19 years old. She then &#39;PM&#39;ed, and directed it at 20 yrs old, graduated from Auckland University and then moved to London. This finished feature film is now doing the festival circuit (2021). "
     ],
     "dia" => "https://player.vimeo.com/video/320412004",
     "links" => [
@@ -21,7 +21,7 @@ $filmData[] = [
     "text" => [
         "Fleur&#39;s Secret is set in a small farming community on the North Island of New Zealand. Helen flees her drunkard husband in Sydney, taking her daughter, Fleur, to stay with her on Grandpa's farm. 13 year old Fleur is blackmailed, while there, for a dreadful lie that she told. This film deals with the problems that alcohol can cause a family.",
         "This fourth feature (1&frac12; hrs) Fleur&#39;s Secret has been released to international film festivals, Jan. &#39;19.",
-        "Rose Goldthorp wrote this screenplay at 16 years old, and did 3 revisions at 17 (working with a script consultant). Rose then &#39;PM&#39;ed and directed Fleur's Secret at 19 years old.",
+        "Rose Goldthorp wrote this screenplay at 16 years old, and did 3 revisions at 17 (working with a script consultant). Rose then &#39;PM&#39;ed, directed, and edited Fleur's Secret at 19 years old.",
         "2019: 2 sets of laurels have been awarded at international film festivals for Fleur&#39;s Secret."
     ],
     "dia" => "https://player.vimeo.com/video/252835658",
@@ -38,7 +38,7 @@ $filmData[] = [
         "<b><em>Sometimes ghosts go \"OOOOOOHHH ... really!\"</em></b>",
         "A drag queen ghost seems to be only adding to the stresses heaped upon Mother's shoulders, as they bow under the weight of a failing family. This ghost may really be the solution, however.",
         "This is Rose's third micro-budget feature film. It was released in September '18",
-        "Rose Goldthorp wrote A Ghost in Corsets at 17 years old and 'UPM'ed and directed it at 18."
+        "Rose Goldthorp wrote A Ghost in Corsets at 17 years old and 'PM'ed, directed and edited it at 18."
     ],
     "dia" => "https://player.vimeo.com/video/214127201",
     "links" => [
@@ -51,7 +51,7 @@ $filmData[] = [
 ];
 $filmData[] = [
     "title" => "Silverville",
-    "extract" => "Rose's second feature is an Edwardian period rom-com (¾ hour micro-budget). She wrote and shot this at ages 15 and 16.",
+    "extract" => "Rose's second feature is an Edwardian period rom-com (¾ hour micro-budget). She wrote, shot and edited this at ages 15 and 16.",
     "text" => [
         "Silverville is an Edwardian rom-com film (¾ hour micro-budget). It deals with a young woman being pressured into marrying a respectable lawyer who she is not at all interested in. The lawyer, however, finds that he is interested in our heroine's step-brother. Calamity ensues.",
         "Silverville, Rose's second feature, was shot over the Christmas 2014/15 with a cast of 26 and a crew of 5.",
@@ -67,7 +67,7 @@ $filmData[] = [
 ];
 $filmData[] = [
     "title" => "Watcher",
-    "extract" => "Rose's first feature is a sci-fi film (¾ hour micro-budget). She wrote and shot this at ages 14 and 15.",
+    "extract" => "Rose's first feature is a sci-fi film (¾ hour micro-budget). She wrote, shot and edited this at ages 14 and 15.",
     "text" => [
         "Watcher is a sci-fi film (¾ hour micro-budget) that deals with the family loyalties of two young girls. They find, in the end, that their loyalty lies with the household AI, instead of with their father.",
         "This film was shot during the summer of 2013/14, in New Zealand. It has a cast of 34 and a crew of 5.",
