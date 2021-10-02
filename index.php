@@ -54,7 +54,8 @@ if (!file_exists($chapterContentsFileName)) {
     $chapterFileRoot = $siteFileRoot . "chapters/" . $chapter . "/";
 }
 //==============================================================================================================================
-$metaHtml = "";
+$metaHtml = '<meta name="description" content="Rose Goldthorp&#39;s web site.">
+<meta property="og:description" content="Rose Goldthorp&#39;s web site">';
 $chapterMetaFileName = $chapterFileRoot . "meta.htm";
 // only look for extra meta tags if we are not on the home - this speeds home up slightly
 if (($chapter != "home") && (file_exists($chapterMetaFileName)) && ($data = file_get_contents($chapterMetaFileName)))

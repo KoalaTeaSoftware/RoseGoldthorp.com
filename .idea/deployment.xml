@@ -8,14 +8,16 @@
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/comms" />
             <excludedPath local="true" path="$PROJECT_DIR$/wiki" />
-            <excludedPath local="true" path="$PROJECT_DIR$/Templates" />
-            <excludedPath local="true" path="$PROJECT_DIR$/scss" />
+            <excludedPath local="true" path="$PROJECT_DIR$/comms" />
             <excludedPath local="true" path="$PROJECT_DIR$/raw-assets" />
+            <excludedPath local="true" path="$PROJECT_DIR$/scss" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.ftpquota" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
             <excludedPath path="/cms" />
+            <excludedPath path="/scss" />
             <excludedPath path="/error_log" />
-            <excludedPath local="true" path="$PROJECT_DIR$/error_log" />
           </excludedPaths>
         </serverdata>
       </paths>
@@ -29,6 +31,9 @@
             <excludedPath local="true" path="$PROJECT_DIR$/comms" />
             <excludedPath local="true" path="$PROJECT_DIR$/raw-assets" />
             <excludedPath local="true" path="$PROJECT_DIR$/scss" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.ftpquota" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
           </excludedPaths>
         </serverdata>
       </paths>

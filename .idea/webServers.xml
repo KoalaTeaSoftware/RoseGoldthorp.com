@@ -9,7 +9,7 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
-      <webServer id="c98388a9-e255-43fa-be39-84939e64cfb7" name="live" url="http://rosegoldthorp.com/">
+      <webServer id="de6d9a63-53f9-48ff-a7e9-6d6a58904158" name="live" url="http://dev.rosegoldthorp.com/">
         <fileTransfer host="ftp.koalateasoftware.com" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />

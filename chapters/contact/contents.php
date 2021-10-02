@@ -1,4 +1,6 @@
-<?php /** @noinspection PhpUndefinedVariableInspection */
+<?php
+/** ToDo: replace this with something like the nicer forms on, say Daily Dilettante.  */
+/** @noinspection PhpUndefinedVariableInspection */
 $timeNow = gmdate('Ymdhms');
 echo '<p hidden id="stamp">' . $timeNow . '</p>';
 require_once "chapters/contact/constraints.php";
@@ -58,6 +60,8 @@ if (isset($_GET)) {
         return checkEmails(); //until I can think of more things
     }
 </script>
+
+<h1>Contact Me</h1>
 <p>If you don't already know my email, please write to me using this form (please use all fields)</p>
 
 <!--suppress HtmlUnknownTarget -->
@@ -100,8 +104,7 @@ if (isset($_GET)) {
                       id="<?= $messageFieldName ?>" name="<?= $messageFieldName ?>"
                       minlength="<?= $msgMinLen ?>" maxlength="<?= $msgMaxLen ?>" rows="5" cols="200"
                       class="form-control"
-                      onkeyup="showCount(this.value)">
-            </textarea>
+                      onkeyup="showCount(this.value)"></textarea>
         </label>
     </div>
     <button class="btn brandedButton" type="submit" name="<?= $submitButtonIdName ?>" style="font-size: x-large"> Send
