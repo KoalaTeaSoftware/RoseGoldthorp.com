@@ -26,8 +26,10 @@
 <div class="row align-items-center mt-2">
     <div class="col">
         <p>I hope to make the feature film versions of my Greenlands Cycle as animations. I also want to direct the
-            period Brit. lit. scripts I have co-written as live action films, whenever a producer can find these films
-            some investments. Meanwhile, lots of you lovely people are helping me, on a collaborative basis, to get
-            these scripts out into the world as podcasts.</p>
+            period Brit. lit. feature / podcast scripts that I have co-written as live action films, whenever a producer
+            can find these films
+            some investments. Meanwhile, lots of you lovely people are helping me, on a voluntary, collaborative basis,
+            to get
+            these scripts out into the world as podcasts, and no budget features.</p>
     </div>
 </div>

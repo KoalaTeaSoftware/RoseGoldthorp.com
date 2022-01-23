@@ -57,6 +57,11 @@ if (strlen($message) < $msgMinLen) {
 if (strlen($message) > $msgMaxLen) {
     $error_message .= 'The message you entered appears to be too long.<br />';
 }
+/** @noinspection PhpUndefinedVariableInspection */
+if (!preg_match("/^" . $msgRegexp . "$/", $name)) {
+    $error_message .= 'Please use only letters, numbers, space, or hyphen in your message.<br />';
+}
+
 
 if (strlen($error_message) > 0) {
     expire($error_message);

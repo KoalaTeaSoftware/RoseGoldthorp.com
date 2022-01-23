@@ -1,19 +1,4 @@
 <section>
-    <script>
-        let xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200) {
-                let myObj = JSON.parse(this.responseText);
-                let el = document.getElementById('instagramImage');
-                el.setAttribute('src', myObj['imgList'][0]);
-                el.setAttribute('alt', myObj['altList'][0]);
-                el.setAttribute('title', myObj['altList'][0]);
-                el.setAttribute("class", "img-fluid img-thumbnail fade-in");
-            }
-        };
-        xmlhttp.open("GET", "https://stage.rosegoldthorp.com/api/instagram/", true);
-        xmlhttp.send();
-    </script>
     <div class="row align-items-center">
         <div class="col-md" id="leftCol">
             <div class="card" id="thisIsMe">
@@ -51,32 +36,35 @@
             </div>
             <div id="cta">
                 <script src="https://gumroad.com/js/gumroad.js"></script>
-                <p class="mt-4 mb-0">My movie The Rocky Road to Freedom is available now!</p>
-                <a class="btn btn-block brandedButton mt-0"
-                   style="margin-top: 1rem;"
-                   href="https://gum.co/rockyroad"
-                   target="_blank"
-                   data-gumroad-single-product="true">
-                    <span style="margin: 1rem; font-size: 3rem!important;">Buy the movie</span>
-                </a>
+                <p class="mt-4 mb-0">My movie The Rocky Road to Freedom is available
+                    now<a href="https://gum.co/rockyroad" target="_blank">from Gumroad!</a></p>
             </div>
         </div>
         <div class="col-md" id="rightCol">
             <div class="card align-items-center" id="instagramFeed">
-                <div class="card-body ">
-                    <img id="instagramImage"
-                         class="img-thumbnail"
-                         src="/ass/WorkingCogs.gif"
-                         alt="On it's way ..."
-                         title="On it's way ...">
+                <div class="card-body " style="width: 100%!important;">
+                    <iframe id="instaFrame"
+                            src="https://embedsocial.com/facebook_album/pro_hashtag/735060643f18df3227207dd85ac850a39ac3263d"
+                            width="100%" height="300em"
+                            title="My Greenlands Instagram account">
+                    </iframe>
                 </div>
                 <div class="card-footer">
-                    <a href="https://www.instagram.com/rosegoldthorpfilms/" target="_blank"
+                    <a href="https://www.instagram.com/the_greenlands/" target="_blank"
                        rel="noopener nofollow" class="m-auto">
                         Follow me on Instagram</a>
                 </div>
             </div>
         </div>
+        <script>
+            window.addEventListener('DOMContentLoaded', function (e) {
+                const thingy = document.querySelector("#instagramFeed > div.card-body > iframe")
+                if (document.body.clientWidth <= 1024)
+                    thingy.height = 300
+                else
+                    thingy.height = 500
+            })
+        </script>
     </div>
     <div class="row">
         <div class="col">
@@ -88,21 +76,18 @@
                     <p>Hello and welcome to my web site. Have a mooch around and get an idea of what I'm up to, and drop
                         me a line if you want to employ, collaborate with, or just contact me.
                     </p>
-                    <p>I already have a producer, and the two sorts of collaborating that I have going on at the moment
-                        are:
-                    </p>
+                    <p>The two sorts of work that I have going on at the moment are: </p>
                     <ol>
-                        <li>Podcasting (largely voice acting)</li>
-                        <li>Helping packaging, financing and selling my planned films, either the fantasy cycle
-                            (<a href="https://the-greenlands.com/" target="_blank">The Greenlands</a>), or my period
-                            brit lit features (see my <!--suppress HtmlUnknownTarget -->
-                            <a href="/period-brit-lit" target="_blank">Period Brit Lit chapter</a>)
+                        <li>Dramatic Podcasting (season four of The Greenlands, and the Wessex Dramas, starting in Jan.
+                            '22)
                         </li>
+                        <li>Making 'NO budget' Thomas Hardy feature films.</li>
                     </ol>
                     <p> For quick reference, when I was a student, I made 5 feature films and co-wrote 12 other feature
                         screenplays. As a schoolchild, I made 18 shorts. Since graduating, I have made 3 dramatic
-                        podcast seasons, launched and populated the-greenlands.com transmedia project, and am designing
-                        and planning my Period Brit. Lit. transmedia project.
+                        podcast seasons for the Greenlands. I have also launched and populated my the-greenlands.com
+                        storyworld, and started on my period Brit. lit work, whose first story world is that of Thomas
+                        Hardy's Wessex.
                     </p>
                 </div>
             </div>

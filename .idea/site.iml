@@ -13,5 +13,7 @@
     <orderEntry type="library" name="popper.js" level="application" />
     <orderEntry type="library" name="gumroad" level="application" />
     <orderEntry type="library" name="w3" level="application" />
+    <orderEntry type="library" name="gumroad" level="application" />
+    <orderEntry type="library" name="pixlee_widget_1_0_0" level="application" />
   </component>
 </module>

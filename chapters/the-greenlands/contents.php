@@ -16,8 +16,7 @@
             six screenplays.
         </p>
         <p class="mt-3">On the <a href="https://the-greenlands.com" target="_blank"> web site</a>, you can listen to the
-            podcasts of these features. Shortly, in early 2021, I will record the fourth feature in this cycle, "The
-            Battle of the Ley Lines"
+            podcasts of these features.
         </p>
     </div>
 </div>

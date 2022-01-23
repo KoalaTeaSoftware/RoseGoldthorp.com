@@ -14,3 +14,5 @@ $messageFieldName = "yourMessage";
 $submitButtonIdName = "sendMsg";
 
 $nameRegex = "[A-Za-z0-9 .\-]+";
+$msgRegexp = "/^[£a-z0-9'\"., -/?/)(]+$/i";
+

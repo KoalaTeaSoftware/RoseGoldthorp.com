@@ -15,9 +15,6 @@
             <excludedPath local="true" path="$PROJECT_DIR$/.ftpquota" />
             <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
             <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
-            <excludedPath path="/cms" />
-            <excludedPath path="/scss" />
-            <excludedPath path="/error_log" />
           </excludedPaths>
         </serverdata>
       </paths>
@@ -34,6 +31,7 @@
             <excludedPath local="true" path="$PROJECT_DIR$/.ftpquota" />
             <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
             <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="**.md" />
           </excludedPaths>
         </serverdata>
       </paths>
