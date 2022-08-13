@@ -7,25 +7,25 @@
                     <div class="row">
                         <div class="col">
                             <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="itsawarap/GRA_4447@460w.jpg"
-                                 srcset="itsawarap/GRA_4447@460w.jpg 460w, itsawarap/GRA_3790@230w.jpg 230w">
+                                 src="/ass/itsawarap/GRA_4447@460w.jpg"
+                                 srcset="/ass/itsawarap/GRA_4447@460w.jpg 460w, /ass/itsawarap/GRA_3790@230w.jpg 230w, /ass/itsawarap/GRA_3790@117w.jpg 117w">
                             <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="itsawarap/GRA_8242@460w.jpg"
-                                 srcset="itsawarap/GRA_8242@460w.jpg 460w, itsawarap/GRA_8242@230w.jpg 230w">
+                                 src="/ass/itsawarap/GRA_8242@460w.jpg"
+                                 srcset="/ass/itsawarap/GRA_8242@460w.jpg 460w, /ass/itsawarap/GRA_8242@230w.jpg 230w, /ass/itsawarap/GRA_8242@117w.jpg 117w">
                             <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="itsawarap/GRA_3790@460w.jpg"
-                                 srcset="itsawarap/GRA_3790@460w.jpg 460w, itsawarap/GRA_3790@230w.jpg 230w">
+                                 src="/ass/itsawarap/GRA_3790@460w.jpg"
+                                 srcset="/ass/itsawarap/GRA_3790@460w.jpg 460w, /ass/itsawarap/GRA_3790@230w.jpg 230w, /ass/itsawarap/GRA_3790@117w.jpg 117w">
                         </div>
                         <div class="col">
                             <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="itsawarap/GRA_8894@460w.jpg"
-                                 srcset="itsawarap/GRA_8894@460w.jpg 460w, itsawarap/GRA_8894@230w.jpg 230w">
+                                 src="/ass/itsawarap/GRA_8894@460w.jpg"
+                                 srcset="/ass/itsawarap/GRA_8894@460w.jpg 460w, /ass/itsawarap/GRA_8894@230w.jpg 230w, /ass/itsawarap/GRA_8894@117w.jpg 117w">
                             <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="itsawarap/GRA_8433@460w.jpg"
-                                 srcset="itsawarap/GRA_8433@460w.jpg 460w, itsawarap/GRA_8433@230w.jpg 230w">
+                                 src="/ass/itsawarap/GRA_8433@460w.jpg"
+                                 srcset="/ass/itsawarap/GRA_8433@460w.jpg 460w, /ass/itsawarap/GRA_8433@230w.jpg 230w, /ass/itsawarap/GRA_8433@117w.jpg 117w">
                             <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="itsawarap/r_n_m_Portland@460w.jpg"
-                                 srcset="itsawarap/r_n_m_Portland@460w.jpg 460w, itsawarap/r_n_m_Portland@230w.jpg 230w">
+                                 src="/ass/itsawarap/r_n_m_Portland@460w.jpg"
+                                 srcset="/ass/itsawarap/r_n_m_Portland@460w.jpg 460w, /ass/itsawarap/r_n_m_Portland@230w.jpg 230w, /ass/itsawarap/r_n_m_Portland@117w.jpg 117w">
                         </div>
                     </div>
                 </div>
