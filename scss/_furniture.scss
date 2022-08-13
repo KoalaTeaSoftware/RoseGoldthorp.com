@@ -5,41 +5,20 @@
   //noinspection SassScssResolvedByNameOnly
   color: $banner-text;
 
+  #main-content {
+    padding: 0;
+  }
+
   #banner {
-    margin: 0.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    text-align: center;
+    font-size: 6rem;
     font-weight: bold;
     line-height: 1;
-    font-size: 6rem;
-    @media (max-width: 767.98px) {
-      font-size: 3rem;
-    }
-    @media (max-width: 575.98px) {
-      font-size: 1.5rem;
-    }
+  }
 
-    #subTitle {
-      font-size: 35%;
-    }
-
-    #logo {
-      border-right: 5px;
-      vertical-align: bottom; // so that it looks nice wrt the words
-      border-color: white; // give a little bit of white all around the picture
-      border-style: solid;
-      border-radius: .25rem; // matches the radius given to cards
-      // the corresponds to the height of the big letters in this banner - these break-points correspond to the heights set for the
-      // #banner (above)
-      height: 6rem;
-      @media (max-width: 767.98px) {
-        height: 3rem;
-      }
-      @media (max-width: 575.98px) {
-        height: 1.5rem;
-      }
-    }
+  #subTitle {
+    text-align: center;
+    font-size: 2rem;
   }
 }
 

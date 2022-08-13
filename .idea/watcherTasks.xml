@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectTasksOptions">
     <TaskOptions isEnabled="true">
-      <option name="arguments" value="$FileName$:../$FileNameWithoutExtension$.v2.css --style=&quot;compressed&quot;" />
+      <option name="arguments" value="$FileName$:../$FileNameWithoutExtension$.v4.css --style=&quot;compressed&quot;" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />

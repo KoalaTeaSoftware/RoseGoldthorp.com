@@ -72,39 +72,44 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?= $metaHtml ?>
     <title>Rose Goldthorp</title>
-    <link rel="stylesheet" href="/stylesV2.css">
+    <link rel="stylesheet" href="/styles.v4.css">
     <link rel="icon" type="image/gif" sizes="16x16" href="/ass/logo@16px.gif">
     <link rel="icon" type="image/gif" sizes="320x320" href="/ass/logo@320px.gif">
     <!-- I was served from othersites -->
 </head>
 <body class="container-fluid">
 <div id="furniture" class="row">
-    <div id="banner">
-        <img src="/ass/logo@320px.gif" alt="logo" id="logo">
-        Rose Goldthorp: <span id="subTitle">Artist and Film Maker</span>
-    </div>
-    <nav id="mainNav" class="navbar navbar-expand-md navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleableNavBar"
-                aria-controls="toggleableNavBar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="toggleableNavBar">
-            <div class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
-                <!--suppress HtmlUnknownTarget -->
-                <a class="nav-item nav-link" id="homeNav" href="/">Home</a>
-                <!--suppress HtmlUnknownTarget -->
-                <a class="nav-item nav-link" id="aboutNav" href="/about">About</a>
-                <!--suppress HtmlUnknownTarget -->
-                <a class="nav-item nav-link" id="the-greenlandsNav" href="/the-greenlands">The Greenlands</a>
-                <!--suppress HtmlUnknownTarget -->
-                <a class="nav-item nav-link" id="period-brit-litNav" href="/period-brit-lit">Period Brit. Lit.</a>
-                <!--suppress HtmlUnknownTarget -->
-                <a class="nav-item nav-link" id="released-featuresNav" href="/released-features">Released Features</a>
-                <!--suppress HtmlUnknownTarget -->
-                <a class="nav-item nav-link" id="contactNav" href="/contact">Contact</a>
+    <div class="col" id="main-content">
+        <p id="banner">Rose Goldthorp</p>
+        <p id="subTitle">Artist, Film Maker & Enfant Terrible </p>
+        <nav id="mainNav" class="navbar navbar-expand-md navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleableNavBar"
+                    aria-controls="toggleableNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleableNavBar">
+                <div class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto">
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-item nav-link" id="homeNav" href="/">Home</a>
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-item nav-link" id="aboutNav" href="/about">About</a>
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-item nav-link" id="the-greenlandsNav" href="https://the-greenlands.com/"
+                       target="_blank">The
+                        Greenlands</a>
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-item nav-link" id="period-brit-litNav" href="https://thedailydilettante.com/"
+                       target="_blank">The Hardy Project</a>
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-item nav-link" id="released-featuresNav" href="/released-features">Released
+                        Features</a>
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-item nav-link" id="contactNav" href="/contact">Contact</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <img class="img-fluid" src="/ass/rose-peering-through-clapboard.jpg">
+    </div>
 </div>
 
 <div id="<?= $chapter ?>" class="container-fluid align-content-center">

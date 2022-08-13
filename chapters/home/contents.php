@@ -2,8 +2,32 @@
     <div class="row align-items-center">
         <div class="col-md" id="leftCol">
             <div class="card" id="thisIsMe">
+                <div class="card-header"><h2>Feature 6: Hardy's Regrets - It's A Wrap!</h2></div>
                 <div class="card-body">
-                    <img src="/chapters/home/rose.jpg" alt="This is me" id="me" class="img-thumbnail">
+                    <div class="row">
+                        <div class="col">
+                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
+                                 src="itsawarap/GRA_4447@460w.jpg"
+                                 srcset="itsawarap/GRA_4447@460w.jpg 460w, itsawarap/GRA_3790@230w.jpg 230w">
+                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
+                                 src="itsawarap/GRA_8242@460w.jpg"
+                                 srcset="itsawarap/GRA_8242@460w.jpg 460w, itsawarap/GRA_8242@230w.jpg 230w">
+                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
+                                 src="itsawarap/GRA_3790@460w.jpg"
+                                 srcset="itsawarap/GRA_3790@460w.jpg 460w, itsawarap/GRA_3790@230w.jpg 230w">
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
+                                 src="itsawarap/GRA_8894@460w.jpg"
+                                 srcset="itsawarap/GRA_8894@460w.jpg 460w, itsawarap/GRA_8894@230w.jpg 230w">
+                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
+                                 src="itsawarap/GRA_8433@460w.jpg"
+                                 srcset="itsawarap/GRA_8433@460w.jpg 460w, itsawarap/GRA_8433@230w.jpg 230w">
+                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
+                                 src="itsawarap/r_n_m_Portland@460w.jpg"
+                                 srcset="itsawarap/r_n_m_Portland@460w.jpg 460w, itsawarap/r_n_m_Portland@230w.jpg 230w">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,9 +1,5 @@
 #home {
 
-  #me {
-    width: 100%;
-  }
-
   #myCarousel {
     display: flex;
     align-items: center;
@@ -50,5 +46,8 @@
       margin-bottom: .3rem;
     }
   }
-;
+
+  #leftCol img {
+    padding: 0.25em;
+  }
 }

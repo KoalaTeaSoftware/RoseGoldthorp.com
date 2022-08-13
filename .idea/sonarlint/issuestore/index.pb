@@ -6,8 +6,6 @@ L
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-F
-chapters/home/meta.txt,a\d\ad12b87665cae621aeabf8d7b9672a449605a513
 M
 chapters/contact/contents.php,5\1\51a553aba7a9bbed9280b7595aafab4c6a19517a
 R
@@ -22,9 +20,5 @@ G
 api/films/responder.php,c\b\cb59b08005b9518f38543fe2b8a5f078e4479e9e
 =
 api/readme.md,4\a\4a8753f3f09de9124cd20d1d8980d0df7cb3c1a6
-D
-scss/_furniture.scss,2\6\267dab3f200475dae7401c69f723ccc85a55e688
-<
-stylesV2.css,8\b\8b066a85df34ecce3d024ed5b6715f825539a030
 ;
 sitemap.xml,9\9\991b411cc600215e9528c61790563f0521666950
