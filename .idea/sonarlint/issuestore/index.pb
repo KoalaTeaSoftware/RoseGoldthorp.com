@@ -22,3 +22,19 @@ G
 api/readme.md,4\a\4a8753f3f09de9124cd20d1d8980d0df7cb3c1a6
 ;
 sitemap.xml,9\9\991b411cc600215e9528c61790563f0521666950
+?
+scss/_home.scss,6\6\66443a4a958edc6dba3e56e588196e78114e5f4b
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+D
+scss/_furniture.scss,2\6\267dab3f200475dae7401c69f723ccc85a55e688
+=
+styles.v4.css,4\7\47309bde46c34ce991cec171f135cc84772fc0b7
+A
+styles.v4.css.map,0\5\05e0af8859dd3ffb3b3c8b1ccd9f6afefbbd7dcb
+P
+ raw-assets/fornt page/resize.bat,7\f\7f7924135b5b1ce21712ebf659d22da6329a4750
+9
+	index.php,b\b\bb6499b8e938f92a3695fff1afe57edea4b9efb7
+J
+chapters/home/contents.php,f\2\f2ca5383f4042791fa9753b8be08e440232f1991

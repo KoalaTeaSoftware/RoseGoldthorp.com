@@ -72,7 +72,7 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?= $metaHtml ?>
     <title>Rose Goldthorp</title>
-    <link rel="stylesheet" href="/styles.v4.css">
+    <link rel="stylesheet" href="/styles.v5.css">
     <link rel="icon" type="image/gif" sizes="16x16" href="/ass/logo@16px.gif">
     <link rel="icon" type="image/gif" sizes="320x320" href="/ass/logo@320px.gif">
     <!-- I was served from othersites -->
@@ -108,7 +108,7 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
                 </div>
             </div>
         </nav>
-        <img class="img-fluid" src="/ass/rose-peering-through-clapboard.jpg">
+        <!--        <img class="img-fluid" src="/ass/rose-peering-through-clapboard.jpg">-->
     </div>
 </div>
 

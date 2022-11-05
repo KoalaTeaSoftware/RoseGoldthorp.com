@@ -43,10 +43,10 @@
                             <img class="img-fluid" src="/chapters/home/carousel/02silverville.jpg"
                                  alt="Poster and clip for featurette Silverville">
                         </div>
-                        <div class="carousel-item">
+                        <!--div class="carousel-item">
                             <img class="img-fluid" src="/chapters/home/carousel/03aGhostInCorsets.jpg"
                                  alt="Poster and clip for feature A Ghost In Corsets">
-                        </div>
+                        </div-->
                         <div class="carousel-item">
                             <img class="img-fluid" src="/chapters/home/carousel/04fleur'sSecret.jpg"
                                  alt="Poster and clip for feature Fleur's Secret">
@@ -136,7 +136,7 @@
                                    value="">
                         </div>
                         <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                                class="btn btn-default brandedButton">Get my newsletter
+                                class="btn btn-default brandedButton ml-1"> Get my newsletter
                         </button>
                     </form>
                 </div>

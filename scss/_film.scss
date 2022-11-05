@@ -27,3 +27,13 @@
     }
   }
 }
+
+div#released-features > .card {
+  border-width: thick;
+  border-color: $banner-text;
+  text-align: center;
+
+  .card {
+    border-color: $banner-background;
+  }
+}
