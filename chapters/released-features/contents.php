@@ -10,7 +10,6 @@ if (isset($section) && ($section != "")) {
     $sectionFileRoot = $chapterFileRoot . $section . "/";
     $sectionFileContents = $sectionFileRoot . "contents.php";
     if (file_exists($sectionFileContents)) {
-        /** @noinspection PhpIncludeInspection */
         require_once $sectionFileContents;
         return;
     } else {
@@ -51,7 +50,7 @@ if (isset($section) && ($section != "")) {
                 <div class="row">
                     <div class="col-md-2 d-flex flex-row justify-content-center align-items-center">
                         <img alt="Hardy's Regrets" class="img-fluid filmThumbnail"
-                             src="/ass/filmDetails/public/hardys-regrets/thumb.jpg">
+                             src="/ass/hardys-regrets-final-poster.jpg">
                     </div>
                     <div class="col">
                         <h3> Hardy's Regrets (2022)</h3>
@@ -97,6 +96,8 @@ if (isset($section) && ($section != "")) {
                         </a>
                         <p class="filmPuff">
                             Rose's fifth feature, shot in Jan. 2019, was released to festivals in early 2021.
+                            It was awarded 'official selection' at three international
+                            festivals.
                         </p>
                         <p>
                             Gabriel is a rather shy clerk who becomes besotted with Mai, a young musician.
@@ -122,7 +123,7 @@ if (isset($section) && ($section != "")) {
                         <p class="filmPuff">
                             Rose's fourth full-length (1½ hrs), self-funded feature film is a drama set in a
                             contemporary
-                            NZ farming community. Released Jan '19, it was awarded selections at two international
+                            NZ farming community. Released Jan '19, it was awarded 'official selection' at two international
                             festivals. </p>
                     </div>
                 </div>

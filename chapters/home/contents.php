@@ -2,30 +2,12 @@
     <div class="row align-items-center">
         <div class="col-md" id="leftCol">
             <div class="card" id="thisIsMe">
-                <div class="card-header"><h2>Feature 6: Hardy's Regrets - It's A Wrap!</h2></div>
+                <div class="card-header"><h2>Feature 6: "Hardy's Regrets"<br>
+                        Preview screening: November 19th, RMT, Portland.</h2></div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
-                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="/ass/itsawarap/GRA_4447@460w.jpg"
-                                 srcset="/ass/itsawarap/GRA_4447@460w.jpg 460w, /ass/itsawarap/GRA_3790@230w.jpg 230w, /ass/itsawarap/GRA_3790@117w.jpg 117w">
-                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="/ass/itsawarap/GRA_8242@460w.jpg"
-                                 srcset="/ass/itsawarap/GRA_8242@460w.jpg 460w, /ass/itsawarap/GRA_8242@230w.jpg 230w, /ass/itsawarap/GRA_8242@117w.jpg 117w">
-                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="/ass/itsawarap/GRA_3790@460w.jpg"
-                                 srcset="/ass/itsawarap/GRA_3790@460w.jpg 460w, /ass/itsawarap/GRA_3790@230w.jpg 230w, /ass/itsawarap/GRA_3790@117w.jpg 117w">
-                        </div>
-                        <div class="col">
-                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="/ass/itsawarap/GRA_8894@460w.jpg"
-                                 srcset="/ass/itsawarap/GRA_8894@460w.jpg 460w, /ass/itsawarap/GRA_8894@230w.jpg 230w, /ass/itsawarap/GRA_8894@117w.jpg 117w">
-                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="/ass/itsawarap/GRA_8433@460w.jpg"
-                                 srcset="/ass/itsawarap/GRA_8433@460w.jpg 460w, /ass/itsawarap/GRA_8433@230w.jpg 230w, /ass/itsawarap/GRA_8433@117w.jpg 117w">
-                            <img class="img-fluid" alt="BTS from filming Hardy's Regrets"
-                                 src="/ass/itsawarap/r_n_m_Portland@460w.jpg"
-                                 srcset="/ass/itsawarap/r_n_m_Portland@460w.jpg 460w, /ass/itsawarap/r_n_m_Portland@230w.jpg 230w, /ass/itsawarap/r_n_m_Portland@117w.jpg 117w">
+                            <img src="/ass/hardys-regrets-final-poster.jpg" class="img-fluid" alt="The Hardy's Regrets poster">
                         </div>
                     </div>
                 </div>
@@ -81,7 +63,7 @@
             </div>
         </div>
         <script>
-            window.addEventListener('DOMContentLoaded', function (e) {
+            window.addEventListener('DOMContentLoaded', function () {
                 const thingy = document.querySelector("#instagramFeed > div.card-body > iframe")
                 if (document.body.clientWidth <= 1024)
                     thingy.height = 300

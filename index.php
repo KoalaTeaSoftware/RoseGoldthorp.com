@@ -65,7 +65,7 @@ else
 //==============================================================================================================================
 $titleTag = ucfirst(str_replace('-', ' ', $chapter));
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
