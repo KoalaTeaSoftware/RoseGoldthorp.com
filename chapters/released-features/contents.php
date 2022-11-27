@@ -60,8 +60,8 @@ if (isset($section) && ($section != "")) {
                             in the Weymouth / Portland area.
                         </p>
                         <p class="filmPuff">Rose is also making these film scripts as dramatic podcasts and,
-                            in November 2022, is about to record season four of the Wessex Dramas Project:
-                            The Well Beloved.
+                            in November 2022, she recorded season four of the Wessex Dramas Project:
+                            The Well Beloved. It will soon be available, along with her other podcasts, on
                             (<a href="https://thedailydilettante.com/podcasts"
                                 target="_blank"
                                 class="textLinkToFilmDetails linkText newTabInd">The Daily Dilettante </a>).
