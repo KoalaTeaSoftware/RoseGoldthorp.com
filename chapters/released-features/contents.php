@@ -67,7 +67,9 @@ if (isset($section) && ($section != "")) {
                                 class="textLinkToFilmDetails linkText newTabInd">The Daily Dilettante </a>).
                         </p>
                         <p>This feature is now available via
-                            <a href="https://gumroadrose.gumroad.com/l/hardysregrets" title="One a new tab on gumroad">Gumroad</a>
+                            <a href="https://gumroadrose.gumroad.com/l/hardysregrets"
+                               target="_blank"
+                               title="Open a new tab on gumroad">Gumroad</a>
                         </p>
                     </div>
                     <div class="col-md-4">
