@@ -43,7 +43,6 @@ else {
     $titleTag = $requiredFilm["title"];
 }
 ?>
-    <script src="https://gumroad.com/js/gumroad.js"></script>
     <div id="filmDetails">
         <div class="jumbotron">
             <h1 class="text-center" id="filmTitle"><?= $requiredFilm["title"] ?></h1>

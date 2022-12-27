@@ -47,9 +47,9 @@ if (isset($section) && ($section != "")) {
 
         <div class="card">
             <div class="card-body">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-md-2 d-flex flex-row justify-content-center align-items-center">
-                        <img alt="Hardy's Regrets" class="img-fluid filmThumbnail"
+                        <img alt="Hardy's Regrets poster" class="img-fluid filmThumbnail"
                              src="/ass/hardys-regrets-final-poster.jpg">
                     </div>
                     <div class="col">
@@ -65,6 +65,21 @@ if (isset($section) && ($section != "")) {
                             (<a href="https://thedailydilettante.com/podcasts"
                                 target="_blank"
                                 class="textLinkToFilmDetails linkText newTabInd">The Daily Dilettante </a>).
+                        </p>
+                        <p>This feature is now available via
+                            <a href="https://gumroadrose.gumroad.com/l/hardysregrets" title="One a new tab on gumroad">Gumroad</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video id="hrTrailer" controls="" preload="auto" class="embed-responsive-item w-100"
+                                   poster="/ass/filmDetails/public/hardys-regrets/posterImage.jpg">
+                                <source src="/ass/filmDetails/public/hardys-regrets/hardysRegretsTrailer@720p30.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="help m-auto" style="text-align: center; font-style: italic; font-size: small;">Not
+                            playing nicely on your iPad?<br>Try picture-in-picture, or maximising the player.
                         </p>
                     </div>
                 </div>
@@ -123,7 +138,8 @@ if (isset($section) && ($section != "")) {
                         <p class="filmPuff">
                             Rose's fourth full-length (1½ hrs), self-funded feature film is a drama set in a
                             contemporary
-                            NZ farming community. Released Jan '19, it was awarded 'official selection' at two international
+                            NZ farming community. Released Jan '19, it was awarded 'official selection' at two
+                            international
                             festivals. </p>
                     </div>
                 </div>
@@ -152,7 +168,17 @@ if (isset($section) && ($section != "")) {
 
         <div class="card">
             <div class="card-body">
-                <div class="row">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img alt="Silverville poster"
+                             class="img-fluid" src="/ass/filmDetails/public/silverville/poster.jpg">
+                    </div>
+                    <div class="col">
+                        <h3> Silverville </h3>
+                        <p class="filmPuff">
+                            Rose's second feature film is an Edwardian period rom-com (¾ hour micro-budget). She
+                            wrote, shot and edited this at ages 15 and 16.
+                    </div>
                     <div class="col-4 justify-content-center align-items-center">
                         <div class="embed-responsive embed-responsive-4by3">
                             <iframe class="embed-responsive-item"
@@ -160,12 +186,6 @@ if (isset($section) && ($section != "")) {
                             >
                             </iframe>
                         </div>
-                    </div>
-                    <div class="col">
-                        <h3> Silverville </h3>
-                        <p class="filmPuff">
-                            Rose's second feature film is an Edwardian period rom-com (¾ hour micro-budget). She
-                            wrote, shot and edited this at ages 15 and 16.
                     </div>
                 </div>
             </div>

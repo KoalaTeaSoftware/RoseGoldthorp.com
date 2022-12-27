@@ -1,18 +1,20 @@
 <section>
     <div class="row align-items-center">
+
         <div class="col-md" id="leftCol">
             <div class="card" id="thisIsMe">
-                <div class="card-header"><h2>Feature 6: "Hardy's Regrets"<br>
-                        Preview screening: November 19th, RMT, Portland.</h2></div>
+                <div class="card-header"><h2>Feature 6: "Hardy's Regrets"</h2></div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
-                            <img src="/ass/hardys-regrets-final-poster.jpg" class="img-fluid" alt="The Hardy's Regrets poster">
+                            <img src="/ass/hardys-regrets-final-poster.jpg" class="img-fluid"
+                                 alt="The Hardy's Regrets poster">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="col-md d-none d-md-block " id="centreCol">
             <div class="container">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
@@ -41,36 +43,24 @@
                 </div>
             </div>
             <div id="cta">
-                <script src="https://gumroad.com/js/gumroad.js"></script>
-                <p class="mt-4 mb-0">My movie The Rocky Road to Freedom is available
-                    now<a href="https://gum.co/rockyroad" target="_blank">from Gumroad!</a></p>
+                <p class="mt-4 mb-0">My most recent movie "Hardy's Regrets" is available now
+                    <a href="https://gumroadrose.gumroad.com/l/hardysregrets" target="_blank">from Gumroad!</a>
+                </p>
             </div>
         </div>
+
         <div class="col-md" id="rightCol">
-            <div class="card align-items-center" id="instagramFeed">
-                <div class="card-body " style="width: 100%!important;">
-                    <iframe id="instaFrame"
-                            src="https://embedsocial.com/facebook_album/pro_hashtag/735060643f18df3227207dd85ac850a39ac3263d"
-                            width="100%" height="300em"
-                            title="My Greenlands Instagram account">
-                    </iframe>
-                </div>
-                <div class="card-footer">
-                    <a href="https://www.instagram.com/the_greenlands/" target="_blank"
-                       rel="noopener nofollow" class="m-auto">
-                        Follow me on Instagram</a>
-                </div>
+            <div class="embed-responsive embed-responsive-16by9">
+                <video id="hrTrailer" controls="" preload="auto" class="embed-responsive-item w-100"
+                       poster="/ass/filmDetails/public/hardys-regrets/posterImage.jpg">
+                    <source src="/ass/filmDetails/public/hardys-regrets/hardysRegretsTrailer@720p30.mp4"
+                            type="video/mp4">
+                </video>
             </div>
+            <p class="help m-auto" style="text-align: center; font-style: italic; font-size: small;">Not
+                playing nicely on your iPad?<br>Try picture-in-picture, or maximising the player.
+            </p>
         </div>
-        <script>
-            window.addEventListener('DOMContentLoaded', function () {
-                const thingy = document.querySelector("#instagramFeed > div.card-body > iframe")
-                if (document.body.clientWidth <= 1024)
-                    thingy.height = 300
-                else
-                    thingy.height = 500
-            })
-        </script>
     </div>
     <div class="row">
         <div class="col">
