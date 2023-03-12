@@ -95,11 +95,13 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
                     <a class="nav-item nav-link" id="aboutNav" href="/about">About</a>
                     <!--suppress HtmlUnknownTarget -->
                     <a class="nav-item nav-link" id="the-greenlandsNav" href="https://the-greenlands.com/"
-                       target="_blank">The
-                        Greenlands</a>
+                       target="_blank">The Greenlands</a>
                     <!--suppress HtmlUnknownTarget -->
-                    <a class="nav-item nav-link" id="period-brit-litNav" href="https://thedailydilettante.com/"
-                       target="_blank">The Hardy Project</a>
+                    <a class="nav-item nav-link" id="dd-nav" href="https://thedailydilettante.com/"
+                       target="_blank">The Wessex Project</a>
+                    <!--suppress HtmlUnknownTarget -->
+                    <a class="nav-item nav-link" id="scott-nav" href="https://scottland.org//"
+                       target="_blank">The Scottland Project</a>
                     <!--suppress HtmlUnknownTarget -->
                     <a class="nav-item nav-link" id="released-featuresNav" href="/released-features">Released
                         Features</a>

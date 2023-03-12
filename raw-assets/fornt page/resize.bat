@@ -1,4 +1,3 @@
-magick GRA_3790.jpg  -resize 690x460\! GRA_3790@460w.jpg
 magick GRA_3790.jpg  -resize 345x230\! GRA_3790@230w.jpg
 magick GRA_3790.jpg  -resize 117x78\! GRA_3790@117w.jpg
 
