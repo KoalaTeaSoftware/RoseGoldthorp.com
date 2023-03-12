@@ -72,12 +72,10 @@
                     <p>Hello and welcome to my web site. Have a mooch around and get an idea of what I'm up to, and drop
                         me a line if you want to employ, collaborate with, or just contact me.
                     </p>
-                    <p>The two sorts of work that I have going on at the moment are: </p>
+                    <p>The two sorts of work that I have going on at the moment are:</p>
                     <ol>
-                        <li>Dramatic Podcasting (season four of The Greenlands, and the Wessex Dramas, starting in Jan.
-                            '22)
-                        </li>
-                        <li>Making 'NO budget' Thomas Hardy feature films.</li>
+                        <li>Dramatic Podcasting (The Wessex Dramas, and The Scottland Dramas)</li>
+                        <li>Making 'NO/LO budget' Thomas Hardy and Sir Walter Scott feature films.</li>
                     </ol>
                     <p> For quick reference, when I was a student, I made 5 feature films and co-wrote 12 other feature
                         screenplays. As a schoolchild, I made 18 shorts. Since graduating, I have made 3 dramatic

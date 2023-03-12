@@ -15,12 +15,17 @@
             <a href="https://the-greenlands.com/" target="_blank">The Greenlands</a>, for which (along with soc. med.
             platforms) I draw, write, upload and record my
             fantasy drama podcast; art work; digital storyboards (of the Greenlands films); illustrated blogs;
-            short films; and cartoon strips and affiliate “shops”. </p>
-        <p>I have also just launched my second transmedia
-            website about the other half of my work: period Brit. lit. films. From the new year (2022) onwards, I will
-            also be starting a podcast series on this project's web site
-            <a href="https://thedailydilettante.com/" target="_blank">The Daily Dilettante</a>
+            short films; and cartoon strips and affiliate “shops”.
         </p>
+        <p>In 2020, I launched <a href="https://thedailydilettante.com/" target="_blank">The Wessex Dramas Project</a>
+            with my co-writer, and in this, each year, we make one 'No/Lo Budget' feature film and two podcast seasons
+            of Thomas Hardy stories.
+        </p>
+        <p>In 2023, I also launched <a href="https://scottland.org/" target="_blank">The Scottland Dramas Project</a>
+            with my co-writer and in this project, each year, we make one 'No/Lo Budget' feature film and two podcast
+            seasons of Sir Walter Scott's stores.
+        </p>
+
     </div>
 </div>
 <div class="row align-items-center mt-2">
@@ -30,6 +35,7 @@
             can find these films
             some investments. Meanwhile, lots of you lovely people are helping me, on a voluntary, collaborative basis,
             to get
-            these scripts out into the world as podcasts, and no budget features.</p>
+            these scripts out into the world as podcasts, and no budget features.
+        </p>
     </div>
 </div>
