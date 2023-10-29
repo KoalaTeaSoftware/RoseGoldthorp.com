@@ -33,17 +33,71 @@ if (isset($section) && ($section != "")) {
             Rose's interests as an adult are increasingly tending towards lightheartedness and the exploration of
             Brit. Lit. masterpieces</p>
         <p class="card-text">
-            Rose has co-written 6 comic feature film screenplays set in her fantasy world of
+            Thus, Rose has co-written 6 comic feature film screenplays set in her fantasy world of
             <a href="https://the-greenlands.com/" class="textLinkToFilmDetails linkText newTabInd" target="_blank">The
                 Greenlands </a> (2020 - end '21). She has produced over 4 seasons of dramatic podcasts of these scripts.
         </p>
         <p class="card-text">
-            Rose has also now begun
-            <a href="https://thedailydilettante.com/features" target="_blank"
+            in 2022, Rose and her producer began
+            <a href="https://wessexdramas.org/" target="_blank"
                class="textLinkToFilmDetails linkText newTabInd">The Wessex Dramas Project </a>.
-            This will involve the annual production of a feature-film adaptation from Thomas Hardy's works, and
-            three dramatic podcasts from Thomas Hardy's works, as well. For example:
+            This involves the annual production of a feature-film adaptation from Thomas Hardy's works, and
+            a couple of dramatic podcasts from Thomas Hardy's works, as well.
         </p>
+        <p>In 2023, Rose and her producer began
+            <a href="https://scottlanddramas.org/" class="textLinkToFilmDetails linkText newTabInd" target="_blank">The
+                Scottland Dramas Project</a>.
+            This involves the annual production of a couple of Sir Walter Scott audio drama podcast seasons. Rose and
+            her producer are now seeking sponsorship / social enterprise investment for their slate of ten
+            of Scott's "Scottish Novels".</p>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-2 d-flex flex-row justify-content-center align-items-center">
+                        <img alt="Hardy's Hand of Fate poster" class="img-fluid filmThumbnail"
+                             src="/ass/filmDetails/public/hardys-hand-of-fate/hhof-poster@460w.jpg">
+                    </div>
+                    <div class="col">
+                        <h3> Hardy's Hand of Fate (2023)</h3>
+                        <p class="filmPuff">
+                            Feature film number 2 of The Wessex Dramas, <b>Hardy's Hand of Fate</b> (Rose's actual
+                            seventh feature film)
+                            is an anthology feature film exhibiting four of Hardy' short stories. This was shot as a 'no
+                            budget' feature
+                            in the Weymouth / Portland area.
+                        </p>
+                        <p class="filmPuff">Rose is also making these film scripts as dramatic podcasts and,
+                            in November 2023, she will be recording <b>"Fellow Townsmen"</b> which is season six of the
+                            Wessex
+                            Dramas Project's podcast series. This will soon be available, along with her other podcasts,
+                            on
+                            (<a href="https://wessexdramas.org/"
+                                target="_blank"
+                                class="textLinkToFilmDetails linkText newTabInd">https://wessexdramas.org/</a>).
+                        </p>
+                        <!--                        <p>This feature is now available via-->
+                        <!--                            <a href="https://gumroadrose.gumroad.com/l/hardysregrets"-->
+                        <!--                               target="_blank"-->
+                        <!--                               title="Open a new tab on gumroad">Gumroad</a>-->
+                        <!--                        </p>-->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video id="hofTrailer" controls="" preload="auto" class="embed-responsive-item w-100"
+                                   poster="/ass/filmDetails/public/hardys-hand-of-fate/poster-16by9wide.jpg">
+                                <source src="/ass/filmDetails/public/hardys-hand-of-fate/HandOfFate-Trailer-720p.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="help m-auto" style="text-align: center; font-style: italic; font-size: small;">Not
+                            playing nicely on your iPad?<br>Try picture-in-picture, or maximising the player.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div class="card">
             <div class="card-body">

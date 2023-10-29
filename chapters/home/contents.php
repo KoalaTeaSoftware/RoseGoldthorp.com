@@ -3,11 +3,11 @@
 
         <div class="col-md" id="leftCol">
             <div class="card" id="thisIsMe">
-                <div class="card-header"><h2>Feature 6: "Hardy's Regrets"</h2></div>
+<!--                <div class="card-header"><h2>Feature 7: "Hardy's Hand of Fate"</h2></div>-->
                 <div class="card-body">
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col">
-                            <img src="/ass/hardys-regrets-final-poster.jpg" class="img-fluid"
+                            <img src="/ass/filmDetails/public/hardys-hand-of-fate/hhof-poster@460w.jpg" class="img-fluid"
                                  alt="The Hardy's Regrets poster">
                         </div>
                     </div>
@@ -42,18 +42,18 @@
                     </div>
                 </div>
             </div>
-            <div id="cta">
-                <p class="mt-4 mb-0">My most recent movie "Hardy's Regrets" is available now
-                    <a href="https://gumroadrose.gumroad.com/l/hardysregrets" target="_blank">from Gumroad!</a>
-                </p>
-            </div>
+<!--            <div id="cta">-->
+<!--                <p class="mt-4 mb-0">My most recent movie "Hardy's Regrets" is available now-->
+<!--                    <a href="https://gumroadrose.gumroad.com/l/hardysregrets" target="_blank">from Gumroad!</a>-->
+<!--                </p>-->
+<!--            </div>-->
         </div>
 
         <div class="col-md" id="rightCol">
             <div class="embed-responsive embed-responsive-16by9">
                 <video id="hrTrailer" controls="" preload="auto" class="embed-responsive-item w-100"
-                       poster="/ass/filmDetails/public/hardys-regrets/posterImage.jpg">
-                    <source src="/ass/filmDetails/public/hardys-regrets/hardysRegretsTrailer@720p30.mp4"
+                       poster="/ass/filmDetails/public/hardys-hand-of-fate/poster-16by9wide.jpg">
+                    <source src="/ass/filmDetails/public/hardys-hand-of-fate/HandOfFate-Trailer-720p.mp4"
                             type="video/mp4">
                 </video>
             </div>
