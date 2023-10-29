@@ -61,11 +61,10 @@ if (isset($section) && ($section != "")) {
                     <div class="col">
                         <h3> Hardy's Hand of Fate (2023)</h3>
                         <p class="filmPuff">
-                            Feature film number 2 of The Wessex Dramas, <b>Hardy's Hand of Fate</b> (Rose's actual
-                            seventh feature film)
-                            is an anthology feature film exhibiting four of Hardy' short stories. This was shot as a 'no
-                            budget' feature
-                            in the Weymouth / Portland area.
+                            Feature film number 2 of The Wessex Dramas (Rose's actual
+                            seventh feature film), <b>Hardy's Hand of Fate</b> is an anthology feature film exhibiting
+                            four of Hardy' short stories. This was shot as a 'no budget' feature in the Weymouth /
+                            Portland area.
                         </p>
                         <p class="filmPuff">Rose is also making these film scripts as dramatic podcasts and,
                             in November 2023, she will be recording <b>"Fellow Townsmen"</b> which is season six of the
@@ -109,9 +108,9 @@ if (isset($section) && ($section != "")) {
                     <div class="col">
                         <h3> Hardy's Regrets (2022)</h3>
                         <p class="filmPuff">
-                            Feature film number 1 of The Wessex Dramas, <b>Hardy's Regrets</b> is an anthology
-                            feature film exhibiting four of Hardy' short stories. This was shot as a 'no budget' feature
-                            in the Weymouth / Portland area.
+                            Feature film number 1 of The Wessex Dramas (Rose's actual sixth feature film), <b>Hardy's
+                                Regrets</b> is an anthology feature film exhibiting four of Hardy' short stories. This
+                            was shot as a 'no budget' feature in the Weymouth / Portland area.
                         </p>
                         <p class="filmPuff">Rose is also making these film scripts as dramatic podcasts and,
                             in November 2022, she recorded season four of the Wessex Dramas Project:
