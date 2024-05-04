@@ -115,9 +115,9 @@ if (isset($section) && ($section != "")) {
                         <p class="filmPuff">Rose is also making these film scripts as dramatic podcasts and,
                             in November 2022, she recorded season four of the Wessex Dramas Project:
                             The Well Beloved. It will soon be available, along with her other podcasts, on
-                            (<a href="https://thedailydilettante.com/podcasts"
+                            (<a href="https://wessexdramas.org/podcasts"
                                 target="_blank"
-                                class="textLinkToFilmDetails linkText newTabInd">The Daily Dilettante </a>).
+                                class="textLinkToFilmDetails linkText newTabInd">The Wessex Dramas Project </a>).
                         </p>
                         <p>This feature is now available via
                             <a href="https://gumroadrose.gumroad.com/l/hardysregrets"

@@ -1,0 +1,30 @@
+RewriteEngine on
+
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^index\.php$ - [NC,L]
+
+RewriteCond %{REQUEST_URI} !\.(png|gif|jpg|jpeg|svg|js|css|mp3|mp4|wav|txt|map|ico|pdf|xml)$ [NC]
+RewriteCond %{REQUEST_URI} !^/cms [NC]
+RewriteCond %{REQUEST_URI} !^/api [NC]
+RewriteCond %{REQUEST_URI} !sendmail\.php [NC]
+
+RewriteRule ^(.*)$ index.php?%{QUERY_STRING}  [NC]
+
+# initial quick fix for caching different resources
+# One year for image files - once in place, a change of picture is very likely to involve a changed name
+<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "public, max-age=31536000, immutable"
+</filesMatch>
+## One month for css and js - these are pretty stable, now
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php81” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

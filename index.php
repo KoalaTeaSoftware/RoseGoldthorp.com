@@ -97,7 +97,7 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
                     <a class="nav-item nav-link" id="the-greenlandsNav" href="https://the-greenlands.com/"
                        target="_blank">The Greenlands</a>
                     <!--suppress HtmlUnknownTarget -->
-                    <a class="nav-item nav-link" id="dd-nav" href="https://thedailydilettante.com/"
+                    <a class="nav-item nav-link" id="dd-nav" href="https://wessexdramas.org/"
                        target="_blank">The Wessex Project</a>
                     <!--suppress HtmlUnknownTarget -->
                     <a class="nav-item nav-link" id="scott-nav" href="https://scottland.org//"

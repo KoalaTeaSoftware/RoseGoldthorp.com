@@ -3,7 +3,7 @@
     <div class="col">
         <p>I have just launched another transmedia project, again involving various
             social media platforms and its own web site,
-            <a href="https://thedailydilettante.com/" target="_blank">The Daily Dilettante</a>.
+            <a href="https://wessexdramas.org/" target="_blank">The Wessex Dramas Project</a>.
             Dramatic podcasts of Thomas Hardy adaptations start early in 2022.
         </p>
     </div>

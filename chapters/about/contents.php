@@ -17,7 +17,7 @@
             fantasy drama podcast; art work; digital storyboards (of the Greenlands films); illustrated blogs;
             short films; and cartoon strips and affiliate “shops”.
         </p>
-        <p>In 2022, I launched <a href="https://thedailydilettante.com/" target="_blank">The Wessex Dramas Project</a>
+        <p>In 2022, I launched <a href="https://wessexdramas.org/" target="_blank">The Wessex Dramas Project</a>
             with my co-writer, and in this, each year, we make one 'No/Lo Budget' feature film and two podcast seasons
             of Thomas Hardy stories.
         </p>
