@@ -3,11 +3,12 @@
 
         <div class="col-md" id="leftCol">
             <div class="card" id="thisIsMe">
-<!--                <div class="card-header"><h2>Feature 7: "Hardy's Hand of Fate"</h2></div>-->
+                <!--                <div class="card-header"><h2>Feature 7: "Hardy's Hand of Fate"</h2></div>-->
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col">
-                            <img src="/ass/filmDetails/public/hardys-hand-of-fate/hhof-poster@460w.jpg" class="img-fluid"
+                            <img src="/ass/filmDetails/public/hardys-hand-of-fate/hhof-poster@460w.jpg"
+                                 class="img-fluid"
                                  alt="The Hardy's Regrets poster">
                         </div>
                     </div>
@@ -42,11 +43,11 @@
                     </div>
                 </div>
             </div>
-<!--            <div id="cta">-->
-<!--                <p class="mt-4 mb-0">My most recent movie "Hardy's Regrets" is available now-->
-<!--                    <a href="https://gumroadrose.gumroad.com/l/hardysregrets" target="_blank">from Gumroad!</a>-->
-<!--                </p>-->
-<!--            </div>-->
+            <!--            <div id="cta">-->
+            <!--                <p class="mt-4 mb-0">My most recent movie "Hardy's Regrets" is available now-->
+            <!--                    <a href="https://gumroadrose.gumroad.com/l/hardysregrets" target="_blank">from Gumroad!</a>-->
+            <!--                </p>-->
+            <!--            </div>-->
         </div>
 
         <div class="col-md" id="rightCol">
@@ -78,10 +79,12 @@
                         <li>Making 'NO/LO budget' Thomas Hardy and Sir Walter Scott feature films.</li>
                     </ol>
                     <p> For quick reference, when I was a student, I made 5 feature films and co-wrote 12 other feature
-                        screenplays. As a schoolchild, I made 18 shorts. Since graduating, I have made 3 dramatic
-                        podcast seasons for the Greenlands. I have also launched and populated my the-greenlands.com
-                        storyworld, and started on my period Brit. lit work, whose first story world is that of Thomas
-                        Hardy's Wessex.
+                        screenplays. As a schoolchild, I made 18 shorts. Since graduating, I have made 5 dramatic
+                        podcast seasons from the 6 feature film screenplays in the-greenlands.com
+                        storyworld. I have now, also, started on my period Brit. lit work, whose first story world is
+                        that of Thomas Hardy's Wessex, by co-adapting Hardy stories for 9 Hardy feature films. The
+                        Wessex Dramas' Project (for which I am the resident filmmaker) releases its third Hardy feature
+                        film at the end of 2024.
                     </p>
                 </div>
             </div>

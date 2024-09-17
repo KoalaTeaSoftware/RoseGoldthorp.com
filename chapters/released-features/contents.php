@@ -47,8 +47,8 @@ if (isset($section) && ($section != "")) {
         <p>In 2023, Rose and her producer began
             <a href="https://scottlanddramas.org/" class="textLinkToFilmDetails linkText newTabInd" target="_blank">The
                 Scottland Dramas Project</a>.
-            This involves the annual production of a couple of Sir Walter Scott audio drama podcast seasons. Rose and
-            her producer are now seeking sponsorship / social enterprise investment for their slate of ten
+            This involves the annual production of a Sir Walter Scott audio drama podcast season. Rose and
+            her producer are now seeking investment for their slate of ten
             of Scott's "Scottish Novels".</p>
 
         <div class="card">
