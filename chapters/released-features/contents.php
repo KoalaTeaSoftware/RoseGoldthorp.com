@@ -149,7 +149,7 @@ if (isset($section) && ($section != "")) {
         <p class="card-title">
         <h2 class="card-title">Feature Films made as a Student in New Zealand</h2>
         <p class="card-text">
-            Rose made these <b><span style="font-size: larger">TWO</span> FEATURE FILMS</b> in her spare time while
+            Rose made these <b><span style="font-size: larger">Three</span> FEATURE FILMS</b> in her spare time while
             studying for her Bachelor's degree at Auckland University, New Zealand.
         </p>
 
@@ -192,8 +192,8 @@ if (isset($section) && ($section != "")) {
                         </a>
                         <p class="filmPuff">
                             Rose's fourth full-length (1½ hrs), self-funded feature film is a drama set in a
-                            contemporary
-                            NZ farming community. Released Jan '19, it was awarded 'official selection' at two
+                            contemporary NZ farming community.</p>
+                        <p> Released Jan '19, it was awarded 'official selection' at two
                             international
                             festivals. </p>
                     </div>
@@ -201,6 +201,26 @@ if (isset($section) && ($section != "")) {
             </div>
         </div>
 
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-2 d-flex flex-row justify-content-center align-items-center">
+                        <img alt="A Ghost in Corsets" class="img-fluid filmThumbnail"
+                             src="/ass/filmDetails/public/a-ghost-in-corsets/thumb.jpg">
+                    </div>
+                    <div class="col">
+                        <a href="released-features/films/a-ghost-in-corsets">
+                            <h3 class="textLinkToFilmDetails linkText newTabInd">A Ghost in Corsets</h3>
+                        </a>
+                        <p class="filmPuff">
+                            This was Rose's third full-length (hour and a half) no budget feature film,
+                            a social comedy set in New Zealand.</p>
+                        <p> It was awarded Official Selection at two
+                            international festivals and released in 2018.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -209,15 +229,13 @@ if (isset($section) && ($section != "")) {
         <p class="card-title">
         <h2 class="card-title">Feature Films made in the 6th form</h2>
         <p class="card-text">
-            These <b><span style="font-size: larger">THREE</span> FEATURE FILMS</b> were made by Rose in her spare
+            These <b><span style="font-size: larger">TWO</span> FEATURE FILMS</b> were made by Rose in her spare
             time while she was at school in New Zealand, in the 6th form.
         </p>
-        <p>They were made in line with the funding
-            requirements from the NZ Film Commission. This funding, however, was never forthcoming.
-        </p>
+
         <p>These films were:
-            a&nbsp;ghost&nbsp;film&nbsp;(1&frac12;hrs):&nbsp;<b>A&nbsp;GHOST&nbsp;IN&nbsp;CORSETS</b>;
-            a&nbsp;historic&nbsp;comedy&nbsp;(&frac34;hrs):&nbsp;<b>SILVERVILLE</b>; and a sci-fi (&frac34;hrs): <b>WATCHER</b>.
+            A&nbsp;historic&nbsp;comedy&nbsp;(&frac34;hrs):&nbsp;<b>SILVERVILLE</b>; and a sci-fi (&frac34;hrs):
+            <b>WATCHER</b>.
         </p>
         <p class="card-text"><b>Here is one example:- </b></p>
 

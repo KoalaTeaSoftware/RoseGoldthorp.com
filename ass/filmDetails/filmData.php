@@ -31,22 +31,22 @@ $filmData[] = [
         ["text" => "See the Press Kit", "code" => "/ass/filmDetails/public/fleurs-secret/press-kit/press-kit.pdf"]
     ]
 ];
+// AGIC does have an EPK, but the redirection has not been properly coded
 $filmData[] = [
     "title" => "A Ghost In Corsets",
     "extract" => "A modern-day, supernatural, dark comedic drama. This third feature is a self-funded, full-length (1&frac12; hrs) feature film in which a besieged family manages to win-out with the aid of unexpected support. Released September '18.",
     "text" => [
         "<b><em>Sometimes ghosts go \"OOOOOOHHH ... really!\"</em></b>",
         "A drag queen ghost seems to be only adding to the stresses heaped upon Mother's shoulders, as they bow under the weight of a failing family. This ghost may really be the solution, however.",
-        "This is Rose's third micro-budget feature film. It was released in September '18",
-        "Rose Goldthorp wrote A Ghost in Corsets at 17 years old and 'PM'ed, directed and edited it at 18."
+        "This is Rose's third 'no-budget' feature film. It is an hour and a half in length. A Ghost in Corsets was released in September '18",
+        "Rose Goldthorp wrote A Ghost in Corsets at 17 years old and 'PM'ed, directed and edited it at 18. This film was made in line with a funding recommendation from the NZ Film Commission, at a WIFT meeting. No funding was forthcoming, however."
     ],
     "dia" => "https://player.vimeo.com/video/214127201",
     "links" => [
         ["text" => "Buy the DVD on Amazon", "code" => "https://www.amazon.com/dp/B07HN4B3VY"],
         ["text" => "Buy the movie on Amazon Prime", "code" => "https://www.amazon.co.uk/dp/B07FSGZBG6"],
         ["text" => "See the trailer", "code" => "https://vimeo.com/rosegoldthorp/a-ghost-in-corsets-trailer"],
-        ["text" => "See the Press Kit", "code" => "/ass/filmDetails/public/a-ghost-in-corsets/press-kit/press-kit.pdf"]/*,
-["text" => "See the EPK", "code" => "http://www.rosegoldthorp.com/data/filmDetails/A-Ghost-In-Corsets/electronic-press-kit.html"]*/
+        ["text" => "See the Press Kit", "code" => "/ass/filmDetails/public/a-ghost-in-corsets/press-kit/press-kit.pdf"]
     ]
 ];
 $filmData[] = [
@@ -82,6 +82,8 @@ $filmData[] = [
 ];
 
 /**
+ * Derives the path element from the name of the film by replacing, or removing, non-acceptable chars
+ * So a film name "A Ghost In Corsets" matches a path "a-ghost-in-corsets"
  * @param $given
  * @return string
  */
