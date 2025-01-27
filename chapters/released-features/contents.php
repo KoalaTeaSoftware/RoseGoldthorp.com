@@ -27,11 +27,8 @@ if (isset($section) && ($section != "")) {
     <div class="card-body">
         <h2 class="card-title">Recent Feature Films</h2>
         <p class="card-text">
-            Since leaving university and returning to the UK, Rose has stopped following the New Zealand Film
-            Commission's demands for "edgy, morally ambiguous" films. She now makes her own choices about the
-            subjects of her movies and makes films where bad lifestyle choices are punished and good ones rewarded.
-            Rose's interests as an adult are increasingly tending towards lightheartedness and the exploration of
-            Brit. Lit. masterpieces</p>
+            Rose's current interests increasingly tending towards the exploration of Brit. Lit. masterpieces,
+            and the challenges of doing them on a low budget.</p>
         <p class="card-text">
             Thus, Rose has co-written 6 comic feature film screenplays set in her fantasy world of
             <a href="https://the-greenlands.com/" class="textLinkToFilmDetails linkText newTabInd" target="_blank">The
@@ -50,6 +47,82 @@ if (isset($section) && ($section != "")) {
             This involves the annual production of a Sir Walter Scott audio drama podcast season. Rose and
             her producer are now seeking investment for their slate of ten
             of Scott's "Scottish Novels".</p>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-2 d-flex flex-row justify-content-center align-items-center">
+                        <img alt="Hardy's Fellow Townsmen poster" class="img-fluid filmThumbnail"
+                             src="/ass/filmDetails/public/fellow-townsmen/movie-poster@460w.jpg">
+                    </div>
+                    <div class="col">
+                        <h3> Fellow Townsmen (2025)</h3>
+                        <p class="filmPuff">This year, Rose is producing a feature film based upon Hardy's story
+                            "Fellow Townsmen". Hardy set this in Bridport and Bridport Harbour ("Port Bredy")
+                        </p>
+                        <p class="filmPuff">This feature film will be made as a no-budget with
+                            <a href="https://wessexdramas.org/"
+                               target="_blank"
+                               class="textLinkToFilmDetails linkText newTabInd">The Wessex Dramas Project</a>
+                        </p>
+                        <p class="filmPuff">There is also the possibility that Rose may be directing a second
+                        Hardy feature film, this year, which Hardy set in Weymouth. This film, however, will be a
+                        financed film, under the auspices of another production company.</p>
+                    </div>
+                    <!--div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video id="hofTrailer" controls="" preload="auto" class="embed-responsive-item w-100">
+                                <source src="/ass/filmDetails/public/the-well-beloved/the-well-beloved-trailer-720p.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="help m-auto" style="text-align: center; font-style: italic; font-size: small;">Not
+                            playing nicely on your iPad?<br>Try picture-in-picture, or maximising the player.
+                        </p>
+                    </div-->
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-2 d-flex flex-row justify-content-center align-items-center">
+                        <img alt="Hardy's The Well Beloved poster" class="img-fluid filmThumbnail"
+                             src="/ass/filmDetails/public/the-well-beloved/the-well-beloved-poster@460w.jpg">
+                    </div>
+                    <div class="col">
+                        <h3> The Well Beloved (2024)</h3>
+                        <p class="filmPuff">
+                            Feature film number 3 of
+                            <a href="https://wessexdramas.org/"
+                               target="_blank"
+                               class="textLinkToFilmDetails linkText newTabInd">The Wessex Dramas Project</a> (Rose's
+                            actual eighth feature film), <b>The Well Beloved</b> is the first of Hardy's `Seaside
+                            Trilogy`. This was shot as a no-budget feature, using amateurs largely in the Portland area,
+                            where Hardy set this story ("The Isle of Slingers").
+                        </p>
+                        <p class="filmPuff">This feature film has been premiered on Portland and Weymouth. It will
+                            shortly will be available as a double-DVD, together with a documentary about Rose and the
+                            project.
+                        </p>
+                        <p class="filmPuff">This film is now starting its round of international film festival
+                            entries.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video id="hofTrailer" controls="" preload="auto" class="embed-responsive-item w-100">
+                                <source src="/ass/filmDetails/public/the-well-beloved/the-well-beloved-trailer-720p.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="help m-auto" style="text-align: center; font-style: italic; font-size: small;">Not
+                            playing nicely on your iPad?<br>Try picture-in-picture, or maximising the player.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="card">
             <div class="card-body">
@@ -96,7 +169,6 @@ if (isset($section) && ($section != "")) {
                 </div>
             </div>
         </div>
-
 
         <div class="card">
             <div class="card-body">
