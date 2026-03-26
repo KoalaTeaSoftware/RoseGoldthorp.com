@@ -34,10 +34,12 @@ import FilmCard from '../components/FilmCard.vue'
         </p>
 
         <!-- Fellow Townsmen -->
-        <FilmCard title="Fellow Townsmen (2025)"
+        <FilmCard title="Fellow Townsmen (2026/7)"
                   thumbnail="/assets/filmDetails/fellow-townsmen/movie-poster@460w.jpg">
-          <p class="filmPuff">In July and August, Rose is directing and shooting a feature film based upon
-            Hardy's story "Fellow Townsmen". Hardy set this in Bridport and Bridport Harbour ("Port Bredy")</p>
+          <p class="filmPuff">In 2026/7, Rose is directing and shooting a feature film based upon
+            Hardy's story
+            "Fellow Townsmen". Hardy set this in Bridport and Bridport Harbour ("Port Bredy")
+          </p>
           <p class="filmPuff">This feature film will be made as a no-budget with
             <a href="https://wessexdramas.org/" target="_blank"
                class="textLinkToFilmDetails linkText newTabInd">The Wessex Dramas Project</a>
@@ -50,7 +52,7 @@ import FilmCard from '../components/FilmCard.vue'
           <p class="filmPuff">This is an adaptation of Thomas Hardy's "The Trumpet Major".</p>
           <p class="filmPuff">In June, Rose directed this UK feature film, as well as helping with
             various aspects of production (from costumes, through locations, to pack-down).</p>
-          <p class="filmPuff">This film is a microbudget and is slated to be released later in 2025.</p>
+          <p class="filmPuff">This film is a microbudget feature film and is slated to be released mid 2026.</p>
         </FilmCard>
 
         <!-- The Well Beloved -->

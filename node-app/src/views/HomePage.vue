@@ -19,9 +19,9 @@ const carouselImages = [
           <div class="card-body">
             <div class="row align-items-center">
               <div class="col">
-                <img src="/assets/filmDetails/hardys-hand-of-fate/hhof-poster@460w.jpg"
+                <img src="/assets/filmDetails/the-well-beloved/the-well-beloved-poster@460w.jpg?v=2"
                      class="img-fluid"
-                     alt="The Hardy's Hand of Fate poster">
+                     alt="The Well Beloved poster">
               </div>
             </div>
           </div>
@@ -36,9 +36,8 @@ const carouselImages = [
 
       <div class="col-md" id="rightCol">
         <div class="ratio ratio-16x9">
-          <video id="hrTrailer" controls preload="auto"
-                 poster="/assets/filmDetails/hardys-hand-of-fate/poster-16by9wide.jpg">
-            <source src="/assets/filmDetails/hardys-hand-of-fate/HandOfFate-Trailer-720p.mp4"
+          <video id="hrTrailer" controls preload="auto">
+            <source src="/assets/filmDetails/the-well-beloved/the-well-beloved-trailer-720p.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -67,8 +66,8 @@ const carouselImages = [
               podcast seasons from the 6 feature film screenplays in the-greenlands.com
               storyworld. I have now, also, started on my period Brit. lit work, whose first story world is
               that of Thomas Hardy's Wessex, by co-adapting Hardy stories for 9 Hardy feature films. The
-              Wessex Dramas' Project (for which I am the resident filmmaker) releases its third Hardy feature
-              film at the end of 2024.</p>
+              Wessex Dramas' Project (for which I am the resident filmmaker) releases its fourth Hardy feature
+              film at the end of 2027.</p>
           </div>
         </div>
         <div class="card">
