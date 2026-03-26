@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="live" persistUploadOnCheckin="false" autoUploadExternalChanges="true" compareModeInSync="TEXT" showNewOnSourceInSync="false">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="stage" persistUploadOnCheckin="false" autoUploadExternalChanges="true" compareModeInSync="TEXT">
     <serverData>
       <paths name="live">
         <serverdata>
@@ -8,13 +8,12 @@
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
           <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/wiki" />
-            <excludedPath local="true" path="$PROJECT_DIR$/comms" />
             <excludedPath local="true" path="$PROJECT_DIR$/raw-assets" />
             <excludedPath local="true" path="$PROJECT_DIR$/scss" />
             <excludedPath local="true" path="$PROJECT_DIR$/.ftpquota" />
             <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
             <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+            <excludedPath local="true" path="$PROJECT_DIR$/node-app" />
           </excludedPaths>
         </serverdata>
       </paths>
@@ -32,6 +31,7 @@
             <excludedPath local="true" path="$PROJECT_DIR$/.gitignore" />
             <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
             <excludedPath local="true" path="**.md" />
+            <excludedPath local="true" path="$PROJECT_DIR$/node-app" />
           </excludedPaths>
         </serverdata>
       </paths>

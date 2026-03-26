@@ -72,6 +72,8 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?= $metaHtml ?>
     <title>Rose Goldthorp</title>
+    <meta http-equiv="expires" content="Sun, 01 Jan 2014 00:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache" />
     <link rel="stylesheet" href="/styles.v5.css">
     <link rel="icon" type="image/gif" sizes="16x16" href="/ass/logo@16px.gif">
     <link rel="icon" type="image/gif" sizes="320x320" href="/ass/logo@320px.gif">
@@ -100,7 +102,7 @@ $titleTag = ucfirst(str_replace('-', ' ', $chapter));
                     <a class="nav-item nav-link" id="dd-nav" href="https://wessexdramas.org/"
                        target="_blank">The Wessex Project</a>
                     <!--suppress HtmlUnknownTarget -->
-                    <a class="nav-item nav-link" id="scott-nav" href="https://scottland.org//"
+                    <a class="nav-item nav-link" id="scott-nav" href="https://scottlanddramas.org//"
                        target="_blank">The Scottland Project</a>
                     <!--suppress HtmlUnknownTarget -->
                     <a class="nav-item nav-link" id="released-featuresNav" href="/released-features">Released

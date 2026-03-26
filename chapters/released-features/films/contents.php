@@ -143,4 +143,3 @@ function makeDiaBox($diaData)
     }
     return $html;
 }
-

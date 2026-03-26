@@ -7,9 +7,9 @@
                 <div class="card-body">
                     <div class="row align-items-center">
                         <div class="col">
-                            <img src="/ass/filmDetails/public/hardys-hand-of-fate/hhof-poster@460w.jpg"
+                            <img src="/ass/filmDetails/public/the-well-beloved/the-well-beloved-poster@460w.jpg?v=2"
                                  class="img-fluid"
-                                 alt="The Hardy's Regrets poster">
+                                 alt="The Well Beloved poster">
                         </div>
                     </div>
                 </div>
@@ -52,9 +52,8 @@
 
         <div class="col-md" id="rightCol">
             <div class="embed-responsive embed-responsive-16by9">
-                <video id="hrTrailer" controls="" preload="auto" class="embed-responsive-item w-100"
-                       poster="/ass/filmDetails/public/hardys-hand-of-fate/poster-16by9wide.jpg">
-                    <source src="/ass/filmDetails/public/hardys-hand-of-fate/HandOfFate-Trailer-720p.mp4"
+                <video id="hrTrailer" controls="" preload="auto" class="embed-responsive-item w-100">
+                    <source src="/ass/filmDetails/public/the-well-beloved/the-well-beloved-trailer-720p.mp4"
                             type="video/mp4">
                 </video>
             </div>
@@ -83,35 +82,39 @@
                         podcast seasons from the 6 feature film screenplays in the-greenlands.com
                         storyworld. I have now, also, started on my period Brit. lit work, whose first story world is
                         that of Thomas Hardy's Wessex, by co-adapting Hardy stories for 9 Hardy feature films. The
-                        Wessex Dramas' Project (for which I am the resident filmmaker) releases its third Hardy feature
-                        film at the end of 2024.
+                        Wessex Dramas' Project (for which I am the resident filmmaker) releases its fourth Hardy feature
+                        film at the end of 2027.
                     </p>
                 </div>
             </div>
             <div class="card">
                 <div class="card-body">
-                    <form class="form-inline"
-                          action="https://rosegoldthorp.us18.list-manage.com/subscribe/post?u=4f69f3e46ff085a594ff19706&amp;id=043e7cb483"
-                          method="post"
-                          target="_blank"
-                          name="mc-embedded-subscribe-form"
-                          id="mc-embedded-subscribe-form"
-                          novalidate>
-                        <div class="form-group">
-                            <!--suppress HtmlFormInputWithoutLabel -->
-                            <input id="mce-EMAIL" type="email" class="form-control" value="" name="EMAIL"
-                                   placeholder="email address" required>
+                    <div class="row row align-items-center">
+                        <div class="col">
+                            <form class="form-inline"
+                                  action="https://rosegoldthorp.us18.list-manage.com/subscribe/post?u=4f69f3e46ff085a594ff19706&amp;id=043e7cb483"
+                                  method="post"
+                                  target="_blank"
+                                  name="mc-embedded-subscribe-form"
+                                  id="mc-embedded-subscribe-form"
+                                  novalidate>
+                                <div class="form-group">
+                                    <!--suppress HtmlFormInputWithoutLabel -->
+                                    <input id="mce-EMAIL" type="email" class="form-control" value="" name="EMAIL"
+                                           placeholder="email address" required>
+                                </div>
+                                <!--suppress HtmlFormInputWithoutLabel -->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <!--suppress HtmlFormInputWithoutLabel -->
+                                    <input type="text" name="b_4f69f3e46ff085a594ff19706_043e7cb483" tabindex="-1"
+                                           value="">
+                                </div>
+                                <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                        class="btn btn-default brandedButton ml-1"> Get my newsletter
+                                </button>
+                            </form>
                         </div>
-                        <!--suppress HtmlFormInputWithoutLabel -->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                            <!--suppress HtmlFormInputWithoutLabel -->
-                            <input type="text" name="b_4f69f3e46ff085a594ff19706_043e7cb483" tabindex="-1"
-                                   value="">
-                        </div>
-                        <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                                class="btn btn-default brandedButton ml-1"> Get my newsletter
-                        </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

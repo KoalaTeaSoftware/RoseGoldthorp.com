@@ -21,7 +21,7 @@
             with my co-writer, and in this, each year, we make one 'No/Lo Budget' feature film and two podcast seasons
             of Thomas Hardy stories.
         </p>
-        <p>In 2023, I also launched <a href="https://scottland.org/" target="_blank">The Scottland Dramas Project</a>
+        <p>In 2023, I also launched <a href="https://scottlanddramas.org/" target="_blank">The Scottland Dramas Project</a>
             with my co-writer and in this project, each year, we make one 'No/Lo Budget' feature film and two podcast
             seasons of Sir Walter Scott's stores.
         </p>

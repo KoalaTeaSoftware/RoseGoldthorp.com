@@ -38,15 +38,16 @@ if (isset($section) && ($section != "")) {
             in 2022, Rose and her producer began
             <a href="https://wessexdramas.org/" target="_blank"
                class="textLinkToFilmDetails linkText newTabInd">The Wessex Dramas Project </a>.
-            This involves the annual production of a feature-film adaptation from Thomas Hardy's works, and
-            a couple of dramatic podcasts from Thomas Hardy's works, as well.
+            This involves the regular production of a feature-film adaptation from Thomas Hardy's works, and
+            a regular audio drama podcasts from Thomas Hardy's works, as well.
         </p>
         <p>In 2023, Rose and her producer began
             <a href="https://scottlanddramas.org/" class="textLinkToFilmDetails linkText newTabInd" target="_blank">The
                 Scottland Dramas Project</a>.
-            This involves the annual production of a Sir Walter Scott audio drama podcast season. Rose and
-            her producer are now seeking investment for their slate of ten
-            of Scott's "Scottish Novels".</p>
+            This involves the regular production of a Sir Walter Scott audio drama podcast season. Rose and
+            her producer are now seeking investment for what will be their slate of ten
+            of Scott's "Scottish Novels". They are, at present, mid-adapt on number six in this cycle: "Redgauntlet"
+        </p>
 
         <div class="card">
             <div class="card-body">
@@ -56,8 +57,9 @@ if (isset($section) && ($section != "")) {
                              src="/ass/filmDetails/public/fellow-townsmen/movie-poster@460w.jpg">
                     </div>
                     <div class="col">
-                        <h3> Fellow Townsmen (2025)</h3>
-                        <p class="filmPuff">This year, Rose is producing a feature film based upon Hardy's story
+                        <h3> Fellow Townsmen (2026/7)</h3>
+                        <p class="filmPuff">In 2026/7, Rose is directing and shooting a feature film based upon
+                            Hardy's story
                             "Fellow Townsmen". Hardy set this in Bridport and Bridport Harbour ("Port Bredy")
                         </p>
                         <p class="filmPuff">This feature film will be made as a no-budget with
@@ -65,9 +67,6 @@ if (isset($section) && ($section != "")) {
                                target="_blank"
                                class="textLinkToFilmDetails linkText newTabInd">The Wessex Dramas Project</a>
                         </p>
-                        <p class="filmPuff">There is also the possibility that Rose may be directing a second
-                        Hardy feature film, this year, which Hardy set in Weymouth. This film, however, will be a
-                        financed film, under the auspices of another production company.</p>
                     </div>
                     <!--div class="col-md-4">
                         <div class="embed-responsive embed-responsive-16by9">
@@ -88,8 +87,39 @@ if (isset($section) && ($section != "")) {
             <div class="card-body">
                 <div class="row align-items-center">
                     <div class="col-md-2 d-flex flex-row justify-content-center align-items-center">
+                        <img alt="Hardy's Fellow Townsmen poster" class="img-fluid filmThumbnail"
+                             src="/ass/filmDetails/public/soldier-and-sailor/poster.png">
+                    </div>
+                    <div class="col">
+                        <h3> The Soldier and the Sailor (2025)</h3>
+                        <p class="filmPuff">This is an adaptation of Thomas Hardy's "The Trumpet Major".
+                        </p>
+                        <p class="filmPuff"> In June, Rose directed this UK feature film, as well as helping with
+                            various aspect
+                            of production (from costumes, through locations, to pack-down).
+                        </p>
+                        <p class="filmPuff">This film is a microbudget feature film and is slated to be released mid 2026. </p>
+                    </div>
+                    <!--div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video id="hofTrailer" controls="" preload="auto" class="embed-responsive-item w-100">
+                                <source src="/ass/filmDetails/public/the-well-beloved/the-well-beloved-trailer-720p.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="help m-auto" style="text-align: center; font-style: italic; font-size: small;">Not
+                            playing nicely on your iPad?<br>Try picture-in-picture, or maximising the player.
+                        </p>
+                    </div-->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-2 d-flex flex-row justify-content-center align-items-center">
                         <img alt="Hardy's The Well Beloved poster" class="img-fluid filmThumbnail"
-                             src="/ass/filmDetails/public/the-well-beloved/the-well-beloved-poster@460w.jpg">
+                             src="/ass/filmDetails/public/the-well-beloved/the-well-beloved-poster@460w.jpg?v=2">
                     </div>
                     <div class="col">
                         <h3> The Well Beloved (2024)</h3>
