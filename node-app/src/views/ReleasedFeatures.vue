@@ -57,7 +57,7 @@ import FilmCard from '../components/FilmCard.vue'
 
         <!-- The Well Beloved -->
         <FilmCard title="The Well Beloved (2024)"
-                  thumbnail="/assets/filmDetails/the-well-beloved/the-well-beloved-poster@460w.jpg?v=2"
+                  thumbnail="/assets/filmDetails/the-well-beloved/the-well-beloved-poster@460w.jpg?v=3"
                   video-src="/assets/filmDetails/the-well-beloved/the-well-beloved-trailer-720p.mp4">
           <p class="filmPuff">
             Feature film number 3 of

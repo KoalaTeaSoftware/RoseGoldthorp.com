@@ -19,7 +19,7 @@ const carouselImages = [
           <div class="card-body">
             <div class="row align-items-center">
               <div class="col">
-                <img src="/assets/filmDetails/the-well-beloved/the-well-beloved-poster@460w.jpg?v=2"
+                <img src="/assets/filmDetails/the-well-beloved/the-well-beloved-poster@460w.jpg?v=3"
                      class="img-fluid"
                      alt="The Well Beloved poster">
               </div>
